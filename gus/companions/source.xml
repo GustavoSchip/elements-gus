@@ -14,6 +14,7 @@
 			<set name="url">https://github.com/GustavoSchip/elements-gus/</set>
 			<set name="author" url="https://github.com/GustavoSchip/">Gustavo Schip</set>
 			<set name="homebrew">true</set>
+			<set name="playtest">true</set>
 		</setters>
 	</element>
 </elements>
