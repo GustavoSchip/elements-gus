@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/source.xml" />
+		</update>
+	</info>
+	<element name="Gus: DnD" type="Source" source="Core" id="ID_GUS_SOURCE_DND">
+		<description>
+			<![CDATA[<p>Homebrew content by Gustavo Schip.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">Gus</set>
+			<set name="url">https://github.com/GustavoSchip/elements-gus/</set>
+			<set name="author" abbreviation="Gus">Gustavo Schip</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
