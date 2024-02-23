@@ -8,5 +8,6 @@
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/source.xml" />
+		<file name="velociraptor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/velociraptor.xml" />
 	</files>
 </index>
