@@ -7,10 +7,6 @@
         </update>
     </info>
 	<element name="Velociraptor" type="Companion" source="Gus: DnD" id="ID_GUS_COMPANION_VELOCIRAPTOR">
-		<description>
-			<p>The velociraptor is a feathered dinosaur that resembles a large turkey. It has a long, slender snout, sharp teeth, and a curved claw on each hind foot. It is covered in brown and black feathers, with a distinctive crest on its head. It has a long, stiff tail that helps it balance and maneuver. It is about 2 feet tall and 6 feet long, and weighs about 30 pounds.</p>
-			<p class="indent">The velociraptor is an aggressive predator that often hunts in packs. It uses its speed and cunning to ambush and surround its prey. It has advantage on attack rolls against a creature if at least one of its allies is within 5 feet of the creature and the ally is not incapacitated. It can make two attacks: one with its bite and one with its claws. Its bite can pierce through flesh and bone, while its claws can slash and rend. If the target is a medium or smaller creature, the velociraptor can try to grapple it with its bite and drag it away.</p>
-        </description>
 		<setters>
 			<set name="strength">6</set>
 			<set name="dexterity">14</set>
@@ -40,10 +36,10 @@
 	</element>
 	<element name="Pack Tactics" type="Companion Trait" source="Gus: DnD" id="ID_GUS_COMPANION_TRAIT_VELOCIRAPTOR_PACK_TACTICS">
 		<description>
-			<p>The velociraptor has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 ft. of the creature and the ally isn't incapacitated.</p>
+			<p>The velociraptor has advantage on an attack roll against a creature if at least one of the velociraptor's allies is within 5 ft. of the creature and the ally isn't incapacitated.</p>
 		</description>
 		<sheet>
-			<description>The velociraptor has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 ft. of the creature and the ally isn't incapacitated.</description>
+			<description>The velociraptor has advantage on an attack roll against a creature if at least one of the velociraptor's allies is within 5 ft. of the creature and the ally isn't incapacitated.</description>
 		</sheet>
 	</element>
 	<element name="Multiattack" type="Companion Action" source="Gus: DnD" id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_MULTIATTACK">
