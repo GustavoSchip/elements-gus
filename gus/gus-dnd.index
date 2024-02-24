@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>r/DnD</name>
-		<update version="0.0.2">
+		<name>Gus: DnD</name>
+		<update version="0.0.3">
 			<file name="gus-dnd.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index" />
 		</update>
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
-		<file name="gus-dnd-companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/gus-dnd-companions.xml" />
-		<file name="gus-dnd-items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/items/gus-dnd-items.xml" />
+		<file name="companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions.index" />
+		<file name="items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index" />
 	</files>
 </index>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Gus: DnD</name>
+		<update version="0.0.3">
+			<file name="companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions.index" />
+		</update>
+	</info>
+	<files>
+		<file name="velociraptor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/velociraptor.xml" />
+	</files>
+</index>

@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Orb of Snakes</name>
-		<update version="0.0.2">
-			<file name="orb-of-snakes.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/items/orb-of-snakes.xml" />
+		<update version="0.0.3">
+			<file name="orb-of-snakes.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/orb-of-snakes.xml" />
 		</update>
 	</info>
 	<element name="Orb of Snakes" type="Magic Item" source="Gus: DnD" id="ID_GUS_MAGIC_ITEM_ORB_OF_SNAKES">
