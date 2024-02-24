@@ -3,9 +3,9 @@
 	<info>
 		<name>Orb of Snakes</name>
 		<description>The construction for my custom Orb of Snakes.</description>
-	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
 		<update version="0.0.7">
-		    <!-- This file -->
+			<!-- This file -->
 			<file name="orb-of-snakes.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/orb-of-snakes.xml" />
 		</update>
 	</info>

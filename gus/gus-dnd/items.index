@@ -3,14 +3,14 @@
 	<info>
 		<name>Gus: DnD Items</name>
 		<description>The main entry point for my custom items.</description>
-	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.4">
-		    <!-- This file -->
+		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.5">
+			<!-- This file -->
 			<file name="items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index" />
 		</update>
 	</info>
 	<files>
-	    <!-- Orb of Snakes -->
+		<!-- Orb of Snakes -->
 		<file name="orb-of-snakes.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/orb-of-snakes.xml" />
 	</files>
 </index>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Velociraptor</name>
+	<info>
+		<name>Velociraptor</name>
 		<description>The construction for my custom velociraptor.</description>
-	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.4">
-		    <!-- This file -->
-            <file name="velociraptor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/velociraptor.xml" />
-        </update>
-    </info>
+		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.5">
+			<!-- This file -->
+			<file name="velociraptor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/velociraptor.xml" />
+		</update>
+	</info>
 	<element name="Velociraptor" type="Companion" source="Gus: DnD" id="ID_GUS_COMPANION_VELOCIRAPTOR">
 		<setters>
 			<set name="strength">6</set>
