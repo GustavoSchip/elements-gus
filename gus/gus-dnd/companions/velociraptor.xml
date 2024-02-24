@@ -2,7 +2,10 @@
 <elements>
     <info>
         <name>Velociraptor</name>
-        <update version="0.0.3">
+		<description>The construction for my custom velociraptor.</description>
+	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.4">
+		    <!-- This file -->
             <file name="velociraptor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/velociraptor.xml" />
         </update>
     </info>

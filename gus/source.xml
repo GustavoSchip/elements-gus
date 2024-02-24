@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+	    <name>Gus: DnD</name>
+		<description>The source definitions for my custom content.</description>
+	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.3">
+		    <!-- This file -->
 			<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
 		</update>
 	</info>

@@ -2,13 +2,19 @@
 <index>
 	<info>
 		<name>Gus: DnD</name>
-		<update version="0.0.3">
+		<description>The semi-main entry point for my custom content.</description>
+	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.4">
+		    <!-- This file -->
 			<file name="gus-dnd.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index" />
 		</update>
 	</info>
 	<files>
+	    <!-- The source definitions -->
 		<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
+		<!-- My homebrew companions -->
 		<file name="companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions.index" />
+		<!-- My homebrew items -->
 		<file name="items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index" />
 	</files>
 </index>

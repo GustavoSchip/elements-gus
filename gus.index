@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.3">
+	    <name>Gus: DnD</name>
+	    <description>The main entry point for my custom content.</description>
+	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.4">
+		    <!-- This file -->
 			<file name="gus.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus.index" />
 		</update>
 	</info>
 	<files>
+	    <!-- My DnD homebrew -->
 		<file name="gus-dnd.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index" />
 	</files>
 </index>
