@@ -1,4 +1,4 @@
-# elements-gus
+# Gus
  My attempt at Homebrew for Aurora Builder
 
 ## Installing
