@@ -38,6 +38,7 @@
 		</rules>
 	</element>
 	<element name="Pack Tactics" type="Companion Trait" source="Gus: DnD" id="ID_GUS_COMPANION_TRAIT_VELOCIRAPTOR_PACK_TACTICS">
+		<compendium display="false" />
 		<description>
 			<p>The velociraptor has advantage on an attack roll against a creature if at least one of the velociraptor's allies is within 5 ft. of the creature and the ally isn't incapacitated.</p>
 		</description>
@@ -46,6 +47,7 @@
 		</sheet>
 	</element>
 	<element name="Multiattack" type="Companion Action" source="Gus: DnD" id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_MULTIATTACK">
+		<compendium display="false" />
 		<description>
 			<p>The velociraptor makes two attacks: one with its bite and one with its claws.</p>
 		</description>
@@ -54,6 +56,7 @@
 		</sheet>
 	</element>
 	<element name="Bite" type="Companion Action" source="Gus: DnD" id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_BITE">
+		<compendium display="false" />
 		<description>
 			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
 		</description>
@@ -62,6 +65,7 @@
 		</sheet>
 	</element>
 	<element name="Claws" type="Companion Action" source="Gus: DnD" id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_CLAWS">
+		<compendium display="false" />
 		<description>
 			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</p>
 		</description>
