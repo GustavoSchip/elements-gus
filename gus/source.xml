@@ -4,7 +4,7 @@
 	    <name>Gus: DnD</name>
 		<description>The source definitions for my custom content.</description>
 	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 		    <!-- This file -->
 			<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
 		</update>
@@ -19,6 +19,7 @@
 			<set name="author" url="https://github.com/GustavoSchip/">Gustavo Schip</set>
 			<set name="homebrew">true</set>
 			<set name="playtest">true</set>
+			<set name="incomplete">true</set>
 		</setters>
 	</element>
 </elements>
