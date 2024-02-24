@@ -4,7 +4,7 @@
 		<name>Orb of Snakes</name>
 		<description>The construction for my custom Orb of Snakes.</description>
 	    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 		    <!-- This file -->
 			<file name="orb-of-snakes.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/orb-of-snakes.xml" />
 		</update>
@@ -16,7 +16,7 @@
 			<p class="indent">The snake is under your control and is friendly to your companions, and it acts on your turn. You can command how the snake moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the snake acts in a fashion appropriate to its nature.</p>
             <p class="indent">The snakes use the <em>Poisonous Snake</em> stat block.</p>
 			<p class="indent">Once three targets have been transformed with the orb, the orb can't be used again until the next dawn.</p>
-			<p class="indent"><strong><em>Curse. </em></strong>if a <em>Human</em> or a <em>'half' human</em> used this item successfully causes them to transform into the <em>Yuan-ti pureblood</em> race, this change is permanent. While being cursed this way, their alignment changes to <em>Chaotic Evil</em> and they worship <em>Zehir</em> as their deity.</p>
+			<p class="indent"><strong><em>Curse. </em></strong>if a <em>Human</em> or a <em>'half' human</em> uses this item successfully, it causes them to transform into the <em>Yuan-ti pureblood</em> race, this change is permanent. While being cursed this way, their alignment changes to <em>Chaotic Evil</em> and they worship <em>Zehir</em> as their deity.</p>
 			<table>
 				<thead>
 					<tr> <td class="col-20">d4</td> <td>Effect</td> </tr>
