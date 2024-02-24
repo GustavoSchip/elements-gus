@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Velociraptor</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="velociraptor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/velociraptor.xml" />
         </update>
     </info>

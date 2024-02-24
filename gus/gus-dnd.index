@@ -2,12 +2,13 @@
 <index>
 	<info>
 		<name>r/DnD</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="gus-dnd.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index" />
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/source.xml" />
-		<file name="velociraptor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/velociraptor.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
+		<file name="gus-dnd-companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/gus-dnd-companions.xml" />
+		<file name="gus-dnd-items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/items/gus-dnd-items.xml" />
 	</files>
 </index>

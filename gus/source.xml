@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/companions/source.xml" />
+		<update version="0.0.2">
+			<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
 		</update>
 	</info>
 	<element name="Gus: DnD" type="Source" source="Core" id="ID_GUS_SOURCE_DND">

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>r/DnD</name>
+		<update version="0.0.2">
+			<file name="gus-dnd-items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/items/gus-dnd-items.xml" />
+		</update>
+	</info>
+	<files>
+		<file name="orb-of-snakes.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/items/orb-of-snakes.xml" />
+	</files>
+</index>

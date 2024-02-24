@@ -1,0 +1,39 @@
+<elements>
+	<info>
+		<name>Orb of Snakes</name>
+		<update version="0.0.2">
+			<file name="orb-of-snakes.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/items/orb-of-snakes.xml" />
+		</update>
+	</info>
+	<element name="Orb of Snakes" type="Magic Item" source="Gus: DnD" id="ID_GUS_MAGIC_ITEM_ORB_OF_SNAKES">
+		<description>
+			<p>This orb appears to have a snake eye inside that glows a bright yellow and weighs 20 pounds. Hissing sounds can be heard from the orb when it is shaken.</p>
+			<h5 class="caption">ORB OF SNAKES</h5>
+			<p class="indent">You can use an action to try to interact with the orb.</p>
+			<p class="indent">Make a DC 15 Intelligence saving throw. If you succeed, target a creature to transform into a snake, determined by rolling a d4. The transformation acts similarly to the <em>polymorph</em> spell.</p>
+			<p class="indent">The creature returns to its original form at the next dawn or when it is reduced to 0 hit points.</p>
+			<p class="indent">If you fail the saving throw, you are transformed into a snake under the DM's control.</p>
+			<p class="indent">The snake is friendly to you and your companions, and it acts on your turn.</p>
+			<p class="indent">You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.</p>
+			<p class="indent">Once three targets have been transformed with the orb, it can't be used again until the next dawn.</p>
+			<table>
+				<thead>
+					<tr> <td class="col-20">d4</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td>1</td> <td>Weasel</td> </tr>
+					<tr> <td>2</td> <td>Giant rat</td> </tr>
+					<tr> <td>3</td> <td>Badger</td> </tr>
+					<tr> <td>4</td> <td>Boar</td> </tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="12">20 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+</elements>
