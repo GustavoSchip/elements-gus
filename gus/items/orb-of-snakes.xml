@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
 		<name>Orb of Snakes</name>
@@ -8,23 +9,20 @@
 	<element name="Orb of Snakes" type="Magic Item" source="Gus: DnD" id="ID_GUS_MAGIC_ITEM_ORB_OF_SNAKES">
 		<description>
 			<p>This orb appears to have a snake eye inside that glows a bright yellow and weighs 20 pounds. Hissing sounds can be heard from the orb when it is shaken.</p>
-			<h5 class="caption">ORB OF SNAKES</h5>
-			<p class="indent">You can use an action to try to interact with the orb.</p>
-			<p class="indent">Make a DC 15 Intelligence saving throw. If you succeed, target a creature to transform into a snake, determined by rolling a d4. The transformation acts similarly to the <em>polymorph</em> spell.</p>
-			<p class="indent">The creature returns to its original form at the next dawn or when it is reduced to 0 hit points.</p>
-			<p class="indent">If you fail the saving throw, you are transformed into a snake under the DM's control.</p>
-			<p class="indent">The snake is friendly to you and your companions, and it acts on your turn.</p>
-			<p class="indent">You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.</p>
-			<p class="indent">Once three targets have been transformed with the orb, it can't be used again until the next dawn.</p>
+			<p class="indent">You can use an action to try to interact with the orb. Make a DC 15 Intelligence saving throw, if you succeeded the saving throw, target a creature to transform into a snake with a effect you determine by rolling a d4, the transformation acts similarly to the <em>polymorph</em> spell. The creature returns to its original form at the next dawn or when it is reduced to 0 hit points. If you failed the saving throw, you are transformed into a snake under the DM's control. The <em>Naga</em> race will always succeed this saving throw. </p>
+			<p class="indent">The snake is under your control and is friendly to your companions, and it acts on your turn. You can command how the snake moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the snake acts in a fashion appropriate to its nature.</p>
+            <p class="indent">The snakes use the <em>Poisonous Snake</em> stat block.</p>
+			<p class="indent">Once three targets have been transformed with the orb, the orb can't be used again until the next dawn.</p>
+			<p class="indent"><strong><em>Curse. </em></strong>Using this item successfully causes you to transform into the <em>Naga</em> race, this change is permanent. While being cursed this way, your alignment changes to <em>Chaotic Evil</em> and you worship <em>Zehir</em> as your deity.</p>
 			<table>
 				<thead>
 					<tr> <td class="col-20">d4</td> <td>Effect</td> </tr>
 				</thead>
 				<tbody>
-					<tr> <td>1</td> <td>Weasel</td> </tr>
-					<tr> <td>2</td> <td>Giant rat</td> </tr>
-					<tr> <td>3</td> <td>Badger</td> </tr>
-					<tr> <td>4</td> <td>Boar</td> </tr>
+					<tr> <td>1</td> <td><strong>Growth spurt</strong>, the snake becomes huge, making it a <em>Giant Poisonous Snake</em>.</td> </tr>
+					<tr> <td>2</td> <td><strong>Primal instincts</strong>, the snake only acts in a fashion appropriate to its nature.</td> </tr>
+					<tr> <td>3</td> <td><strong>Sprouting wings</strong>, the snake grows wings, making it a <em>Flying Snake</em>.</td> </tr>
+					<tr> <td>4</td> <td><strong>Comfortable form</strong>, the transformation is prolonged for 1d4 + 1 dawns.</td> </tr>
 				</tbody>
 			</table>
 		</description>
