@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+		<name>Isilmnir’el</name>
+		<description>The construction for my custom Isilmnir’el subrace for tieflings.</description>
+		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.1">
+			<!-- This file -->
+			<file name="isilmnir-el.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml" />
+		</update>
+	</info>
+  <element name="Isilmnir’el" type="Sub Race" source="Gus: DnD" id="ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL">
+    <supports>Tiefling</supports>
+    <setters>
+
+    </setters>
+    <rules>
+
+    </rules>
+  </element>
+</elements>
