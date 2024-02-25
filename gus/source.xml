@@ -4,7 +4,7 @@
 		<name>Gus: DnD</name>
 		<description>The source definitions for my custom content.</description>
 		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<!-- This file -->
 			<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
 		</update>
@@ -20,6 +20,7 @@
 			<set name="homebrew">true</set>
 			<set name="playtest">true</set>
 			<set name="incomplete">true</set>
+			<set name="information">This homebrew is probably not legal in Adventurers League.</set>
 		</setters>
 	</element>
 </elements>
