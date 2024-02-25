@@ -9,13 +9,90 @@
 			<file name="isilmnir-el.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml" />
 		</update>
 	</info>
-  <element name="Isilmnir’el" type="Sub Race" source="Gus: DnD" id="ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL">
-    <supports>Tiefling</supports>
-    <setters>
-
-    </setters>
-    <rules>
-
-    </rules>
-  </element>
+  <element name="Tiefling (Isilmnir’el)" type="Sub Race" source="Gus: DnD" id="ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL">
+  	<supports>Tiefling</supports>
+  	<description>
+  		<p>The day Lolth struck down her own daughter left those who followed in Her ways feeling as if an ardent stake had been driven straight through their hearts - Transformed by the abyssal aftermath of Her fall, and the remaining splinters of Her essence. Forced into hiding by the lolthsworn, they now emerge from the shadows, drawn to rumors of Eilistraee’s return - seeking refuge, and perhaps a chance to unravel the mysteries of their demonic forms, which some now embrace as a sacred gift from their fallen goddess.</p>
+      <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Charisma score increases by 1.</p>
+      <p class="indent"><strong><em>Superior Darkvision.</em></strong> Your darkvision has a radius of 120 feet.</p>
+      <p class="indent"><strong><em>Melody of the Blade.</em></strong> You gain proficiency with the Rapier, Scimitar, and Longsword.</p>
+      <p class="indent"><strong><em>Dark Maiden’s Blessing.</em></strong> You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and you cannot be Frightened.</p>
+      <p class="indent"><strong><em>Disciple of the Moon.</em></strong> You know the <em>Lunar Missle</em> cantrip. When you reach 3rd level, you can cast the disguise self spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>Lunar Beacon</em> spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+      <p class="indent"><strong><em>Eilistraee’s Moonfire.</em></strong> You know the <em>Lunar Missle</em> cantrip. When you reach 3rd level, you can cast the disguise self spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>Lunar Beacon</em> spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+  	</description>
+		<sheet alt="Tiefling (Isilmnir’el)" display="false">
+			<description>Descended of Eilistraee</description>
+  	</sheet>
+  	<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_TIEFLING_SUBRACE" />
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="Charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Isilmnir’el)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Isilmnir’el)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+      <grant type="Racial Trait" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_MELODY_OF_THE_BLADE" />
+      <grant type="Racial Trait" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DARK_MAIDEN_S_BLESSING" />
+      <grant type="Racial Trait" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DISCIPLE_OF_THE_MOON" />
+      <grant type="Racial Trait" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_EILISTRAEE_S_MOONFIRE" />
+		</rules>
+	</element>
+   <element name="Melody of the Blade" type="Racial Trait" source="Gus: DnD" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_MELODY_OF_THE_BLADE">
+		<description>
+			<p>You gain proficiency with the Rapier, Scimitar, and Longsword.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with the Rapier, Scimitar, and Longsword.</description>
+		</sheet>
+		<rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Melody of the Blade)" number="3" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+  <element name="Dark Maiden’s Blessing" type="Racial Trait" source="Gus: DnD" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DARK_MAIDEN_S_BLESSING">
+		<description>
+			<p>You know the <em>dancing lights</em> cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the dancing lights cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the dancing lights cantrip. You can cast faerie fire spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the dancing lights cantrip. You can cast faerie fire and darkness spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+  <element name="Disciple of the Moon" type="Racial Trait" source="Gus: DnD" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DISCIPLE_OF_THE_MOON">
+		<description>
+			<p>You know the <em>dancing lights</em> cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the dancing lights cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the dancing lights cantrip. You can cast faerie fire spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the dancing lights cantrip. You can cast faerie fire and darkness spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
+  <element name="Eilistraee’s Moonfire" type="Racial Trait" source="Gus: DnD" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_EILISTRAEE_S_MOONFIRE">
+		<description>
+			<p>You know the <em>dancing lights</em> cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+		</description>
+		<sheet>
+			<description>You know the dancing lights cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the dancing lights cantrip. You can cast faerie fire spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the dancing lights cantrip. You can cast faerie fire and darkness spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" />
+		</rules>
+	</element>
 </elements>
