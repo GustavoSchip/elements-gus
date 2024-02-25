@@ -4,7 +4,7 @@
 		<name>Isilmnir’el</name>
 		<description>The construction for my custom Isilmnir’el subrace for tieflings.</description>
 		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<!-- This file -->
 			<file name="isilmnir-el.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml" />
 		</update>
@@ -17,8 +17,8 @@
       <p class="indent"><strong><em>Superior Darkvision.</em></strong> Your darkvision has a radius of 120 feet.</p>
       <p class="indent"><strong><em>Melody of the Blade.</em></strong> You gain proficiency with the Rapier, Scimitar, and Longsword.</p>
       <p class="indent"><strong><em>Dark Maiden’s Blessing.</em></strong> You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and you cannot be Frightened.</p>
-      <p class="indent"><strong><em>Disciple of the Moon.</em></strong> You know the <em>Lunar Missle</em> cantrip. When you reach 3rd level, you can cast the disguise self spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>Lunar Beacon</em> spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
-      <p class="indent"><strong><em>Eilistraee’s Moonfire.</em></strong> You know the <em>Lunar Missle</em> cantrip. When you reach 3rd level, you can cast the disguise self spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>Lunar Beacon</em> spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+      <p class="indent"><strong><em>Disciple of the Moon.</em></strong> You know the <em>Lunar Missle</em> cantrip. When you reach 3rd level, you can cast the <em>Waning Crescent</em> spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>Lunar Beacon</em> spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+      <p class="indent"><strong><em>Eilistraee’s Moonfire.</em></strong> You can surround yourself with dancing moonmotes at will that shed moonlight within 6 meters / 20 feet of you.</p>
   	</description>
 		<sheet alt="Tiefling (Isilmnir’el)" display="false">
 			<description>Descended of Eilistraee</description>
@@ -52,47 +52,36 @@
 	</element>
   <element name="Dark Maiden’s Blessing" type="Racial Trait" source="Gus: DnD" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DARK_MAIDEN_S_BLESSING">
 		<description>
-			<p>You know the <em>dancing lights</em> cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p>You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and you cannot be Frightened.</p>
 		</description>
 		<sheet>
-			<description>You know the dancing lights cantrip. Charisma is your spellcasting ability for this spell.</description>
-			<description level="3">You know the dancing lights cantrip. You can cast faerie fire spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
-			<description level="5">You know the dancing lights cantrip. You can cast faerie fire and darkness spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description>You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and you cannot be Frightened.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" level="1" />
-			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" />
-			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 		</rules>
 	</element>
   <element name="Disciple of the Moon" type="Racial Trait" source="Gus: DnD" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DISCIPLE_OF_THE_MOON">
 		<description>
-			<p>You know the <em>dancing lights</em> cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p>You know the <em>Lunar Missle</em> cantrip. When you reach 3rd level, you can cast the <em>TODO</em> spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>Lunar Beacon</em> spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
 		</description>
 		<sheet>
-			<description>You know the dancing lights cantrip. Charisma is your spellcasting ability for this spell.</description>
-			<description level="3">You know the dancing lights cantrip. You can cast faerie fire spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
-			<description level="5">You know the dancing lights cantrip. You can cast faerie fire and darkness spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description>You know the <em>Lunar Missle</em> cantrip. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You know the <em>Lunar Missle</em> cantrip. You can cast <em>Waning Crescent</em> spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You know the <em>Lunar Missle</em> cantrip. You can cast <em>Waning Crescent</em> and <em>Lunar Beacon</em> spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" level="1" />
-			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" />
-			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" />
+			<grant type="Spell" id="ID_GUS_SPELL_LUNAR_MISSLE" level="1" />
+			<grant type="Spell" id="ID_GUS_SPELL_WANING_CRESCENT" level="3" />
+			<grant type="Spell" id="ID_GUS_SPELL_LUNAR_BEACON" level="5" />
 		</rules>
 	</element>
   <element name="Eilistraee’s Moonfire" type="Racial Trait" source="Gus: DnD" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_EILISTRAEE_S_MOONFIRE">
 		<description>
-			<p>You know the <em>dancing lights</em> cantrip. When you reach 3rd level, you can cast the faerie fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can also cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p>You can surround yourself with dancing moonmotes at will that shed moonlight within 6 meters / 20 feet of you.</p>
 		</description>
 		<sheet>
-			<description>You know the dancing lights cantrip. Charisma is your spellcasting ability for this spell.</description>
-			<description level="3">You know the dancing lights cantrip. You can cast faerie fire spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
-			<description level="5">You know the dancing lights cantrip. You can cast faerie fire and darkness spells once per long rest. Charisma is your spellcasting ability for these spells.</description>
-		</sheet>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" level="1" />
-			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" />
-			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" />
-		</rules>
+			<description>You can surround yourself with dancing moonmotes at will that shed moonlight within 6 meters / 20 feet of you.</description>
+    </sheet>
 	</element>
 </elements>
