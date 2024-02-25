@@ -4,13 +4,13 @@
 		<name>Lunar Missle</name>
 		<description>The construction for my custom Lunar Missle spell for the Isilmnir’el subrace.</description>
 		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<!-- This file -->
 			<file name="lunar-missle.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/lunar-missle.xml" />
 		</update>
 	</info>
   <element name="Lunar Missile" type="Spell" source="Gus: DnD" id="ID_GUS_SPELL_LUNAR_MISSLE">
-		<requirements>Disciple of the Moon</requirements>
+		<requirements>ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL</requirements>
     <supports>Spell Attack, Spell Saving Throw</supports>
 		<description>
 			<p>You hurl a moonmote at a target, dealing 1d4 radiant damage. The target must make a Charisma saving throw. On a failed save, depending on the current phase of the moon, the following effect happens.</p>

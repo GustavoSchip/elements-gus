@@ -4,7 +4,7 @@
 		<name>Gus: DnD Subraces</name>
 		<description>The main entry point for my custom subraces.</description>
 		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<!-- This file -->
 			<file name="subraces.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index" />
 		</update>

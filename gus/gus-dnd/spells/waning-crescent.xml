@@ -4,13 +4,13 @@
 		<name>Waning Crescent</name>
 		<description>The construction for my custom Waning Crescent spell for the Isilmnir’el subrace.</description>
 		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<!-- This file -->
 			<file name="waning-crescent.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/waning-crescent.xml" />
 		</update>
 	</info>
   <element name="Waning Crescent" type="Spell" source="Gus: DnD" id="ID_GUS_SPELL_WANING_CRESCENT">
-		<requirements>Disciple of the Moon</requirements>
+		<requirements>ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL</requirements>
     <supports>Spell Saving Throw</supports>
 		<description>
 			<p>You summon 3 Multiples of yourself to distract enemies; each multiple increases your AC by 2. Each time an attack misses you, one multiple detonates, dealing 1d6 radiant damage and all creatures within 5 ft must make a Dexterity saving throw. On a failed save, the creature is blinded for 2 turns.</p>

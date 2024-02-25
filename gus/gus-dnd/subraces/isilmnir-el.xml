@@ -4,7 +4,7 @@
 		<name>Isilmnir’el</name>
 		<description>The construction for my custom Isilmnir’el subrace for tieflings.</description>
 		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<!-- This file -->
 			<file name="isilmnir-el.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml" />
 		</update>
@@ -63,7 +63,7 @@
 	</element>
   <element name="Disciple of the Moon" type="Racial Trait" source="Gus: DnD" id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DISCIPLE_OF_THE_MOON">
 		<description>
-			<p>You know the <em>Lunar Missle</em> cantrip. When you reach 3rd level, you can cast the <em>TODO</em> spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>Lunar Beacon</em> spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+			<p>You know the <em>Lunar Missle</em> cantrip. When you reach 3rd level, you can cast the <em>Waning Crescent</em> spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <em>Lunar Beacon</em> spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
 		</description>
 		<sheet>
 			<description>You know the <em>Lunar Missle</em> cantrip. Charisma is your spellcasting ability for this spell.</description>
