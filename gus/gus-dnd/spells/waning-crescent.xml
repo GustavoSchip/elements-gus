@@ -9,5 +9,25 @@
 			<file name="waning-crescent.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/waning-crescent.xml" />
 		</update>
 	</info>
-
+  <element name="Waning Crescent" type="Spell" source="Gus: DnD" id="ID_GUS_SPELL_WANING_CRESCENT">
+		<requirements>Disciple of the Moon</requirements>
+    <supports>Spell Saving Throw</supports>
+		<description>
+			<p>You summon 3 Multiples of yourself to distract enemies; each multiple increases your AC by 2. Each time an attack misses you, one multiple detonates, dealing 1d6 radiant damage and all creatures within 5 ft must make a Dexterity saving throw. On a failed save, the creature is blinded for 2 turns.</p>
+		</description>
+		<setters>
+      <set name="keywords">radiant</set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 </elements>

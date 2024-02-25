@@ -4,10 +4,42 @@
 		<name>Lunar Missle</name>
 		<description>The construction for my custom Lunar Missle spell for the Isilmnir’el subrace.</description>
 		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<!-- This file -->
 			<file name="lunar-missle.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/lunar-missle.xml" />
 		</update>
 	</info>
-
+  <element name="Lunar Missile" type="Spell" source="Gus: DnD" id="ID_GUS_SPELL_LUNAR_MISSLE">
+		<requirements>Disciple of the Moon</requirements>
+    <supports>Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>You hurl a moonmote at a target, dealing 1d4 radiant damage. The target must make a Charisma saving throw. On a failed save, depending on the current phase of the moon, the following effect happens.</p>
+      <table>
+				<thead>
+					<tr> <td class="col-20">Moon phase</td> <td>Effect</td> </tr>
+				</thead>
+				<tbody>
+					<tr> <td><strong><em>New moon</em></strong></td> <td>The target is slowed for 1 turn, and takes 1d4 additional cold damage.</td> </tr>
+					<tr> <td><strong><em>Waxing crescent.</em></strong></td> <td>The target is pushed 15 feet away from you.</td> </tr>
+					<tr> <td><strong><em>Full moon.</em></strong></td> <td>The target takes 1d4 additional radiant damage, this additional damage is doubled against Undead targets.</td> </tr>
+					<tr> <td><strong><em>Waning crescent.</em></strong></td> <td>The target is blinded for 1 turn.</td> </tr>
+				</tbody>
+			</table>
+      <p class="indent">This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+		</description>
+		<setters>
+      <set name="keywords">radiant</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 </elements>
