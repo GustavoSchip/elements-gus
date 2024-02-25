@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Gus: DnD Spells</name>
+		<description>The main entry point for my custom spells.</description>
+		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.1">
+			<!-- This file -->
+			<file name="spells.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells.index" />
+		</update>
+	</info>
+	<files>
+		<!-- Lunar Beacon -->
+		<file name="lunar-beacon.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/lunar-beacon.xml" />
+		<!-- Lunar Missle -->
+		<file name="lunar-missle.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/lunar-missle.xml" />
+		<!-- Waning Crescent -->
+		<file name="waning-crescent.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/waning-crescent.xml" />
+	</files>
+</index>
