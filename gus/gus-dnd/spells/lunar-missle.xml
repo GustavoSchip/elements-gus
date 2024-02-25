@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+		<name>Lunar Missle</name>
+		<description>The construction for my custom Lunar Missle spell for the Isilmnir’el subrace.</description>
+		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.1">
+			<!-- This file -->
+			<file name="lunar-missle.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/lunar-missle.xml" />
+		</update>
+	</info>
+
+</elements>

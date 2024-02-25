@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+		<name>Waning Crescent</name>
+		<description>The construction for my custom Waning Crescent spell for the Isilmnir’el subrace.</description>
+		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.1">
+			<!-- This file -->
+			<file name="waning-crescent.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/waning-crescent.xml" />
+		</update>
+	</info>
+
+</elements>
