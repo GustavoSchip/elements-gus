@@ -1,0 +1,43 @@
+name: Format Style
+on:
+  push:
+    branches: [ '**' ]
+    paths:
+      - '**.index'
+      - '**.xml'
+  pull_request:
+    paths:
+      - '**.index'
+      - '**.xml'
+  workflow_dispatch:
+concurrency:
+  group: Format Style
+  cancel-in-progress: true
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  format-style:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out the repository
+        uses: actions/checkout@main
+      - name: Formatting with style
+        uses: findologic/intellij-format-action@main
+        with:
+          include-glob: '*.index, *.xml'
+          path: '.'
+      - name: Create Pull Request
+        id: cpr
+        if: startsWith(github.ref, 'refs/heads/') && github.repository == GustavoSchip/elements-gus
+        uses: peter-evans/create-pull-request@main
+        with:
+          commit-message: Formatted with style
+          title: Formatter[bot]
+          body: Formatted with style
+          branch: master-format
+      - uses: peter-evans/enable-pull-request-automerge@main
+        if: startsWith(github.ref, 'refs/heads/') && github.repository == GustavoSchip/elements-gus
+        with:
+          pull-request-number: '${{ steps.cpr.outputs.pull-request-number }}'
+          merge-method: squash

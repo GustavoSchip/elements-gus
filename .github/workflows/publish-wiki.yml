@@ -1,9 +1,9 @@
 name: Publish Wiki
 on:
   push:
-    branches: [ master ]
+    branches: [ 'master' ]
     paths:
-      - Wiki/**
+      - 'wiki/**'
   workflow_dispatch:
 concurrency:
   group: Publish Wiki
@@ -19,11 +19,16 @@ jobs:
       - name: Placeholder processing the wiki
         uses: richardrigutins/replace-in-files@main
         with:
-          files: Wiki/*.md
+          files: 'wiki/*.md'
           search-text: '{{ GITHUB_REPO }}'
           replacement-text: '${{ github.server_url }}/${{ github.repository }}'
+      - name: Formatting with style
+        uses: findologic/intellij-format-action@main
+        with:
+          include-glob: '*.md'
+          path: 'wiki/'
       - name: Publishing processed Wiki
         uses: Andrew-Chen-Wang/github-wiki-action@master
         with:
-          path: Wiki/
+          path: 'wiki/'
           strategy: init
