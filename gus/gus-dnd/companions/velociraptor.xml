@@ -4,7 +4,7 @@
 		<name>Velociraptor</name>
 		<description>The construction for my custom velociraptor companion.</description>
 		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<!-- This file -->
 			<file name="velociraptor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/velociraptor.xml" />
 		</update>
