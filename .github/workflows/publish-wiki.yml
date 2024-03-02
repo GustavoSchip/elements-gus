@@ -2,6 +2,7 @@ name: Publish Wiki
 on:
   push:
     branches: [ 'master' ]
+    tags-ignore: [ '**' ]
     paths:
       - 'wiki/**'
   workflow_dispatch:

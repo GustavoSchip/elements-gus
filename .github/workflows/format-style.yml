@@ -2,10 +2,13 @@ name: Format Style
 on:
   push:
     branches: [ '**' ]
+    tags-ignore: [ '**' ]
     paths:
       - '**.index'
       - '**.xml'
   pull_request:
+    branches: [ '**' ]
+    tags-ignore: [ '**' ]
     paths:
       - '**.index'
       - '**.xml'
@@ -29,7 +32,7 @@ jobs:
           path: '.'
       - name: Create Pull Request
         id: cpr
-        if: startsWith(github.ref, 'refs/heads/') && github.repository == GustavoSchip/elements-gus
+        if: github.repository == 'GustavoSchip/elements-gus'
         uses: peter-evans/create-pull-request@main
         with:
           commit-message: Formatted with style
@@ -37,7 +40,7 @@ jobs:
           body: Formatted with style
           branch: master-format
       - uses: peter-evans/enable-pull-request-automerge@main
-        if: startsWith(github.ref, 'refs/heads/') && github.repository == GustavoSchip/elements-gus
+        if: github.repository == 'GustavoSchip/elements-gus'
         with:
           pull-request-number: '${{ steps.cpr.outputs.pull-request-number }}'
           merge-method: squash
