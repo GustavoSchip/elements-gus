@@ -1,0 +1,29 @@
+name: Publish Wiki
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - Wiki/**
+  workflow_dispatch:
+concurrency:
+  group: Publish Wiki
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  publish-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out the repository
+        uses: actions/checkout@main
+      - name: Placeholder processing the wiki
+        uses: richardrigutins/replace-in-files@main
+        with:
+          files: Wiki/*.md
+          search-text: '{{ GITHUB_REPO }}'
+          replacement-text: '${{ github.server_url }}/${{ github.repository }}'
+      - name: Publishing processed Wiki
+        uses: Andrew-Chen-Wang/github-wiki-action@master
+        with:
+          path: Wiki/
+          strategy: init
