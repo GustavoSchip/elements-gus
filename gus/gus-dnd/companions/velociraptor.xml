@@ -61,7 +61,7 @@
 			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
 		</description>
 		<sheet>
-			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one targe</description>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</description>
 		</sheet>
 	</element>
 	<element name="Claws" type="Companion Action" source="Gus: DnD" id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_CLAWS">
