@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
-	<info>
-		<name>Gus: DnD</name>
-		<description>The semi-main entry point for my custom content.</description>
-		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.7">
-			<!-- This file -->
-			<file name="gus-dnd.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index" />
-		</update>
-	</info>
-	<files>
-		<!-- The source definitions -->
-		<file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
-		<!-- My homebrew companions -->
-		<file name="companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions.index" />
-		<!-- My homebrew items -->
-		<file name="items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index" />
-		<!-- My homebrew spells -->
-		<file name="spells.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells.index" />
-		<!-- My homebrew subraces -->
-		<file name="subraces.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index" />
-	</files>
+    <info>
+        <name>Gus: DnD</name>
+        <description>The semi-main entry point for my custom content.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.7">
+            <!-- This file -->
+            <file name="gus-dnd.index"
+                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index"/>
+        </update>
+    </info>
+    <files>
+        <!-- The source definitions -->
+        <file name="source.xml"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml"/>
+        <!-- My homebrew companions -->
+        <file name="companions.index"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions.index"/>
+        <!-- My homebrew items -->
+        <file name="items.index"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index"/>
+        <!-- My homebrew spells -->
+        <file name="spells.index"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells.index"/>
+        <!-- My homebrew subraces -->
+        <file name="subraces.index"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index"/>
+    </files>
 </index>

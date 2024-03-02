@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
-	<info>
-		<name>Gus: DnD Subraces</name>
-		<description>The main entry point for my custom subraces.</description>
-		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.2">
-			<!-- This file -->
-			<file name="subraces.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index" />
-		</update>
-	</info>
-	<files>
-		<!-- Isilmnir’el -->
-		<file name="isilmnir-el.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml" />
-	</files>
+    <info>
+        <name>Gus: DnD Subraces</name>
+        <description>The main entry point for my custom subraces.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="subraces.index"
+                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index"/>
+        </update>
+    </info>
+    <files>
+        <!-- Isilmnir’el -->
+        <file name="isilmnir-el.xml"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml"/>
+    </files>
 </index>

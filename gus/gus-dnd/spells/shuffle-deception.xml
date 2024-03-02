@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <info>
-		<name>Shuffle Deception</name>
-		<description>The construction for my custom Shuffle Deception spell.</description>
-		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-		<update version="0.0.1">
-			<!-- This file -->
-			<file name="shuffle-deception.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/shuffle-deception.xml" />
-		</update>
-	</info>
-  <element name="Shuffle Deception" type="Spell" source="Gus: DnD" id="ID_GUS_SPELL_SHUFFLE_DECEPTION">
-    <supports>Cleric, Sorcerer, Wizard</supports>
-		<description>
-			<p>You summon 3 clones of yourself and every creature within a 30 feet radius, all the clones and real creatures and yourself are randomly moved around and nobody knows who is the real or fake creature. The clones can mimic attacks as if they were real attacks, but they only do 1/4 the amount of damage, the clones can only use cantrips or the attack action. Each time an attack hits the clones, the clone detonates, dealing 2d6 force damage to all creatures within 5 ft.</p>
-      <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5nd level or higher, the damage increases by 1d6 for each slot level above 4st.</p>
-		</description>
-		<setters>
-			<set name="level">4</set>
-			<set name="school">Illusion</set>
-			<set name="time">1 action</set>
-			<set name="duration">Concentration, up to 10 rounds</set>
-			<set name="range">Self (30-feet-radius sphere)</set>
-			<set name="hasVerbalComponent">false</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent" />
-			<set name="isConcentration">true</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
+    <info>
+        <name>Shuffle Deception</name>
+        <description>The construction for my custom Shuffle Deception spell.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="shuffle-deception.xml"
+                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/shuffle-deception.xml"/>
+        </update>
+    </info>
+    <element name="Shuffle Deception" type="Spell" source="Gus: DnD" id="ID_GUS_SPELL_SHUFFLE_DECEPTION">
+        <supports>Cleric, Sorcerer, Wizard</supports>
+        <description>
+            <p>You summon 3 clones of yourself and every creature within a 30 feet radius, all the clones and real
+                creatures and yourself are randomly moved around and nobody knows who is the real or fake creature. The
+                clones can mimic attacks as if they were real attacks, but they only do 1/4 the amount of damage, the
+                clones can only use cantrips or the attack action. Each time an attack hits the clones, the clone
+                detonates, dealing 2d6 force damage to all creatures within 5 ft.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>At Higher Levels.</em>
+                </strong>
+                When you cast this spell using a spell slot of 5nd level or higher, the damage increases by 1d6 for each
+                slot level above 4st.
+            </p>
+        </description>
+        <setters>
+            <set name="level">4</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 10 rounds</set>
+            <set name="range">Self (30-feet-radius sphere)</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"/>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
