@@ -38,8 +38,6 @@ jobs:
           else
             echo diff=true >> $GITHUB_ENV
           fi
-      - name: DEBUG
-        run: echo '${{ steps.cfc.outputs.diff }}'
       - name: Create Pull Request
         id: cpr
         if: github.repository == 'GustavoSchip/elements-gus' && steps.cfc.outputs.diff == true
