@@ -6,12 +6,6 @@ on:
     paths:
       - '**.index'
       - '**.xml'
-  pull_request:
-    branches: [ '**' ]
-    tags-ignore: [ '**' ]
-    paths:
-      - '**.index'
-      - '**.xml'
   workflow_dispatch:
 concurrency:
   group: Format Style
@@ -30,7 +24,8 @@ jobs:
       - name: Checking for changes
         id: cfc
         run: |
-          if git diff HEAD --quiet; then
+          git stage .
+          if git diff --quiet; then
             echo diff=false >> $GITHUB_ENV
           else
             echo diff=true >> $GITHUB_ENV
