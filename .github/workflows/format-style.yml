@@ -33,7 +33,7 @@ jobs:
       - name: Checking for changes
         id: cfc
         run: |
-          if git diff --quiet; then
+          if git diff HEAD --quiet; then
             echo diff=false >> $GITHUB_ENV
           else
             echo diff=true >> $GITHUB_ENV
