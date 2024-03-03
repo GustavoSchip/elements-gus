@@ -27,9 +27,6 @@ jobs:
         uses: actions/checkout@main
       - name: Formatting with style
         uses: findologic/intellij-format-action@main
-        with:
-          include-glob: '*.index, *.xml'
-          path: '.'
       - name: Checking for changes
         id: cfc
         run: |
