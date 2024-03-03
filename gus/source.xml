@@ -6,8 +6,7 @@
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
         <update version="0.0.6">
             <!-- This file -->
-            <file name="source.xml"
-                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml"/>
+            <file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml"/>
         </update>
     </info>
     <element name="Gus: DnD" type="Source" source="Core" id="ID_GUS_SOURCE_DND">
