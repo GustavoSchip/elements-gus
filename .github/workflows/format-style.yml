@@ -19,28 +19,12 @@ jobs:
     steps:
       - name: Checking out the repository
         uses: actions/checkout@main
-      - name: Formatting with style
-        uses: findologic/intellij-format-action@main
-      - name: Checking for changes
-        id: cfc
-        run: |
-          git stage .
-          if git diff --quiet; then
-            echo diff=false >> $GITHUB_ENV
-          else
-            echo diff=true >> $GITHUB_ENV
-          fi
-      - name: Create Pull Request
-        id: cpr
-        if: github.repository == 'GustavoSchip/elements-gus' && steps.cfc.outputs.diff == true
-        uses: peter-evans/create-pull-request@main
+      - name: Setting up Python
+        uses: actions/setup-python@main
         with:
-          commit-message: Formatted with style
-          title: Formatter[bot]
-          body: Formatted with style
-          branch: master-format
-      - uses: peter-evans/enable-pull-request-automerge@main
-        if: github.repository == 'GustavoSchip/elements-gus' && steps.cfc.outputs.diff == true
-        with:
-          pull-request-number: '${{ steps.cpr.outputs.pull-request-number }}'
-          merge-method: squash
+          python-version: 3.11
+      - name: Running pre-commit
+        uses: pre-commit/action@main
+      - name: Running pre-commit-ci
+        uses: pre-commit-ci/lite-action@main
+        if: always()
