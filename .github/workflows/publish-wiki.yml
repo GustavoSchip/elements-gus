@@ -12,7 +12,7 @@ concurrency:
 permissions:
   contents: write
 jobs:
-  publish-wiki:
+  process-placeholders:
     runs-on: ubuntu-latest
     steps:
       - name: Checking out the repository
@@ -23,8 +23,16 @@ jobs:
           files: 'wiki/*.md'
           search-text: '{{ GITHUB_REPO }}'
           replacement-text: '${{ github.server_url }}/${{ github.repository }}'
-      - name: Formatting with style
-        uses: GustavoSchip/elements-gus/.github/workflows/format-style.yml@main
+  formatting-wiki:
+    needs: process-placeholders
+    uses: GustavoSchip/elements-gus/.github/workflows/format-style.yml@main
+    secrets: inherit
+  publish-wiki:
+    needs: formatting-wiki
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out the repository
+        uses: actions/checkout@main
       - name: Publishing processed Wiki
         uses: Andrew-Chen-Wang/github-wiki-action@master
         with:
