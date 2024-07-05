@@ -4,7 +4,7 @@
         <name>Arachnie</name>
         <description>The construction for my custom Arachnie subrace for tieflings.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <!-- This file -->
             <file name="arachnie.xml"
 				  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/arachnie.xml"/>
@@ -13,12 +13,7 @@
     <element name="Tiefling (Arachnie)" type="Sub Race" source="Gus: DnD" id="ID_GUS_TIEFLING_SUBRACE_ARACHNIE">
         <supports>Tiefling</supports>
         <description>
-            <p>...,
-                ...,
-                ...,
-                ...,
-                ...
-            </p>
+            <p>The followers of Lolth often find themselves blessed or cursed by her influence, and none more so than the Arachnie tieflings. Born with the essence of spiders, they embody the cunning and ferocity of their eight-legged kin. Emerging from the dark corners of the Underdark, these tieflings have honed their abilities to survive and thrive in the harshest environments, leveraging their unique traits to navigate both physical and social webs.</p>
             <p class="indent">
                 <strong>
                     <em>Ability Score Increase.</em>
@@ -35,29 +30,29 @@
                 <strong>
                     <em>Spider Expertise.</em>
                 </strong>
-                ...
+                You gain proficiency with the Net, and you know the <em>Web</em> spell. Charisma is your spellcasting ability for this spell.
             </p>
             <p class="indent">
                 <strong>
                     <em>Spider Sense.</em>
                 </strong>
-                ...
+                When you are in spider form and within a web you created using the <em>Web</em> spell, you have blindsight up to a range of 15 feet, but both you and the target must be within the same web.
             </p>
             <p class="indent">
                 <strong>
                     <em>Inherent Form.</em>
                 </strong>
-                ...
+                When in spider form, you gain a climbing speed equal to your walking speed, and you are immune to the negative effects of webs.
             </p>
 			<p class="indent">
                 <strong>
                     <em>Inherent Resistance.</em>
                 </strong>
-                ...
+                You have resistance to poison damage.
             </p>
         </description>
         <sheet alt="Tiefling (Arachnie)" display="false">
-            <description>...</description>
+            <description>Descended of Lolth</description>
         </sheet>
         <rules>
             <grant type="Grants" id="ID_INTERNAL_GRANTS_TIEFLING_SUBRACE"/>
@@ -77,30 +72,26 @@
     <element name="Spider Expertise" type="Racial Trait" source="Gus: DnD"
              id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_EXPERTISE">
         <description>
-            <p>...
-				...
-			</p>
+            <p>You gain proficiency with the Net, and you know the <em>Web</em> spell. Charisma is your spellcasting ability for this spell.</p>
         </description>
         <sheet>
-            <description>...
-				...
-			</description>
+            <description>You gain proficiency with the Net, and you know the <em>Web</em> spell. Charisma is your spellcasting ability for this spell.</description>
         </sheet>
 		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET"
+                   requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type="Proficiency" name="Simple/Martial Weapon or Tool (Melody of the Blade)" number="1"
+                    supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
 			<grant type="Spell" id="ID_PHB_SPELL_WEB" level="1"/>
 		</rules>
     </element>
     <element name="Spider Sense" type="Racial Trait" source="Gus: DnD"
              id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_SENSE">
         <description>
-            <p>...
-                ...
-            </p>
+            <p>When you are in spider form and within a web you created using the <em>Web</em> spell, you have blindsight up to a range of 15 feet, but both you and the target must be within the same web.</p>
         </description>
         <sheet>
-            <description>...
-                ...
-            </description>
+            <description>When you are in spider form and within a web you created using the <em>Web</em> spell, you have blindsight up to a range of 15 feet, but both you and the target must be within the same web.</description>
         </sheet>
 		<rules>
 			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
@@ -110,14 +101,10 @@
     <element name="Inherent Form" type="Racial Trait" source="Gus: DnD"
              id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_FORM">
         <description>
-            <p>...
-				...
-            </p>
+            <p>When in spider form, you gain a climbing speed equal to your walking speed, and you are immune to the negative effects of webs.</p>
         </description>
         <sheet>
-            <description>...
-                ...
-            </description>
+            <description>When in spider form, you gain a climbing speed equal to your walking speed, and you are immune to the negative effects of webs.</description>
         </sheet>
 		<rules>
 			<stat name="speed:climb" value="speed" bonus="base" equipped="!([armor:heavy]||[shield:any])" />
@@ -126,14 +113,10 @@
     <element name="Inherent Resistance" type="Racial Trait" source="Gus: DnD"
              id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_RESISTANCE">
         <description>
-            <p>...
-                ...
-            </p>
+            <p>You have resistance to poison damage.</p>
         </description>
         <sheet>
-            <description>...
-                ...
-            </description>
+            <description>You have resistance to poison damage.</description>
         </sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
