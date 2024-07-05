@@ -27,6 +27,9 @@ jobs:
     needs: process-placeholders
     uses: GustavoSchip/elements-gus/.github/workflows/format-style.yml@master
     secrets: inherit
+    permissions:
+      contents: write
+      pull-requests: write
   publish-wiki:
     needs: formatting-wiki
     runs-on: ubuntu-latest
