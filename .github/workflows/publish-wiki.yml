@@ -24,9 +24,7 @@ jobs:
           search-text: '{{ GITHUB_REPO }}'
           replacement-text: '${{ github.server_url }}/${{ github.repository }}'
       - name: Formatting with style
-        uses: findologic/intellij-format-action@main
-        with:
-          path: 'wiki/'
+        uses: ./.github/workflows/format-style.yml
       - name: Publishing processed Wiki
         uses: Andrew-Chen-Wang/github-wiki-action@master
         with:
