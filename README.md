@@ -2,9 +2,9 @@
 
 My attempt at Homebrew for Aurora Builder
 
-### Installing
+## Installing
 
-Use this link in the Aurora Builder 'ADDITIONAL CONTENT' tab: <br> <!-- markdownlint-disable-line no-inline-html -->
+Use this link in the Aurora Builder 'ADDITIONAL CONTENT' tab: <br> <!-- markdownlint-disable-line no-inline-html --> <!-- markdownlint-disable-line line-length -->
 ``` https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus.index ``` <!-- markdownlint-disable-line line-length -->
 
 ### Requirements
