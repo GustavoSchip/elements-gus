@@ -25,7 +25,7 @@ jobs:
           replacement-text: '${{ github.server_url }}/${{ github.repository }}'
   formatting-wiki:
     needs: process-placeholders
-    uses: GustavoSchip/elements-gus/.github/workflows/format-style.yml@main
+    uses: GustavoSchip/elements-gus/.github/workflows/format-style.yml@master
     secrets: inherit
   publish-wiki:
     needs: formatting-wiki
