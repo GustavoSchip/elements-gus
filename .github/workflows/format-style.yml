@@ -6,6 +6,7 @@ on:
     paths:
       - '**.index'
       - '**.xml'
+      - 'wiki/**'
   workflow_dispatch:
   workflow_call:
 concurrency:
