@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
   workflow_call:
 concurrency:
-  group: Format Style
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 permissions:
   contents: write
