@@ -7,6 +7,7 @@ on:
       - '**.index'
       - '**.xml'
   workflow_dispatch:
+  workflow_call:
 concurrency:
   group: Format Style
   cancel-in-progress: true

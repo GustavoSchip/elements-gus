@@ -1,27 +1,34 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
-    <info>
-        <name>Gus: DnD</name>
-        <description>The source definitions for my custom content.</description>
-        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.6">
-            <!-- This file -->
-            <file name="source.xml"
-                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml"/>
-        </update>
-    </info>
-    <element name="Gus: DnD" type="Source" source="Core" id="ID_GUS_SOURCE_DND">
-        <description>
+  <info>
+    <name>Gus: DnD</name>
+    <description>The source definitions for my custom content.</description>
+    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+    <update version="0.0.6">
+      <!-- This file -->
+      <file name="source.xml"
+            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml"
+      />
+    </update>
+  </info>
+  <element id="ID_GUS_SOURCE_DND"
+           name="Gus: DnD"
+           source="Core"
+           type="Source"
+  >
+    <description>
             <![CDATA[<p>Homebrew content by Gustavo Schip.</p>]]>
         </description>
-        <setters>
-            <set name="abbreviation">Gus</set>
-            <set name="url">https://github.com/GustavoSchip/elements-gus/</set>
-            <set name="author" url="https://github.com/GustavoSchip/">Gustavo Schip</set>
-            <set name="homebrew">true</set>
-            <set name="playtest">true</set>
-            <set name="incomplete">true</set>
-            <set name="information">This homebrew is probably not legal in Adventurers League.</set>
-        </setters>
-    </element>
+    <setters>
+      <set name="abbreviation">Gus</set>
+      <set name="url">https://github.com/GustavoSchip/elements-gus/</set>
+      <set name="author"
+           url="https://github.com/GustavoSchip/"
+      >Gustavo Schip</set>
+      <set name="homebrew">true</set>
+      <set name="playtest">true</set>
+      <set name="incomplete">true</set>
+      <set name="information">This homebrew is probably not legal in Adventurers League.</set>
+    </setters>
+  </element>
 </elements>

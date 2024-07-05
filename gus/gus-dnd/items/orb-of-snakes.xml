@@ -1,83 +1,108 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
-    <info>
-        <name>Orb of Snakes</name>
-        <description>The construction for my custom Orb of Snakes.</description>
-        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.7">
-            <!-- This file -->
-            <file name="orb-of-snakes.xml"
-                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/orb-of-snakes.xml"/>
-        </update>
-    </info>
-    <element name="Orb of Snakes" type="Magic Item" source="Gus: DnD" id="ID_GUS_MAGIC_ITEM_ORB_OF_SNAKES">
-        <description>
-            <p>This orb appears to have a snake eye inside that glows a bright yellow and weighs 20 pounds. Hissing
+  <info>
+    <name>Orb of Snakes</name>
+    <description>The construction for my custom Orb of Snakes.</description>
+    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+    <update version="0.0.7">
+      <!-- This file -->
+      <file name="orb-of-snakes.xml"
+            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/orb-of-snakes.xml"
+      />
+    </update>
+  </info>
+  <element id="ID_GUS_MAGIC_ITEM_ORB_OF_SNAKES"
+           name="Orb of Snakes"
+           source="Gus: DnD"
+           type="Magic Item"
+  >
+    <description>
+      <p>This orb appears to have a snake eye inside that glows a bright yellow and weighs 20 pounds. Hissing
                 sounds can be heard from the orb when it is shaken.
             </p>
-            <p class="indent">You can use an action to try to interact with the orb. Make a DC 15 Intelligence saving
+      <p class="indent">You can use an action to try to interact with the orb. Make a DC 15 Intelligence saving
                 throw, if you succeeded the saving throw, target a creature to transform into a snake with a effect you
-                determine by rolling a d4, the transformation acts similarly to the <em>polymorph</em> spell. The
+                determine by rolling a d4, the transformation acts similarly to the
+        <em>polymorph</em>
+         spell. The
                 creature returns to its original form at the next dawn or when it is reduced to 0 hit points. If you
                 failed the saving throw, you are transformed into a snake under the DM's control.
-            </p>
-            <p class="indent">The snake is under your control and is friendly to your companions, and it acts on your
+      </p>
+      <p class="indent">The snake is under your control and is friendly to your companions, and it acts on your
                 turn. You can command how the snake moves and what action it takes on its next turn, or to give it
                 general orders, such as to attack your enemies. In the absence of such orders, the snake acts in a
                 fashion appropriate to its nature.
             </p>
-            <p class="indent">The snakes use the <em>Poisonous Snake</em> stat block.
-            </p>
-            <p class="indent">Once three targets have been transformed with the orb, the orb can't be used again until
+      <p class="indent">The snakes use the
+        <em>Poisonous Snake</em>
+         stat block.
+      </p>
+      <p class="indent">Once three targets have been transformed with the orb, the orb can't be used again until
                 the next dawn.
             </p>
-            <p class="indent">
-                <strong>
-                    <em>Curse.</em>
-                </strong>
-                if a <em>Human</em> or a <em>'half' human</em> uses this item successfully, it causes them to transform
-                into the <em>Yuan-ti pureblood</em> race, this change is permanent. While being cursed this way, their
-                alignment changes to <em>Chaotic Evil</em> and they worship <em>Zehir</em> as their deity.
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <td class="col-20">d4</td>
-                        <td>Effect</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><strong>Growth spurt</strong>, the snake becomes huge, making it a <em>Giant Poisonous
+      <p class="indent">
+        <strong>
+          <em>Curse.</em>
+        </strong>
+                if a
+        <em>Human</em>
+        or a
+        <em>'half' human</em>
+         uses this item successfully, it causes them to transform
+                into the
+        <em>Yuan-ti pureblood</em>
+         race, this change is permanent. While being cursed this way, their
+                alignment changes to
+        <em>Chaotic Evil</em>
+        and they worship
+        <em>Zehir</em>
+         as their deity.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <td class="col-20">d4</td>
+            <td>Effect</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>Growth spurt</strong>, the snake becomes huge, making it a
+              <em>Giant Poisonous
                             Snake</em>.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><strong>Primal instincts</strong>, the snake only acts in a fashion appropriate to its
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>Primal instincts</strong>, the snake only acts in a fashion appropriate to its
                             nature.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><strong>Sprouting wings</strong>, the snake grows wings, making it a <em>Flying Snake</em>.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><strong>Comfortable form</strong>, the transformation is prolonged for 1d4 + 1 dawns.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </description>
-        <setters>
-            <set name="category">Wondrous Items</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="12">20 lb.</set>
-            <set name="type">Wondrous Item</set>
-            <set name="rarity">Rare</set>
-        </setters>
-    </element>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><strong>Sprouting wings</strong>, the snake grows wings, making it a
+              <em>Flying Snake</em>.
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>Comfortable form</strong>, the transformation is prolonged for 1d4 + 1 dawns.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </description>
+    <setters>
+      <set name="category">Wondrous Items</set>
+      <set currency="gp"
+           name="cost"
+      >0</set>
+      <set lb="12"
+           name="weight"
+      >20 lb.</set>
+      <set name="type">Wondrous Item</set>
+      <set name="rarity">Rare</set>
+    </setters>
+  </element>
 </elements>
