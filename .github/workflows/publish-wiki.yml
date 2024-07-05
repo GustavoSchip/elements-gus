@@ -7,7 +7,7 @@ on:
       - 'wiki/**'
   workflow_dispatch:
 concurrency:
-  group: ${{ github.workflow }}-${{ github.run_id }}
+  group: Publish Wiki
   cancel-in-progress: true
 permissions:
   contents: write
