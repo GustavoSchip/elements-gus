@@ -12,26 +12,18 @@ concurrency:
 permissions:
   contents: write
 jobs:
-  process-placeholders:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checking out the repository
-        uses: actions/checkout@main
-      - name: Placeholder processing the wiki
-        uses: richardrigutins/replace-in-files@main
-        with:
-          files: 'wiki/*.md'
-          search-text: '{{ GITHUB_REPO }}'
-          replacement-text: '${{ github.server_url }}/${{ github.repository }}'
-  formatting-wiki:
-    needs: process-placeholders
+  check-formatting:
+    strategy:
+      fail-fast: true
     uses: GustavoSchip/elements-gus/.github/workflows/format-style.yml@master
     secrets: inherit
     permissions:
       contents: write
       pull-requests: write
   publish-wiki:
-    needs: formatting-wiki
+    strategy:
+        fail-fast: true
+    needs: check-formatting
     runs-on: ubuntu-latest
     steps:
       - name: Checking out the repository
