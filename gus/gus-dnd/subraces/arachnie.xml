@@ -4,7 +4,7 @@
     <name>Arachnie</name>
     <description>The construction for my custom Arachnie subrace for tieflings.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.2">
+    <update version="0.0.5">
       <!-- This file -->
       <file name="arachnie.xml"
             url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/arachnie.xml"
