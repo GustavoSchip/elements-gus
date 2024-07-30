@@ -4,7 +4,7 @@
         <name>Gus: DnD</name>
         <description>The semi-main entry point for my custom content.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.7">
+        <update version="0.0.8">
             <!-- This file -->
             <file name="gus-dnd.index"
                   url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index"/>
@@ -17,6 +17,9 @@
         <!-- My homebrew companions -->
         <file name="companions.index"
               url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions.index"/>
+		<!-- My homebrew internal -->
+        <file name="internal.index"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internal.index"/>
         <!-- My homebrew items -->
         <file name="items.index"
               url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index"/>

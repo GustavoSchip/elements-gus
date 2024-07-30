@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Internal</name>
+		<description>The construction for my custom Internal.</description>
+		<author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+		<update version="0.0.2">
+			<!-- This file -->
+			<file name="internal.xml"
+				  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internal/internal.xml"/>
+		</update>
+	</info>
+    <!-- Acid -->
+	<element name="Additional Vulnerability, Acid" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_ACID">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_ACID" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ACID" />
+		</rules>
+	</element>
+	<element name="Acid" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_ACID">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Acid damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Acid" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_ACID">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_ACID" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
+		</rules>
+	</element>
+	<element name="Acid" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_ACID">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Acid damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Acid" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_ACID">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Acid" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_ACID">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Acid damage.</p>
+		</description>
+	</element>
+    <!-- Bludgeoning -->
+	<element name="Additional Vulnerability, Bludgeoning" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_BLUDGEONING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_BLUDGEONING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_BLUDGEONING" />
+		</rules>
+	</element>
+	<element name="Bludgeoning" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_BLUDGEONING">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Bludgeoning damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Bludgeoning" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING" />
+		</rules>
+	</element>
+	<element name="Bludgeoning" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Bludgeoning damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Bludgeoning" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+		</rules>
+	</element>
+	<element name="Bludgeoning" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Bludgeoning damage.</p>
+		</description>
+	</element>
+    <!-- Cold -->
+	<element name="Additional Vulnerability, Cold" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_COLD">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_COLD" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_COLD" />
+		</rules>
+	</element>
+	<element name="Cold" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_COLD">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Cold damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Cold" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_COLD">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_COLD" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+		</rules>
+	</element>
+	<element name="Cold" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_COLD">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Cold damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Cold" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_COLD">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Cold" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_COLD">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Cold damage.</p>
+		</description>
+	</element>
+    <!-- Fire -->
+	<element name="Additional Vulnerability, Fire" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_FIRE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_FIRE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FIRE" />
+		</rules>
+	</element>
+	<element name="Fire" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_FIRE">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Fire damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Fire" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_FIRE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+		</rules>
+	</element>
+	<element name="Fire" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_FIRE">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Fire damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Fire" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_FIRE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Fire" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_FIRE">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Fire damage.</p>
+		</description>
+	</element>
+    <!-- Force -->
+	<element name="Additional Vulnerability, Force" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_FORCE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_FORCE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FORCE" />
+		</rules>
+	</element>
+	<element name="Force" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_FORCE">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Force damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Force" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_FORCE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_FORCE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FORCE" />
+		</rules>
+	</element>
+	<element name="Force" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_FORCE">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Force damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Force" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_FORCE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
+	</element>
+	<element name="Force" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_FORCE">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Force damage.</p>
+		</description>
+	</element>
+    <!-- Lightning -->
+	<element name="Additional Vulnerability, Lightning" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_LIGHTNING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_LIGHTNING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_LIGHTNING">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Lightning damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Lightning" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_LIGHTNING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_LIGHTNING">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Lightning damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Lightning" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_LIGHTNING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_LIGHTNING">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Lightning damage.</p>
+		</description>
+	</element>
+    <!-- Necrotic -->
+	<element name="Additional Vulnerability, Necrotic" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_NECROTIC">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_NECROTIC" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_NECROTIC">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Necrotic damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Necrotic" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_NECROTIC">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_NECROTIC">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Necrotic damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Necrotic" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_NECROTIC">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Necrotic" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_NECROTIC">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Necrotic damage.</p>
+		</description>
+	</element>
+    <!-- Piercing -->
+	<element name="Additional Vulnerability, Piercing" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_PIERCING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_PIERCING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_PIERCING" />
+		</rules>
+	</element>
+	<element name="Piercing" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_PIERCING">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Piercing damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Piercing" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_PIERCING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_PIERCING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING" />
+		</rules>
+	</element>
+	<element name="Piercing" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_PIERCING">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Piercing damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Piercing" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_PIERCING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+		</rules>
+	</element>
+	<element name="Piercing" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_PIERCING">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Piercing damage.</p>
+		</description>
+	</element>
+    <!-- Poison -->
+	<element name="Additional Vulnerability, Poison" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_POISON">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_POISON" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_POISON" />
+		</rules>
+	</element>
+	<element name="Poison" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_POISON">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Poison damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Poison" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_POISON">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_POISON" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+	<element name="Poison" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_POISON">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Poison damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Poison" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_POISON">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Poison" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_POISON">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Poison damage.</p>
+		</description>
+	</element>
+    <!-- Psychic -->
+	<element name="Additional Vulnerability, Psychic" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_PSYCHIC">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_PSYCHIC" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_PSYCHIC">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Psychic damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Psychic" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_PSYCHIC">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_PSYCHIC">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Psychic damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Psychic" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_PSYCHIC">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Psychic" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_PSYCHIC">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Psychic damage.</p>
+		</description>
+	</element>
+    <!-- Radiant -->
+	<element name="Additional Vulnerability, Radiant" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_RADIANT">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+		</rules>
+	</element>
+	<element name="Radiant" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_RADIANT">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Radiant damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Radiant" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_RADIANT">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_RADIANT" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" />
+		</rules>
+	</element>
+	<element name="Radiant" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_RADIANT">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Radiant damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Radiant" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_RADIANT">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	<element name="Radiant" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_RADIANT">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Radiant damage.</p>
+		</description>
+	</element>
+    <!-- Slashing -->
+	<element name="Additional Vulnerability, Slashing" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_SLASHING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_SLASHING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_SLASHING" />
+		</rules>
+	</element>
+	<element name="Slashing" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_SLASHING">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Slashing damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Slashing" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_SLASHING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_SLASHING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING" />
+		</rules>
+	</element>
+	<element name="Slashing" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_SLASHING">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Slashing damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Slashing" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_SLASHING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+	</element>
+	<element name="Slashing" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_SLASHING">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Slashing damage.</p>
+		</description>
+	</element>
+    <!-- Thunder -->
+	<element name="Additional Vulnerability, Thunder" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_VULNERABILITY_THUNDER">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_THUNDER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Vulnerability</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_THUNDER" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_VULNERABILITY_THUNDER">
+		<compendium display="false" />
+		<description>
+			<p>You are vulnerable to Thunder damage.</p>
+		</description>
+	</element>
+	<element name="Additional Immunity, Thunder" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_IMMUNITY_THUNDER">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_THUNDER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Immunity</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_IMMUNITY_THUNDER">
+		<compendium display="false" />
+		<description>
+			<p>You are immune to Thunder damage.</p>
+		</description>
+	</element>
+	<element name="Additional Resistance, Thunder" type="Item" source="Internal" id="ID_INTERNAL_ITEM_CONDITION_DAMAGE_RESISTANCE_THUNDER">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Additional Resistance</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Information" source="Internal" id="ID_INTERNAL_INFORMATION_CONDITION_DAMAGE_RESISTANCE_THUNDER">
+		<compendium display="false" />
+		<description>
+			<p>You are resistant to Thunder damage.</p>
+		</description>
+	</element>
+</elements>

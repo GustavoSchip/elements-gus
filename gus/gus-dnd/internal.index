@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+    <info>
+        <name>Gus: DnD Internal</name>
+        <description>The main entry point for my custom Internal.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="items.index"
+                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internal.index"/>
+        </update>
+    </info>
+    <files>
+        <!-- Internal -->
+        <file name="internal.xml"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internal/internal.xml"/>
+    </files>
+</index>
