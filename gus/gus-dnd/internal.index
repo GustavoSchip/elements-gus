@@ -4,7 +4,7 @@
         <name>Gus: DnD Internal</name>
         <description>The main entry point for my custom Internal.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <!-- This file -->
             <file name="items.index"
                   url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internal.index"/>
