@@ -1,247 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-    <info>
-        <name>Isilmnir’el</name>
-        <description>The construction for my custom Isilmnir’el subrace for tieflings.</description>
-        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.3">
-            <!-- This file -->
-            <file name="isilmnir-el.xml"
-                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml"
-            />
-        </update>
-    </info>
-    <element id="ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL"
-             name="Tiefling (Isilmnir’el)"
-             source="Gus: DnD"
-             type="Sub Race"
-    >
-        <supports>Tiefling</supports>
-        <description>
-            <p>The day Lolth struck down her own daughter left those who followed in Her ways feeling as if an ardent
+  <info>
+    <name>Isilmnir’el</name>
+    <description>The construction for my custom Isilmnir’el subrace for tieflings.</description>
+    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+    <update version="0.0.3">
+      <!-- This file -->
+      <file name="isilmnir-el.xml"
+            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml"
+      />
+    </update>
+  </info>
+  <element id="ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL"
+           name="Tiefling (Isilmnir’el)"
+           source="Gus: DnD"
+           type="Sub Race"
+  >
+    <supports>Tiefling</supports>
+    <description>
+      <p>The day Lolth struck down her own daughter left those who followed in Her ways feeling as if an ardent
                 stake had been driven straight through their hearts - Transformed by the abyssal aftermath of Her fall,
                 and the remaining splinters of Her essence. Forced into hiding by the lolthsworn, they now emerge from
                 the shadows, drawn to rumors of Eilistraee’s return - seeking refuge, and perhaps a chance to unravel
                 the mysteries of their demonic forms, which some now embrace as a sacred gift from their fallen goddess.
             </p>
-            <p class="indent">
-                <strong>
-                    <em>Ability Score Increase.</em>
-                </strong>
+      <p class="indent">
+        <strong>
+          <em>Ability Score Increase.</em>
+        </strong>
                 Your Dexterity score increases by 2, and your Charisma score increases by 1.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Superior Darkvision.</em>
-                </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Superior Darkvision.</em>
+        </strong>
                 Your darkvision has a radius of 120 feet.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Melody of the Blade.</em>
-                </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Melody of the Blade.</em>
+        </strong>
                 You gain proficiency with the Rapier, Scimitar, and Longsword.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Dark Maiden’s Blessing.</em>
-                </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Dark Maiden’s Blessing.</em>
+        </strong>
                 You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and you cannot
                 be Frightened.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Disciple of the Moon.</em>
-                </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Disciple of the Moon.</em>
+        </strong>
                 You know the
-                <em>Lunar Missle</em>
+        <em>Lunar Missle</em>
                 cantrip. When you reach 3rd level, you can cast the
-                <em>Waning
+        <em>Waning
                     Crescent
                 </em>
                 spell once with this trait and regain the ability to do so when you finish a long rest. When you reach
                 5th level, you can cast the
-                <em>Lunar Beacon</em>
+        <em>Lunar Beacon</em>
                 spell once with this trait and regain the ability to
                 do so when you finish a long rest. Charisma is your spellcasting ability for these spells.
-            </p>
-            <p class="indent">
-                <strong>
-                    <em>Eilistraee’s Moonfire.</em>
-                </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Eilistraee’s Moonfire.</em>
+        </strong>
                 You can surround yourself with dancing moonmotes at will that shed moonlight within 6 meters / 20 feet
                 of you.
-            </p>
-        </description>
-        <sheet alt="Tiefling (Isilmnir’el)"
-               display="false"
-        >
-            <description>Descended of Eilistraee</description>
-        </sheet>
-        <rules>
-            <grant id="ID_INTERNAL_GRANTS_TIEFLING_SUBRACE"
-                   type="Grants"
-            />
-            <stat name="dexterity"
-                  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
-                  value="2"
-            />
-            <stat name="Charisma"
-                  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
-                  value="1"
-            />
-            <select name="Custom Ability Score Improvement +2 (Isilmnir’el)"
-                    requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
-                    supports="Custom Ability Score Increase 2"
-                    type="Ability Score Improvement"
-            />
-            <select name="Custom Ability Score Improvement +1 (Isilmnir’el)"
-                    requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
-                    supports="Custom Ability Score Increase 1"
-                    type="Ability Score Improvement"
-            />
-            <grant id="ID_VISION_SUPERIORDARKVISION"
-                   type="Vision"
-            />
-            <grant id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_MELODY_OF_THE_BLADE"
-                   type="Racial Trait"
-            />
-            <grant id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DARK_MAIDEN_S_BLESSING"
-                   type="Racial Trait"
-            />
-            <grant id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DISCIPLE_OF_THE_MOON"
-                   type="Racial Trait"
-            />
-            <grant id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_EILISTRAEE_S_MOONFIRE"
-                   type="Racial Trait"
-            />
-        </rules>
-    </element>
-    <element id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_MELODY_OF_THE_BLADE"
-             name="Melody of the Blade"
-             source="Gus: DnD"
-             type="Racial Trait"
+      </p>
+    </description>
+    <sheet alt="Tiefling (Isilmnir’el)"
+           display="false"
     >
-        <description>
-            <p>You gain proficiency with the Rapier, Scimitar, and Longsword.</p>
-        </description>
-        <sheet display="false">
-            <description>You gain proficiency with the Rapier, Scimitar, and Longsword.</description>
-        </sheet>
-        <rules>
-            <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"
-                   requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"
-                   type="Proficiency"
-            />
-            <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR"
-                   requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"
-                   type="Proficiency"
-            />
-            <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"
-                   requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"
-                   type="Proficiency"
-            />
-            <select name="Simple/Martial Weapon or Tool (Melody of the Blade)"
-                    number="3"
-                    requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"
-                    supports="Weapon||Tool"
-                    type="Proficiency"
-            />
-        </rules>
-    </element>
-    <element id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DARK_MAIDEN_S_BLESSING"
-             name="Dark Maiden’s Blessing"
-             source="Gus: DnD"
+      <description>Descended of Eilistraee</description>
+    </sheet>
+    <rules>
+      <grant id="ID_INTERNAL_GRANTS_TIEFLING_SUBRACE"
+             type="Grants"
+      />
+      <stat name="dexterity"
+            requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
+            value="2"
+      />
+      <stat name="Charisma"
+            requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
+            value="1"
+      />
+      <select name="Custom Ability Score Improvement +2 (Isilmnir’el)"
+              requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
+              supports="Custom Ability Score Increase 2"
+              type="Ability Score Improvement"
+      />
+      <select name="Custom Ability Score Improvement +1 (Isilmnir’el)"
+              requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
+              supports="Custom Ability Score Increase 1"
+              type="Ability Score Improvement"
+      />
+      <grant id="ID_VISION_SUPERIORDARKVISION"
+             type="Vision"
+      />
+      <grant id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_MELODY_OF_THE_BLADE"
              type="Racial Trait"
-    >
-        <description>
-            <p>You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and you cannot
+      />
+      <grant id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DARK_MAIDEN_S_BLESSING"
+             type="Racial Trait"
+      />
+      <grant id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DISCIPLE_OF_THE_MOON"
+             type="Racial Trait"
+      />
+      <grant id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_EILISTRAEE_S_MOONFIRE"
+             type="Racial Trait"
+      />
+    </rules>
+  </element>
+  <element id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_MELODY_OF_THE_BLADE"
+           name="Melody of the Blade"
+           source="Gus: DnD"
+           type="Racial Trait"
+  >
+    <description>
+      <p>You gain proficiency with the Rapier, Scimitar, and Longsword.</p>
+    </description>
+    <sheet display="false">
+      <description>You gain proficiency with the Rapier, Scimitar, and Longsword.</description>
+    </sheet>
+    <rules>
+      <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"
+             requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"
+             type="Proficiency"
+      />
+      <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR"
+             requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"
+             type="Proficiency"
+      />
+      <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"
+             requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"
+             type="Proficiency"
+      />
+      <select name="Simple/Martial Weapon or Tool (Melody of the Blade)"
+              number="3"
+              requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"
+              supports="Weapon||Tool"
+              type="Proficiency"
+      />
+    </rules>
+  </element>
+  <element id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DARK_MAIDEN_S_BLESSING"
+           name="Dark Maiden’s Blessing"
+           source="Gus: DnD"
+           type="Racial Trait"
+  >
+    <description>
+      <p>You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and you cannot
                 be Frightened.
             </p>
-        </description>
-        <sheet>
-            <description>You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and
+    </description>
+    <sheet>
+      <description>You gain resistance to Radiant damage, Advantage on saving throws against being Charmed, and
                 you cannot be Frightened.
             </description>
-        </sheet>
-        <rules>
-            <grant id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT"
-                   type="Condition"
-            />
-        </rules>
-    </element>
-    <element id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DISCIPLE_OF_THE_MOON"
-             name="Disciple of the Moon"
-             source="Gus: DnD"
-             type="Racial Trait"
-    >
-        <description>
-            <p>You know the
-                <em>Lunar Missle</em>
+    </sheet>
+    <rules>
+      <grant id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT"
+             type="Condition"
+      />
+    </rules>
+  </element>
+  <element id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_DISCIPLE_OF_THE_MOON"
+           name="Disciple of the Moon"
+           source="Gus: DnD"
+           type="Racial Trait"
+  >
+    <description>
+      <p>You know the
+        <em>Lunar Missle</em>
                 cantrip. When you reach 3rd level, you can cast the
-                <em>Waning
+        <em>Waning
                     Crescent
                 </em>
                 spell once with this trait and regain the ability to do so when you finish a long rest. When you reach
                 5th level, you can cast the
-                <em>Lunar Beacon</em>
+        <em>Lunar Beacon</em>
                 spell once with this trait and regain the ability to
                 do so when you finish a long rest. Charisma is your spellcasting ability for these spells.
-            </p>
-        </description>
-        <sheet>
-            <description>You know the
-                <em>Lunar Missle</em>
+      </p>
+    </description>
+    <sheet>
+      <description>You know the
+        <em>Lunar Missle</em>
                 cantrip. Charisma is your spellcasting ability for this
                 spell.
-            </description>
-            <description level="3">You know the
-                <em>Lunar Missle</em>
+      </description>
+      <description level="3">You know the
+        <em>Lunar Missle</em>
                 cantrip. You can cast
-                <em>Waning Crescent</em>
+        <em>Waning Crescent</em>
                 spell
                 once per long rest. Charisma is your spellcasting ability for these spells.
-            </description>
-            <description level="5">You know the
-                <em>Lunar Missle</em>
+      </description>
+      <description level="5">You know the
+        <em>Lunar Missle</em>
                 cantrip. You can cast
-                <em>Waning Crescent</em>
+        <em>Waning Crescent</em>
                 and
-                <em>
+        <em>
                     Lunar Beacon
                 </em>
                 spells once per long rest. Charisma is your spellcasting ability for these spells.
-            </description>
-        </sheet>
-        <rules>
-            <grant id="ID_GUS_SPELL_LUNAR_MISSLE"
-                   level="1"
-                   type="Spell"
-            />
-            <grant id="ID_GUS_SPELL_WANING_CRESCENT"
-                   level="3"
-                   type="Spell"
-            />
-            <grant id="ID_GUS_SPELL_LUNAR_BEACON"
-                   level="5"
-                   type="Spell"
-            />
-        </rules>
-    </element>
-    <element id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_EILISTRAEE_S_MOONFIRE"
-             name="Eilistraee’s Moonfire"
-             source="Gus: DnD"
-             type="Racial Trait"
-    >
-        <description>
-            <p>You can surround yourself with dancing moonmotes at will that shed moonlight within 6 meters / 20 feet of
+      </description>
+    </sheet>
+    <rules>
+      <grant id="ID_GUS_SPELL_LUNAR_MISSLE"
+             level="1"
+             type="Spell"
+      />
+      <grant id="ID_GUS_SPELL_WANING_CRESCENT"
+             level="3"
+             type="Spell"
+      />
+      <grant id="ID_GUS_SPELL_LUNAR_BEACON"
+             level="5"
+             type="Spell"
+      />
+    </rules>
+  </element>
+  <element id="ID_GUS_RACIAL_TRAIT_ISILMNIR_EL_EILISTRAEE_S_MOONFIRE"
+           name="Eilistraee’s Moonfire"
+           source="Gus: DnD"
+           type="Racial Trait"
+  >
+    <description>
+      <p>You can surround yourself with dancing moonmotes at will that shed moonlight within 6 meters / 20 feet of
                 you.
             </p>
-        </description>
-        <sheet>
-            <description>You can surround yourself with dancing moonmotes at will that shed moonlight within 6 meters /
+    </description>
+    <sheet>
+      <description>You can surround yourself with dancing moonmotes at will that shed moonlight within 6 meters /
                 20 feet of you.
             </description>
-        </sheet>
-    </element>
+    </sheet>
+  </element>
 </elements>

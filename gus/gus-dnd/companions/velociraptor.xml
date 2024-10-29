@@ -1,117 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-    <info>
-        <name>Velociraptor</name>
-        <description>The construction for my custom velociraptor companion.</description>
-        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.7">
-            <!-- This file -->
-            <file name="velociraptor.xml"
-                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/velociraptor.xml"
-            />
-        </update>
-    </info>
-    <element id="ID_GUS_COMPANION_VELOCIRAPTOR"
-             name="Velociraptor"
-             source="Gus: DnD"
-             type="Companion"
-    >
-        <setters>
-            <set name="strength">6</set>
-            <set name="dexterity">14</set>
-            <set name="constitution">13</set>
-            <set name="intelligence">4</set>
-            <set name="wisdom">12</set>
-            <set name="charisma">6</set>
-            <set name="ac">13 (natural armor)</set>
-            <set name="hp">10 (3d4+3)</set>
-            <set name="speed">30 ft.</set>
-            <set name="senses">passive Perception 13</set>
-            <set name="languages">—</set>
-            <set name="skills">Perception +3</set>
-            <set name="type">Beast</set>
-            <set name="size">Tiny</set>
-            <set name="alignment">Unaligned</set>
-            <set name="challenge">1/4</set>
-            <set name="traits">ID_GUS_COMPANION_TRAIT_VELOCIRAPTOR_PACK_TACTICS</set>
-            <set name="actions">
+  <info>
+    <name>Velociraptor</name>
+    <description>The construction for my custom velociraptor companion.</description>
+    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+    <update version="0.0.7">
+      <!-- This file -->
+      <file name="velociraptor.xml"
+            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/velociraptor.xml"
+      />
+    </update>
+  </info>
+  <element id="ID_GUS_COMPANION_VELOCIRAPTOR"
+           name="Velociraptor"
+           source="Gus: DnD"
+           type="Companion"
+  >
+    <setters>
+      <set name="strength">6</set>
+      <set name="dexterity">14</set>
+      <set name="constitution">13</set>
+      <set name="intelligence">4</set>
+      <set name="wisdom">12</set>
+      <set name="charisma">6</set>
+      <set name="ac">13 (natural armor)</set>
+      <set name="hp">10 (3d4+3)</set>
+      <set name="speed">30 ft.</set>
+      <set name="senses">passive Perception 13</set>
+      <set name="languages">—</set>
+      <set name="skills">Perception +3</set>
+      <set name="type">Beast</set>
+      <set name="size">Tiny</set>
+      <set name="alignment">Unaligned</set>
+      <set name="challenge">1/4</set>
+      <set name="traits">ID_GUS_COMPANION_TRAIT_VELOCIRAPTOR_PACK_TACTICS</set>
+      <set name="actions">
                 ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_MULTIATTACK,ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_BITE,ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_CLAWS
             </set>
-        </setters>
-        <rules>
-            <stat name="companion:ac"
-                  value="13"
-            />
-            <stat bonus="base"
-                  name="companion:hp:max"
-                  value="10"
-            />
-            <stat bonus="base"
-                  name="companion:speed"
-                  value="30"
-            />
-            <stat bonus="base"
-                  name="companion:perception:proficiency"
-                  value="companion:proficiency"
-            />
-        </rules>
-    </element>
-    <element id="ID_GUS_COMPANION_TRAIT_VELOCIRAPTOR_PACK_TACTICS"
-             name="Pack Tactics"
-             source="Gus: DnD"
-             type="Companion Trait"
-    >
-        <compendium display="false"/>
-        <description>
-            <p>The velociraptor has advantage on an attack roll against a creature if at least one of the velociraptor's
+    </setters>
+    <rules>
+      <stat name="companion:ac"
+            value="13"
+      />
+      <stat bonus="base"
+            name="companion:hp:max"
+            value="10"
+      />
+      <stat bonus="base"
+            name="companion:speed"
+            value="30"
+      />
+      <stat bonus="base"
+            name="companion:perception:proficiency"
+            value="companion:proficiency"
+      />
+    </rules>
+  </element>
+  <element id="ID_GUS_COMPANION_TRAIT_VELOCIRAPTOR_PACK_TACTICS"
+           name="Pack Tactics"
+           source="Gus: DnD"
+           type="Companion Trait"
+  >
+    <compendium display="false" />
+    <description>
+      <p>The velociraptor has advantage on an attack roll against a creature if at least one of the velociraptor's
                 allies is within 5 ft. of the creature and the ally isn't incapacitated.
             </p>
-        </description>
-        <sheet>
-            <description>The velociraptor has advantage on an attack roll against a creature if at least one of the
+    </description>
+    <sheet>
+      <description>The velociraptor has advantage on an attack roll against a creature if at least one of the
                 velociraptor's allies is within 5 ft. of the creature and the ally isn't incapacitated.
             </description>
-        </sheet>
-    </element>
-    <element id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_MULTIATTACK"
-             name="Multiattack"
-             source="Gus: DnD"
-             type="Companion Action"
-    >
-        <compendium display="false"/>
-        <description>
-            <p>The velociraptor makes two attacks: one with its bite and one with its claws.</p>
-        </description>
-        <sheet>
-            <description>The velociraptor makes two attacks: one with its bite and one with its claws.</description>
-        </sheet>
-    </element>
-    <element id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_BITE"
-             name="Bite"
-             source="Gus: DnD"
-             type="Companion Action"
-    >
-        <compendium display="false"/>
-        <description>
-            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+    </sheet>
+  </element>
+  <element id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_MULTIATTACK"
+           name="Multiattack"
+           source="Gus: DnD"
+           type="Companion Action"
+  >
+    <compendium display="false" />
+    <description>
+      <p>The velociraptor makes two attacks: one with its bite and one with its claws.</p>
+    </description>
+    <sheet>
+      <description>The velociraptor makes two attacks: one with its bite and one with its claws.</description>
+    </sheet>
+  </element>
+  <element id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_BITE"
+           name="Bite"
+           source="Gus: DnD"
+           type="Companion Action"
+  >
+    <compendium display="false" />
+    <description>
+      <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
             </description>
-        </sheet>
-    </element>
-    <element id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_CLAWS"
-             name="Claws"
-             source="Gus: DnD"
-             type="Companion Action"
-    >
-        <compendium display="false"/>
-        <description>
-            <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</p>
-        </description>
-        <sheet>
-            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
+    </sheet>
+  </element>
+  <element id="ID_GUS_COMPANION_ACTION_VELOCIRAPTOR_CLAWS"
+           name="Claws"
+           source="Gus: DnD"
+           type="Companion Action"
+  >
+    <compendium display="false" />
+    <description>
+      <p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</p>
+    </description>
+    <sheet>
+      <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
             </description>
-        </sheet>
-    </element>
+    </sheet>
+  </element>
 </elements>
