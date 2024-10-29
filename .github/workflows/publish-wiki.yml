@@ -22,7 +22,7 @@ jobs:
       pull-requests: write
   publish-wiki:
     strategy:
-        fail-fast: true
+      fail-fast: true
     needs: check-formatting
     runs-on: ubuntu-latest
     steps:

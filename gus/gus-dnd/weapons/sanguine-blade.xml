@@ -29,7 +29,8 @@
       <set name="enhancement">1</set>
       <set addition="rapier"
            name="type"
-      >Weapon</set>
+      >Weapon
+            </set>
       <set name="attunement">true</set>
       <set name="rarity">Very Rare</set>
       <set name="name-format">Sanguine Blade</set>

@@ -1,19 +1,19 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
     hooks:
-    -   id: check-yaml
-    -   id: check-xml
-    -   id: end-of-file-fixer
-    -   id: trailing-whitespace
-    -   id: forbid-submodules
--   repo: https://github.com/collective/zpretty
+      - id: check-yaml
+      - id: check-xml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: forbid-submodules
+  - repo: https://github.com/collective/zpretty
     rev: 3.1.0
     hooks:
-    -   id: zpretty
-        args: [-i]
--   repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.41.0
+      - id: zpretty
+        args: [ -i ]
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.42.0
     hooks:
-    -   id: markdownlint
-        args: [-f]
+      - id: markdownlint
+        args: [ -f ]
