@@ -1,182 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <info>
-    <name>Arachnie</name>
-    <description>The construction for my custom Arachnie subrace for tieflings.</description>
-    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.5">
-      <!-- This file -->
-      <file name="arachnie.xml"
-            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/arachnie.xml"
-      />
-    </update>
-  </info>
-  <element id="ID_GUS_TIEFLING_SUBRACE_ARACHNIE"
-           name="Tiefling (Arachnie)"
-           source="Gus: DnD"
-           type="Sub Race"
-  >
-    <supports>Tiefling</supports>
-    <description>
-      <p>The Arachnie are a rare and eerie subrace of tieflings, born from two primary origins. The first origin occurs when a humanoid mates with a yochlol, a handmaiden demon of Lolth, resulting in a child imbued with the essence of spiders. The second origin involves an unborn cambion exposed to an excess of Lolth's demonic influence, twisting its form and nature into that of an Arachnie.</p>
-      <p>Known for their dual forms, the Arachnie can switch between a humanoid appearance and a spider-like form, each bringing distinct advantages and drawbacks. In humanoid form, they appear as other tieflings, though often with subtle hints of their spider heritage, such as dark, glossy eyes or elongated fingers. In their spider form, they become a terrifying blend of humanoid and arachnid, gaining enhanced abilities but also suffering from sunlight sensitivity.</p>
-      <p class="indent">
-        <strong>
-          <em>Ability Score Increase.</em>
-        </strong>
-                Your Dexterity score increases by 2, and your Charisma score increases by 1.
-      </p>
-      <p class="indent">
-        <strong>
-          <em>Superior Darkvision.</em>
-        </strong>
-                Your darkvision has a radius of 120 feet.
-      </p>
-      <p class="indent">
-        <strong>
-          <em>Spider Expertise.</em>
-        </strong>
-                You can create a 5-foot web as a bonus action up to 10 times per short rest. While in spider form, you are immune to the negative effects of webs, including those created by the web spell.
-      </p>
-      <p class="indent">
-        <strong>
-          <em>Spider Sense.</em>
-        </strong>
-                While in spider form and within a web you have created using the web spell, you gain blindsight within a range of 15 feet, provided you and the target are both in the same web.
-      </p>
-      <p class="indent">
-        <strong>
-          <em>Inherent Form.</em>
-        </strong>
-                You can switch between a humanoid form and a spider-like form. While in humanoid form, you cannot use most of your racial abilities. While in spider form, you gain a climbing speed equal to your walking speed, but you have sunlight sensitivity.
-      </p>
-      <p class="indent">
-        <strong>
-          <em>Inherent Resistance.</em>
-        </strong>
-                You have resistance to poison damage.
-      </p>
-    </description>
-    <sheet alt="Tiefling (Arachnie)"
-           display="false"
+    <info>
+        <name>Arachnie</name>
+        <description>The construction for my custom Arachnie subrace for tieflings.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.5">
+            <!-- This file -->
+            <file name="arachnie.xml"
+                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/arachnie.xml"
+            />
+        </update>
+    </info>
+    <element id="ID_GUS_TIEFLING_SUBRACE_ARACHNIE"
+             name="Tiefling (Arachnie)"
+             source="Gus: DnD"
+             type="Sub Race"
     >
-      <description>Descended of a powerful spider deity</description>
-    </sheet>
-    <rules>
-      <grant id="ID_INTERNAL_GRANTS_TIEFLING_SUBRACE"
-             type="Grants"
-      />
-      <stat name="dexterity"
-            requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
-            value="2"
-      />
-      <stat name="Charisma"
-            requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
-            value="1"
-      />
-      <select name="Custom Ability Score Improvement +2 (Arachnie)"
-              requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
-              supports="Custom Ability Score Increase 2"
-              type="Ability Score Improvement"
-      />
-      <select name="Custom Ability Score Improvement +1 (Arachnie)"
-              requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
-              supports="Custom Ability Score Increase 1"
-              type="Ability Score Improvement"
-      />
-      <grant id="ID_VISION_SUPERIORDARKVISION"
-             type="Vision"
-      />
-      <grant id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_EXPERTISE"
+        <supports>Tiefling</supports>
+        <description>
+            <p>The Arachnie are a rare and eerie subrace of tieflings, born from two primary origins. The first origin
+                occurs when a humanoid mates with a yochlol, a handmaiden demon of Lolth, resulting in a child imbued
+                with the essence of spiders. The second origin involves an unborn cambion exposed to an excess of
+                Lolth's demonic influence, twisting its form and nature into that of an Arachnie.
+            </p>
+            <p>Known for their dual forms, the Arachnie can switch between a humanoid appearance and a spider-like form,
+                each bringing distinct advantages and drawbacks. In humanoid form, they appear as other tieflings,
+                though often with subtle hints of their spider heritage, such as dark, glossy eyes or elongated fingers.
+                In their spider form, they become a terrifying blend of humanoid and arachnid, gaining enhanced
+                abilities but also suffering from sunlight sensitivity.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Ability Score Increase.</em>
+                </strong>
+                Your Dexterity score increases by 2, and your Charisma score increases by 1.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Superior Darkvision.</em>
+                </strong>
+                Your darkvision has a radius of 120 feet.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Spider Expertise.</em>
+                </strong>
+                You can create a 5-foot web as a bonus action up to 10 times per short rest. While in spider form, you
+                are immune to the negative effects of webs, including those created by the web spell.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Spider Sense.</em>
+                </strong>
+                While in spider form and within a web you have created using the web spell, you gain blindsight within a
+                range of 15 feet, provided you and the target are both in the same web.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Inherent Form.</em>
+                </strong>
+                You can switch between a humanoid form and a spider-like form. While in humanoid form, you cannot use
+                most of your racial abilities. While in spider form, you gain a climbing speed equal to your walking
+                speed, but you have sunlight sensitivity.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Inherent Resistance.</em>
+                </strong>
+                You have resistance to poison damage.
+            </p>
+        </description>
+        <sheet alt="Tiefling (Arachnie)"
+               display="false"
+        >
+            <description>Descended of a powerful spider deity</description>
+        </sheet>
+        <rules>
+            <grant id="ID_INTERNAL_GRANTS_TIEFLING_SUBRACE"
+                   type="Grants"
+            />
+            <stat name="dexterity"
+                  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
+                  value="2"
+            />
+            <stat name="Charisma"
+                  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
+                  value="1"
+            />
+            <select name="Custom Ability Score Improvement +2 (Arachnie)"
+                    requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
+                    supports="Custom Ability Score Increase 2"
+                    type="Ability Score Improvement"
+            />
+            <select name="Custom Ability Score Improvement +1 (Arachnie)"
+                    requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"
+                    supports="Custom Ability Score Increase 1"
+                    type="Ability Score Improvement"
+            />
+            <grant id="ID_VISION_SUPERIORDARKVISION"
+                   type="Vision"
+            />
+            <grant id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_EXPERTISE"
+                   type="Racial Trait"
+            />
+            <grant id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_SENSE"
+                   type="Racial Trait"
+            />
+            <grant id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_FORM"
+                   type="Racial Trait"
+            />
+            <grant id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_RESISTANCE"
+                   type="Racial Trait"
+            />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_EXPERTISE"
+             name="Spider Expertise"
+             source="Gus: DnD"
              type="Racial Trait"
-      />
-      <grant id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_SENSE"
+    >
+        <description>
+            <p>You can create a 5-foot web as a bonus action up to 10 times per short rest. While in spider form, you
+                are immune to the negative effects of webs, including those created by the web spell.
+            </p>
+        </description>
+        <sheet>
+            <description>You can create a 5-foot web as a bonus action up to 10 times per short rest. While in spider
+                form, you are immune to the negative effects of webs, including those created by the web spell.
+            </description>
+        </sheet>
+        <rules>
+            <grant id="ID_PHB_SPELL_WEB"
+                   level="1"
+                   type="Spell"
+            />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_SENSE"
+             name="Spider Sense"
+             source="Gus: DnD"
              type="Racial Trait"
-      />
-      <grant id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_FORM"
+    >
+        <description>
+            <p>While in spider form and within a web you have created using the web spell, you gain blindsight within a
+                range of 15 feet, provided you and the target are both in the same web.
+            </p>
+        </description>
+        <sheet>
+            <description>While in spider form and within a web you have created using the web spell, you gain blindsight
+                within a range of 15 feet, provided you and the target are both in the same web.
+            </description>
+        </sheet>
+        <rules>
+            <grant id="ID_VISION_BLINDSIGHT"
+                   type="Vision"
+            />
+            <stat bonus="base"
+                  name="blindsight:range"
+                  value="15"
+            />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_FORM"
+             name="Inherent Form"
+             source="Gus: DnD"
              type="Racial Trait"
-      />
-      <grant id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_RESISTANCE"
+    >
+        <description>
+            <p>You can switch between a humanoid form and a spider-like form. While in humanoid form, you cannot use
+                most of your racial abilities. While in spider form, you gain a climbing speed equal to your walking
+                speed, but you have sunlight sensitivity.
+            </p>
+        </description>
+        <sheet>
+            <description>You can switch between a humanoid form and a spider-like form. While in humanoid form, you
+                cannot use most of your racial abilities. While in spider form, you gain a climbing speed equal to your
+                walking speed, but you have sunlight sensitivity.
+            </description>
+        </sheet>
+        <rules>
+            <stat bonus="base"
+                  equipped="!([armor:heavy]||[shield:any])"
+                  name="speed:climb"
+                  value="speed"
+            />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_RESISTANCE"
+             name="Inherent Resistance"
+             source="Gus: DnD"
              type="Racial Trait"
-      />
-    </rules>
-  </element>
-  <element id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_EXPERTISE"
-           name="Spider Expertise"
-           source="Gus: DnD"
-           type="Racial Trait"
-  >
-    <description>
-      <p>You can create a 5-foot web as a bonus action up to 10 times per short rest. While in spider form, you are immune to the negative effects of webs, including those created by the web spell.</p>
-    </description>
-    <sheet>
-      <description>You can create a 5-foot web as a bonus action up to 10 times per short rest. While in spider form, you are immune to the negative effects of webs, including those created by the web spell.</description>
-    </sheet>
-    <rules>
-      <grant id="ID_PHB_SPELL_WEB"
-             level="1"
-             type="Spell"
-      />
-    </rules>
-  </element>
-  <element id="ID_GUS_RACIAL_TRAIT_ARACHNIE_SPIDER_SENSE"
-           name="Spider Sense"
-           source="Gus: DnD"
-           type="Racial Trait"
-  >
-    <description>
-      <p>While in spider form and within a web you have created using the web spell, you gain blindsight within a range of 15 feet, provided you and the target are both in the same web.</p>
-    </description>
-    <sheet>
-      <description>While in spider form and within a web you have created using the web spell, you gain blindsight within a range of 15 feet, provided you and the target are both in the same web.</description>
-    </sheet>
-    <rules>
-      <grant id="ID_VISION_BLINDSIGHT"
-             type="Vision"
-      />
-      <stat bonus="base"
-            name="blindsight:range"
-            value="15"
-      />
-    </rules>
-  </element>
-  <element id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_FORM"
-           name="Inherent Form"
-           source="Gus: DnD"
-           type="Racial Trait"
-  >
-    <description>
-      <p>You can switch between a humanoid form and a spider-like form. While in humanoid form, you cannot use most of your racial abilities. While in spider form, you gain a climbing speed equal to your walking speed, but you have sunlight sensitivity.</p>
-    </description>
-    <sheet>
-      <description>You can switch between a humanoid form and a spider-like form. While in humanoid form, you cannot use most of your racial abilities. While in spider form, you gain a climbing speed equal to your walking speed, but you have sunlight sensitivity.</description>
-    </sheet>
-    <rules>
-      <stat bonus="base"
-            equipped="!([armor:heavy]||[shield:any])"
-            name="speed:climb"
-            value="speed"
-      />
-    </rules>
-  </element>
-  <element id="ID_GUS_RACIAL_TRAIT_ARACHNIE_INHERENT_RESISTANCE"
-           name="Inherent Resistance"
-           source="Gus: DnD"
-           type="Racial Trait"
-  >
-    <description>
-      <p>You have resistance to poison damage.</p>
-    </description>
-    <sheet>
-      <description>You have resistance to poison damage.</description>
-    </sheet>
-    <rules>
-      <grant id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"
-             type="Condition"
-      />
-      <grant id="ID_INTERNAL_RACIAL_TRAIT_REPLACEMENT_TIEFLING_HELLISH_RESISTANCE"
-             type="Grants"
-      />
-    </rules>
-  </element>
+    >
+        <description>
+            <p>You have resistance to poison damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to poison damage.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"
+                   type="Condition"
+            />
+            <grant id="ID_INTERNAL_RACIAL_TRAIT_REPLACEMENT_TIEFLING_HELLISH_RESISTANCE"
+                   type="Grants"
+            />
+        </rules>
+    </element>
 </elements>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+    <info>
+        <name>Gus: DnD Weapons</name>
+        <description>The main entry point for my custom weapons.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="weapons.index"
+                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons.index"/>
+        </update>
+    </info>
+    <files>
+        <!-- Sanguine Blade -->
+        <file name="sanguine-blade.xml"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons/sanguine-blade.xml"/>
+    </files>
+</index>

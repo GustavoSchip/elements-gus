@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <info>
-    <name>Lunar Beacon</name>
-    <description>The construction for my custom Lunar Beacon spell for the Isilmnir’el subrace.</description>
-    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.3">
-      <!-- This file -->
-      <file name="lunar-beacon.xml"
-            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/lunar-beacon.xml"
-      />
-    </update>
-  </info>
-  <element id="ID_GUS_SPELL_LUNAR_BEACON"
-           name="Lunar Beacon"
-           source="Gus: DnD"
-           type="Spell"
-  >
-    <requirements>ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL</requirements>
-    <description>
-      <p>You send down a beacon of moonlight at a target location. It lasts up to 5 minutes, and impacts enemies
+    <info>
+        <name>Lunar Beacon</name>
+        <description>The construction for my custom Lunar Beacon spell for the Isilmnir’el subrace.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.3">
+            <!-- This file -->
+            <file name="lunar-beacon.xml"
+                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells/lunar-beacon.xml"
+            />
+        </update>
+    </info>
+    <element id="ID_GUS_SPELL_LUNAR_BEACON"
+             name="Lunar Beacon"
+             source="Gus: DnD"
+             type="Spell"
+    >
+        <requirements>ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL</requirements>
+        <description>
+            <p>You send down a beacon of moonlight at a target location. It lasts up to 5 minutes, and impacts enemies
                 within its area of effect, dealing 3d4 radiant damage. Depending on the current phase of the moon, the
                 following effect happens.
             </p>
-      <table>
-        <thead>
-          <tr>
-            <td class="col-20">Moon phase</td>
-            <td>Effect</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <strong>
-                <em>New moon</em>
-              </strong>
-            </td>
-            <td>The affected area becomes freezingly cold, and deals additional 1d4 cold damage.</td>
-          </tr>
-          <tr>
-            <td>
-              <strong>
-                <em>Waxing crescent.</em>
-              </strong>
-            </td>
-            <td>Your allies gain a +1 bonus to attack rolls while inside the affected area.</td>
-          </tr>
-          <tr>
-            <td>
-              <strong>
-                <em>Full moon.</em>
-              </strong>
-            </td>
-            <td>The ground gets covered with moonfire, and reveals anything and anyone hidden, dispelling
+            <table>
+                <thead>
+                    <tr>
+                        <td class="col-20">Moon phase</td>
+                        <td>Effect</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>
+                                <em>New moon</em>
+                            </strong>
+                        </td>
+                        <td>The affected area becomes freezingly cold, and deals additional 1d4 cold damage.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>
+                                <em>Waxing crescent.</em>
+                            </strong>
+                        </td>
+                        <td>Your allies gain a +1 bonus to attack rolls while inside the affected area.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>
+                                <em>Full moon.</em>
+                            </strong>
+                        </td>
+                        <td>The ground gets covered with moonfire, and reveals anything and anyone hidden, dispelling
                             their invisibility instantly.
                         </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>
-                <em>Waning crescent.</em>
-              </strong>
-            </td>
-            <td>Enemies within the affected area become blinded, and take additional 1d4 psychic damage.
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>
+                                <em>Waning crescent.</em>
+                            </strong>
                         </td>
-          </tr>
-        </tbody>
-      </table>
-    </description>
-    <setters>
-      <set name="keywords">radiant</set>
-      <set name="level">2</set>
-      <set name="school">Conjuration</set>
-      <set name="time">1 action</set>
-      <set name="duration">Concentration, up to 5 minutes</set>
-      <set name="range">30 feet</set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">true</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
+                        <td>Enemies within the affected area become blinded, and take additional 1d4 psychic damage.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 5 minutes</set>
+            <set name="range">30 feet</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"/>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>

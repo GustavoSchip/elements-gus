@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Sanguine Blade</name>
+        <description>The construction for my custom Sanguine Blade.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="sanguine-blade.xml"
+                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons/sanguine-blade.xml"
+            />
+        </update>
+    </info>
+    <element id="ID_GUS_MAGIC_WEAPON_SANGUINE_BLADE"
+             name="Sanguine Blade"
+             source="Gus: DnD"
+             type="Magic Item"
+    >
+        <description>
+            <p>...</p>
+        </description>
+        <setters>
+            <set name="keywords">rapier</set>
+            <set name="category">Magic Weapons</set>
+            <set currency="gp"
+                 name="cost"
+            >0
+            </set>
+            <set name="enhancement">1</set>
+            <set name="type" addition="rapier">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="name-format">Sanguine Blade</set>
+        </setters>
+    </element>
+</elements>
