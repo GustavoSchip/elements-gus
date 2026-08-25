@@ -13,6 +13,6 @@
     <files>
         <!-- Wings of the Avariel -->
         <file name="wings-of-the-avariel.xml"
-              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/itemswings-of-the-avariel.xml"/>
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-avariel.xml"/>
     </files>
 </index>
