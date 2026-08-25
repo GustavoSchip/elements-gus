@@ -4,7 +4,7 @@
     <name>Avariel</name>
     <description>The construction for my custom Avariel subrace for elves.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.1">
+    <update version="0.0.2">
       <!-- This file -->
       <file name="avariel.xml"
             url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/avariel.xml"
@@ -12,7 +12,7 @@
     </update>
   </info>
   <element id="ID_GUS_ELF_SUBRACE_AVARIEL"
-           name="Elf (Avariel)"
+           name="Avariel"
            source="Gus: DnD"
            type="Sub Race"
   >

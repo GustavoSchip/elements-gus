@@ -4,7 +4,7 @@
     <name>Arachnie</name>
     <description>The construction for my custom Arachnie subrace for tieflings.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.5">
+    <update version="0.0.6">
       <!-- This file -->
       <file name="arachnie.xml"
             url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/arachnie.xml"
@@ -12,7 +12,7 @@
     </update>
   </info>
   <element id="ID_GUS_TIEFLING_SUBRACE_ARACHNIE"
-           name="Tiefling (Arachnie)"
+           name="Arachnie"
            source="Gus: DnD"
            type="Sub Race"
   >
@@ -70,7 +70,7 @@
                 You have resistance to poison damage.
       </p>
     </description>
-    <sheet alt="Tiefling (Arachnie)"
+    <sheet alt="Arachnie"
            display="false"
     >
       <description>Descended of a powerful spider deity</description>

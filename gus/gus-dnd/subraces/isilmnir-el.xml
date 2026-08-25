@@ -4,7 +4,7 @@
     <name>Isilmnir’el</name>
     <description>The construction for my custom Isilmnir’el subrace for tieflings.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.3">
+    <update version="0.0.4">
       <!-- This file -->
       <file name="isilmnir-el.xml"
             url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml"
@@ -12,7 +12,7 @@
     </update>
   </info>
   <element id="ID_GUS_TIEFLING_SUBRACE_ISILMNIR_EL"
-           name="Tiefling (Isilmnir’el)"
+           name="Isilmnir’el"
            source="Gus: DnD"
            type="Sub Race"
   >
@@ -73,7 +73,7 @@
                 of you.
       </p>
     </description>
-    <sheet alt="Tiefling (Isilmnir’el)"
+    <sheet alt="Isilmnir’el"
            display="false"
     >
       <description>Descended of Eilistraee</description>
