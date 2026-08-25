@@ -4,7 +4,7 @@
         <name>Gus: DnD Subraces</name>
         <description>The main entry point for my custom subraces.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <!-- This file -->
             <file name="subraces.index"
                   url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index"/>
@@ -20,5 +20,8 @@
         <!-- Avariel -->
         <file name="avariel.xml"
               url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/avariel.xml"/>
+        <!-- Eladrin -->
+        <file name="eladrin.xml"
+              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/eladrin.xml"/>
     </files>
 </index>
