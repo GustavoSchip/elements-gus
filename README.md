@@ -12,8 +12,6 @@ tab: <br> <!-- markdownlint-disable-line no-inline-html --> <!-- markdownlint-di
 
 ### Requirements
 
-My homebrew requires at least the [core](https://raw.githubusercontent.com/aurorabuilder/elements/master/core.index)
-content for Aurora Builder, but my preference goes to the new community
-driven [core](https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index)
-content <!-- markdownlint-disable-line line-length -->
+My homebrew requires the [core](https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index)
+community driven content for Aurora Builder
 by [AuroraLegacy](https://github.com/AuroraLegacy) at [elements](https://github.com/AuroraLegacy/elements)

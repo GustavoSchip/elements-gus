@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>Wing Sword</name>
+    <description>The construction for my custom Wing Sword.</description>
+    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+    <update version="0.0.1">
+      <!-- This file -->
+      <file name="wing-sword.xml"
+            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/proficiencies/wing-sword.xml"
+      />
+    </update>
+  </info>
+  <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+    <rules>
+      <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WINGSWORD"
+             type="Proficiency"
+      />
+    </rules>
+  </append>
+  <element id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WINGSWORD"
+           name="Weapon Proficiency (Wing Sword)"
+           source="Gus: DnD"
+           type="Proficiency"
+  >
+    <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+  </element>
+</elements>
