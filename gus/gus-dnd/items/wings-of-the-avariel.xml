@@ -4,7 +4,7 @@
     <name>Wings of the Avariel</name>
     <description>The construction for my custom Wings of the Avariel.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.1">
+    <update version="0.0.2">
       <!-- This file -->
       <file name="wings-of-the-avariel.xml"
             url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-avariel.xml"
