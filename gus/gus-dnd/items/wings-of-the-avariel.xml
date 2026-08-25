@@ -36,7 +36,8 @@
     <rules>
       <stat bonus="base"
             name="innate speed:fly"
-            requirements="![armor:any]"
+            equipped="![armor:any]"
+            requirements="!ID_GUS_RACIAL_TRAIT_WINGS"
             value="15"
       />
     </rules>
