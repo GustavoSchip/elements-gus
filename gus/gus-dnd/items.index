@@ -4,7 +4,7 @@
         <name>Gus: DnD Items</name>
         <description>The main entry point for my custom items.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <!-- This file -->
             <file name="items.index"
                   url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index"/>
