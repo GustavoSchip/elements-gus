@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml
+version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
     <name>Eladrin</name>
     <description>The construction for my custom Eladrin subrace for elves.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.1">
+    <update version="0.0.2">
       <!-- This file -->
-      <file name="avariel.xml"
-            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/eladrin.xml"
-      />
+      <file name="avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/eladrin.xml" />
     </update>
   </info>
-  <element id="ID_GUS_ELF_SUBRACE_ELADRIN"
-           name="Eladrin"
-           source="Gus: DnD"
-           type="Sub Race"
-  >
+  <element id="ID_GUS_ELF_SUBRACE_ELADRIN" name="Eladrin" source="Gus: DnD" type="Sub Race">
     <supports>Elf</supports>
     <description>
       <p>Creatures of magic with strong ties to nature, eladrin live in the twilight realm of the Feywild. Their cities sometimes cross over to the Material Plane, appearing briefly in mountain valleys or deep forest glades before fading back into the Feywild.</p>
@@ -33,27 +28,16 @@
         <tr><td>4</td><td><b>Summer:</b>
             boldness and aggression, a time of unfettered energy and calls to action</td></tr>
       </table>
-      <p class="indent"><strong><em>Ability Score Increase.</em></strong>
-        Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.</p>
-      <p class="indent"><strong><em>Fey Step.</em></strong>
-        You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.</p>
+      <p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.</p>
+      <p class="indent"><strong><em>Fey Step.</em></strong> You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.</p>
     </description>
     <sheet display="false" />
     <rules>
-      <select name="Ability Score Increase (Eladrin)"
-              supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"
-              type="Ability Score Improvement"
-      />
-      <grant id="ID_DMG_RACIAL_TRAIT_FEY_STEP"
-             type="Racial Trait"
-      />
+      <select name="Ability Score Increase (Eladrin)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" type="Ability Score Improvement" />
+      <grant id="ID_DMG_RACIAL_TRAIT_FEY_STEP" type="Racial Trait" />
     </rules>
   </element>
-  <element id="ID_GUS_RACIAL_TRAIT_FEY_STEP"
-           name="Fey Step"
-           source="Gus: DnD"
-           type="Racial Trait"
-  >
+  <element id="ID_GUS_RACIAL_TRAIT_FEY_STEP" name="Fey Step" source="Gus: DnD" type="Racial Trait">
     <description>
       <p>You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.</p>
       <div element="ID_PHB_SPELL_MISTY_STEP" />
@@ -62,9 +46,7 @@
       <description>You can cast the misty step spell once using this trait.</description>
     </sheet>
     <rules>
-      <grant id="ID_PHB_SPELL_MISTY_STEP"
-             type="Spell"
-      />
+      <grant id="ID_PHB_SPELL_MISTY_STEP" type="Spell" />
     </rules>
   </element>
 </elements>

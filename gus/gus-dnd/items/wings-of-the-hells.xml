@@ -1,49 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml
+version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
     <name>Wings of the Hells</name>
     <description>The construction for my custom Wings of the Hells.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.4">
+    <update version="0.0.5">
       <!-- This file -->
-      <file name="wings-of-the-hells.xml"
-            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-hells.xml"
-      />
+      <file name="wings-of-the-hells.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-hells.xml" />
     </update>
   </info>
-  <element id="ID_GUS_MAGIC_ITEM_WINGS_OF_THE_HELLS"
-           name="Wings of the Hells"
-           source="Gus: DnD"
-           type="Magic Item"
-  >
+  <element id="ID_GUS_MAGIC_ITEM_WINGS_OF_THE_HELLS" name="Wings of the Hells" source="Gus: DnD" type="Magic Item">
     <description>
       <p>Crafted from the wings of a winged tiefling, these roughly spiked wings still carry a trace of their innate magic. Though smaller than those of a normal winged tiefling, they can be worn and attuned to by a creature capable of bearing them.</p>
       <p class="indent">While attuned to the wings, you have a pair of wings that grant you a flying speed of 2 feet. Broad and spiked, they can span up to 7 feet when fully extended. To use this flying speed, you can't be wearing medium or heavy armor.</p>
     </description>
     <setters>
       <set name="category">Wondrous Items</set>
-      <set currency="gp"
-           name="cost"
-      >0</set>
-      <set lb="12"
-           name="weight"
-      >0 lb.</set>
+      <set currency="gp" name="cost">0</set>
+      <set lb="12" name="weight">0 lb.</set>
       <set name="slot">shoulders</set>
       <set name="type">Wondrous Item</set>
       <set name="attunement">true</set>
       <set name="rarity">Really Rare</set>
     </setters>
     <rules>
-      <stat bonus="base"
-            equipped="![armor:any]"
-            name="innate speed:fly"
-            value="20"
-      />
-      <stat bonus="base"
-            name="innate speed:fly"
-            requirements="ID_INTERNAL_ARMOR_GROUP_LIGHT"
-            value="20"
-      />
+      <stat bonus="base" equipped="![armor:any]" name="innate speed:fly" value="20" />
+      <stat bonus="base" name="innate speed:fly" requirements="ID_INTERNAL_ARMOR_GROUP_LIGHT" value="20" />
     </rules>
   </element>
 </elements>

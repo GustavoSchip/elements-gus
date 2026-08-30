@@ -3,14 +3,14 @@ on:
     push:
         branches:
             [
-                "master"
+                master
             ]
         tags-ignore:
             [
                 "**"
             ]
         paths:
-            - "wiki/**"
+            - wiki/**
     workflow_dispatch:
 concurrency:
     group: Publish Wiki
@@ -37,5 +37,5 @@ jobs:
             - name: Publishing processed Wiki
               uses: Andrew-Chen-Wang/github-wiki-action@master
               with:
-                  path: "wiki/"
+                  path: wiki/
                   strategy: init

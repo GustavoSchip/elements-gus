@@ -10,7 +10,7 @@ on:
         paths:
             - "**.index"
             - "**.xml"
-            - "wiki/**"
+            - wiki/**
     workflow_dispatch:
     workflow_call:
 concurrency:

@@ -1,27 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml
+version="1.0" encoding="utf-8" ?>
 <index>
     <info>
         <name>Gus: DnD Subraces</name>
         <description>The main entry point for my custom subraces.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <!-- This file -->
-            <file name="subraces.index"
-                  url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index"/>
+            <file name="subraces.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index" />
         </update>
     </info>
     <files>
         <!-- Isilmnir’el -->
-        <file name="isilmnir-el.xml"
-              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml"/>
+        <file name="isilmnir-el.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/isilmnir-el.xml" />
         <!-- Arachnie -->
-        <file name="arachnie.xml"
-              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/arachnie.xml"/>
+        <file name="arachnie.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/arachnie.xml" />
         <!-- Avariel -->
-        <file name="avariel.xml"
-              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/avariel.xml"/>
+        <file name="avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/avariel.xml" />
         <!-- Eladrin -->
-        <file name="eladrin.xml"
-              url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/eladrin.xml"/>
+        <file name="eladrin.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/eladrin.xml" />
     </files>
 </index>
