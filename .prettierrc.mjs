@@ -5,9 +5,9 @@ const require = createRequire(import.meta.url);
 export default {
     plugins: [require.resolve("@prettier/plugin-xml"), require.resolve("prettier-plugin-yaml")],
     overrides: [
-        { files: ["*.index"], options: { parser: "xml", xmlWhitespaceSensitivity: "ignore", printWidth: 9999 } },
-        { files: ["*.xml"], options: { xmlWhitespaceSensitivity: "ignore", printWidth: 9999 } },
-        { files: ["*.yml"], options: { printWidth: 4 } },
+        { files: ["*.index"], options: { parser: "xml", xmlQuoteAttributes: "double", xmlWhitespaceSensitivity: "ignore", printWidth: 9999 } },
+        { files: ["*.xml"], options: { xmlQuoteAttributes: "double", xmlWhitespaceSensitivity: "ignore", printWidth: 9999 } },
+        { files: ["*.yml"], options: { yamlBlockStyle: "folded", yamlCollectionStyle: "block", yamlQuoteValues: true, printWidth: 4 } },
         { files: ["*.md"], options: { printWidth: 180 } },
         { files: ["*.mjs"], options: { printWidth: 200 } }
     ],
