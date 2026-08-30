@@ -1,52 +1,85 @@
 <?xml
 version="1.0" encoding="utf-8" ?>
 <elements>
-  <info>
-    <name>Eladrin</name>
-    <description>The construction for my custom Eladrin subrace for elves.</description>
-    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.2">
-      <!-- This file -->
-      <file name="avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/eladrin.xml" />
-    </update>
-  </info>
-  <element id="ID_GUS_ELF_SUBRACE_ELADRIN" name="Eladrin" source="Gus: DnD" type="Sub Race">
-    <supports>Elf</supports>
-    <description>
-      <p>Creatures of magic with strong ties to nature, eladrin live in the twilight realm of the Feywild. Their cities sometimes cross over to the Material Plane, appearing briefly in mountain valleys or deep forest glades before fading back into the Feywild.</p>
-      <h5>Eladrin Seasons</h5>
-      <table>
-        <thead>
-          <tr><td>d4</td><td>Season</td></tr>
-        </thead>
-        <tr><td>1</td><td><b>Autumn:</b>
-            peace and goodwill, when summer's harvest is shared with all</td></tr>
-        <tr><td>2</td><td><b>Winter:</b>
-            contemplation and dolor, when the vibrant energy of the world slumbers</td></tr>
-        <tr><td>3</td><td><b>Spring:</b>
-            cheerfulness and celebration , marked by merriment and hope as winter's sorrow passes</td></tr>
-        <tr><td>4</td><td><b>Summer:</b>
-            boldness and aggression, a time of unfettered energy and calls to action</td></tr>
-      </table>
-      <p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.</p>
-      <p class="indent"><strong><em>Fey Step.</em></strong> You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <select name="Ability Score Increase (Eladrin)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" type="Ability Score Improvement" />
-      <grant id="ID_DMG_RACIAL_TRAIT_FEY_STEP" type="Racial Trait" />
-    </rules>
-  </element>
-  <element id="ID_GUS_RACIAL_TRAIT_FEY_STEP" name="Fey Step" source="Gus: DnD" type="Racial Trait">
-    <description>
-      <p>You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.</p>
-      <div element="ID_PHB_SPELL_MISTY_STEP" />
-    </description>
-    <sheet usage="1/Short Rest">
-      <description>You can cast the misty step spell once using this trait.</description>
-    </sheet>
-    <rules>
-      <grant id="ID_PHB_SPELL_MISTY_STEP" type="Spell" />
-    </rules>
-  </element>
+    <info>
+        <name>Eladrin</name>
+        <description>The construction for my custom Eladrin subrace for elves.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/eladrin.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_ELF_SUBRACE_ELADRIN" name="Eladrin" source="Gus: DnD" type="Sub Race">
+        <supports>Elf</supports>
+        <description>
+            <p>Creatures of magic with strong ties to nature, eladrin live in the twilight realm of the Feywild. Their cities sometimes cross over to the Material Plane, appearing briefly in mountain valleys or deep forest glades before fading back into the Feywild.</p>
+            <h5>Eladrin Seasons</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>d4</td>
+                        <td>Season</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <b>Autumn:</b>
+                        peace and goodwill, when summer's harvest is shared with all
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <b>Winter:</b>
+                        contemplation and dolor, when the vibrant energy of the world slumbers
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <b>Spring:</b>
+                        cheerfulness and celebration , marked by merriment and hope as winter's sorrow passes
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <b>Summer:</b>
+                        boldness and aggression, a time of unfettered energy and calls to action
+                    </td>
+                </tr>
+            </table>
+            <p class="indent">
+                <strong>
+                    <em>Ability Score Increase.</em>
+                </strong>
+                Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Fey Step.</em>
+                </strong>
+                You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select name="Ability Score Increase (Eladrin)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" type="Ability Score Improvement" />
+            <grant id="ID_DMG_RACIAL_TRAIT_FEY_STEP" type="Racial Trait" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_FEY_STEP" name="Fey Step" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.</p>
+            <div element="ID_PHB_SPELL_MISTY_STEP" />
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can cast the misty step spell once using this trait.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_PHB_SPELL_MISTY_STEP" type="Spell" />
+        </rules>
+    </element>
 </elements>

@@ -1,33 +1,33 @@
 <?xml
 version="1.0" encoding="utf-8" ?>
 <elements>
-  <info>
-    <name>Wings of the Avariel</name>
-    <description>The construction for my custom Wings of the Avariel.</description>
-    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.6">
-      <!-- This file -->
-      <file name="wings-of-the-avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-avariel.xml" />
-    </update>
-  </info>
-  <element id="ID_GUS_MAGIC_ITEM_WINGS_OF_THE_AVARIEL" name="Wings of the Avariel" source="Gus: DnD" type="Magic Item">
-    <description>
-      <p>Crafted from the wings of a Avariel, these delicate feathers still carry a trace of their innate magic. Though smaller than those of a normal Avariel, they can be worn and attuned to by a creature capable of bearing them.</p>
-      <p class="indent">While attuned to the wings, you have a pair of feathered wings that grant you a flying speed of 30 feet. Broad and delicate, they can span up to 8 feet when fully extended. Your flying speed is reduced to 25 feet while wearing light armor. You can't use this flying speed while wearing medium or heavy armor.</p>
-    </description>
-    <setters>
-      <set name="category">Wondrous Items</set>
-      <set currency="gp" name="cost">0</set>
-      <set lb="12" name="weight">0 lb.</set>
-      <set name="slot">shoulders</set>
-      <set name="type">Wondrous Item</set>
-      <set name="attunement">true</set>
-      <set name="rarity">Legendary</set>
-    </setters>
-    <rules>
-      <stat bonus="base" name="innate speed:fly" value="30" equipped="[armor:none]" />
-      <stat bonus="base" name="innate speed:fly" value="25" equipped="[armor:light]" />
-      <stat bonus="base" name="innate speed:fly" value="30" requirements="ID_WOTC_DMG_MAGIC_ITEM_ELVEN_CHAIN" />
-    </rules>
-  </element>
+    <info>
+        <name>Wings of the Avariel</name>
+        <description>The construction for my custom Wings of the Avariel.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.6">
+            <!-- This file -->
+            <file name="wings-of-the-avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-avariel.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_MAGIC_ITEM_WINGS_OF_THE_AVARIEL" name="Wings of the Avariel" source="Gus: DnD" type="Magic Item">
+        <description>
+            <p>Crafted from the wings of a Avariel, these delicate feathers still carry a trace of their innate magic. Though smaller than those of a normal Avariel, they can be worn and attuned to by a creature capable of bearing them.</p>
+            <p class="indent">While attuned to the wings, you have a pair of feathered wings that grant you a flying speed of 30 feet. Broad and delicate, they can span up to 8 feet when fully extended. Your flying speed is reduced to 25 feet while wearing light armor. You can't use this flying speed while wearing medium or heavy armor.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set currency="gp" name="cost">0</set>
+            <set lb="12" name="weight">0 lb.</set>
+            <set name="slot">shoulders</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+        <rules>
+            <stat bonus="base" name="innate speed:fly" value="30" equipped="[armor:none]" />
+            <stat bonus="base" name="innate speed:fly" value="25" equipped="[armor:light]" />
+            <stat bonus="base" name="innate speed:fly" value="30" requirements="ID_WOTC_DMG_MAGIC_ITEM_ELVEN_CHAIN" />
+        </rules>
+    </element>
 </elements>
