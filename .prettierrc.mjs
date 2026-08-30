@@ -5,33 +5,11 @@ const require = createRequire(import.meta.url);
 export default {
     plugins: [require.resolve("@prettier/plugin-xml"), require.resolve("prettier-plugin-yaml")],
     overrides: [
-        {
-            files: ["*.xml", "*.index"],
-            options: {
-                parser: "xml",
-                objectWrap: "collapse",
-                printWidth: 9999
-            }
-        },
-        {
-            files: ["*.yml"],
-            options: {
-                objectWrap: "collapse",
-                printWidth: 4
-            }
-        },
-        {
-            files: ["*.md"],
-            options: {
-                printWidth: 180
-            }
-        },
-        {
-            files: ["*.mjs"],
-            options: {
-                printWidth: 200
-            }
-        }
+        { files: ["*.index"], options: { parser: "xml", xmlWhitespaceSensitivity: "ignore", printWidth: 9999 } },
+        { files: ["*.xml"], options: { xmlWhitespaceSensitivity: "ignore", printWidth: 9999 } },
+        { files: ["*.yml"], options: { printWidth: 4 } },
+        { files: ["*.md"], options: { printWidth: 180 } },
+        { files: ["*.mjs"], options: { printWidth: 200 } }
     ],
 
     printWidth: 160,
@@ -42,7 +20,7 @@ export default {
     bracketSameLine: true,
     bracketSpacing: true,
     trailingComma: "none",
-    objectWrap: "preserve",
+    objectWrap: "collapse",
     embeddedLanguageFormatting: "auto",
     endOfLine: "lf"
 };
