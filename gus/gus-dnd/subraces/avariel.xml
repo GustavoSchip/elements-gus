@@ -4,7 +4,7 @@
     <name>Avariel</name>
     <description>The construction for my custom Avariel subrace for elves.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.2">
+    <update version="0.0.3">
       <!-- This file -->
       <file name="avariel.xml"
             url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/avariel.xml"
@@ -63,6 +63,11 @@
       <description>You have a pair of wings that grant you a flying speed of 30 feet. Broad and feathered, they can span up to 10 feet when fully extended. To use this flying speed, you can't be wearing medium or heavy armor.</description>
     </sheet>
     <rules>
+      <stat bonus="base"
+            equipped="![armor:any]"
+            name="innate speed:fly"
+            value="30"
+      />
       <stat bonus="base"
             name="innate speed:fly"
             requirements="ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_WOTC_DMG_MAGIC_ITEM_ELVEN_CHAIN"
