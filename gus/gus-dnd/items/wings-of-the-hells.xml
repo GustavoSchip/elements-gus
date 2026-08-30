@@ -4,7 +4,7 @@
     <name>Wings of the Hells</name>
     <description>The construction for my custom Wings of the Hells.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.3">
+    <update version="0.0.4">
       <!-- This file -->
       <file name="wings-of-the-hells.xml"
             url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-hells.xml"
@@ -17,7 +17,7 @@
            type="Magic Item"
   >
     <description>
-      <p>Crafted from the wings of a young winged tiefling, these roughly spiked wings still carry a trace of their innate magic. Though smaller than those of a fully grown winged tieflings, they can be worn and attuned to by a creature capable of bearing them.</p>
+      <p>Crafted from the wings of a winged tiefling, these roughly spiked wings still carry a trace of their innate magic. Though smaller than those of a normal winged tiefling, they can be worn and attuned to by a creature capable of bearing them.</p>
       <p class="indent">While attuned to the wings, you have a pair of wings that grant you a flying speed of 2 feet. Broad and spiked, they can span up to 7 feet when fully extended. To use this flying speed, you can't be wearing medium or heavy armor.</p>
     </description>
     <setters>
