@@ -2,7 +2,7 @@
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/GustavoSchip/elements-gus/master.svg)](https://results.pre-commit.ci/latest/github/GustavoSchip/elements-gus/master)
 
-My attempt at Homebrew for Aurora Builder
+My attempt at Homebrew for Aurora Builder.
 
 ## Installing
 
@@ -15,3 +15,7 @@ tab: <br> <!-- markdownlint-disable-line no-inline-html --> <!-- markdownlint-di
 My homebrew requires the [core](https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index)
 community driven content for Aurora Builder
 by [AuroraLegacy](https://github.com/AuroraLegacy) at [elements](https://github.com/AuroraLegacy/elements)
+
+### Documentation
+
+You can view the documentation at [wiki](https://github.com/GustavoSchip/elements-gus/wiki)
