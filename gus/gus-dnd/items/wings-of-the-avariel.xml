@@ -4,7 +4,7 @@
     <name>Wings of the Avariel</name>
     <description>The construction for my custom Wings of the Avariel.</description>
     <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.1">
+    <update version="0.0.2">
       <!-- This file -->
       <file name="wings-of-the-avariel.xml"
             url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-avariel.xml"
@@ -18,7 +18,7 @@
   >
     <description>
       <p>Crafted from the wings of a young Avariel, these delicate feathers still carry a trace of their innate magic. Though smaller than those of a fully grown Avariel, they can be worn and attuned to by a creature capable of bearing them.</p>
-      <p class="indent">While attuned to the wings, you have a pair of wings that grant you a flying speed of 15 feet. Broad and feathered, they can span up to 5 feet when fully extended. To use this flying speed, you can't be wearing armor</p>
+      <p class="indent">While attuned to the wings, you have a pair of wings that grant you a flying speed of 20 feet. Broad and feathered, they can span up to 5 feet when fully extended. To use this flying speed, you can't be wearing armor</p>
     </description>
     <setters>
       <set name="category">Wondrous Items</set>
@@ -35,9 +35,14 @@
     </setters>
     <rules>
       <stat bonus="base"
+            equipped="![armor:any]"
             name="innate speed:fly"
-            requirements="![armor:any]"
-            value="15"
+            value="20"
+      />
+      <stat bonus="base"
+            name="innate speed:fly"
+            requirements="ID_WOTC_DMG_MAGIC_ITEM_ELVEN_CHAIN"
+            value="20"
       />
     </rules>
   </element>
