@@ -1,41 +1,37 @@
-name: Publish Wiki
+name: "Publish Wiki"
 on:
     push:
         branches:
-            [
-                master
-            ]
+            - "master"
         tags-ignore:
-            [
-                "**"
-            ]
+            - "**"
         paths:
-            - wiki/**
-    workflow_dispatch:
+            - "wiki/**"
+    workflow_dispatch: null
 concurrency:
-    group: Publish Wiki
+    group: "Publish Wiki"
     cancel-in-progress: true
 permissions:
-    contents: write
+    contents: "write"
 jobs:
     check-formatting:
         strategy:
             fail-fast: true
-        uses: GustavoSchip/elements-gus/.github/workflows/format-style.yml@master
-        secrets: inherit
+        uses: "GustavoSchip/elements-gus/.github/workflows/format-style.yml@master"
+        secrets: "inherit"
         permissions:
-            contents: write
-            pull-requests: write
+            contents: "write"
+            pull-requests: "write"
     publish-wiki:
         strategy:
             fail-fast: true
-        needs: check-formatting
-        runs-on: ubuntu-latest
+        needs: "check-formatting"
+        runs-on: "ubuntu-latest"
         steps:
-            - name: Checking out the repository
-              uses: actions/checkout@main
-            - name: Publishing processed Wiki
-              uses: Andrew-Chen-Wang/github-wiki-action@master
+            - name: "Checking out the repository"
+              uses: "actions/checkout@main"
+            - name: "Publishing processed Wiki"
+              uses: "Andrew-Chen-Wang/github-wiki-action@master"
               with:
-                  path: wiki/
-                  strategy: init
+                  path: "wiki/"
+                  strategy: "init"
