@@ -1,38 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml
+version="1.0" encoding="utf-8" ?>
 <elements>
-  <info>
-    <name>Wing Sword</name>
-    <description>The construction for my custom Wing Sword.</description>
-    <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-    <update version="0.0.2">
-      <!-- This file -->
-      <file name="wing-sword.xml"
-            url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons/wing-sword.xml"
-      />
-    </update>
-  </info>
-  <element id="ID_GUS_WEAPON_WING_SWORD"
-           name="Wing Sword"
-           source="Gus: DnD"
-           type="Weapon"
-  >
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
-    <description>
-      <p />
-    </description>
-    <setters>
-      <set name="category">Weapons</set>
-      <set currency="gp"
-           name="cost"
-      >12</set>
-      <set lb="2.5"
-           name="weight"
-      >2.5 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="damage"
-           type="slashing"
-      >1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WINGSWORD</set>
-    </setters>
-  </element>
+    <info>
+        <name>Wing Sword</name>
+        <description>The construction for my custom Wing Sword.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.3">
+            <!-- This file -->
+            <file name="wing-sword.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons/wing-sword.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_WEAPON_WING_SWORD" name="Wing Sword" source="Gus: DnD" type="Weapon">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p />
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set currency="gp" name="cost">12</set>
+            <set lb="2.5" name="weight">2.5 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WINGSWORD</set>
+        </setters>
+    </element>
 </elements>
