@@ -1,31 +1,36 @@
 name: Format Style
 on:
-  pull_request:
-    types: [ opened, reopened, synchronize ]
-    paths:
-      - '**.index'
-      - '**.xml'
-      - 'wiki/**'
-  workflow_dispatch:
-  workflow_call:
+    pull_request:
+        types:
+            [
+                opened,
+                reopened,
+                synchronize
+            ]
+        paths:
+            - "**.index"
+            - "**.xml"
+            - "wiki/**"
+    workflow_dispatch:
+    workflow_call:
 concurrency:
-  group: Format Style
-  cancel-in-progress: true
+    group: Format Style
+    cancel-in-progress: true
 permissions:
-  contents: write
-  pull-requests: write
+    contents: write
+    pull-requests: write
 jobs:
-  format-style:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checking out the repository
-        uses: actions/checkout@main
-      - name: Setting up Python
-        uses: actions/setup-python@main
-        with:
-          python-version: 3.11
-      - name: Running pre-commit
-        uses: pre-commit/action@main
-      - name: Running pre-commit-ci
-        uses: pre-commit-ci/lite-action@main
-        if: always()
+    format-style:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checking out the repository
+              uses: actions/checkout@main
+            - name: Setting up Python
+              uses: actions/setup-python@main
+              with:
+                  python-version: 3.11
+            - name: Running pre-commit
+              uses: pre-commit/action@main
+            - name: Running pre-commit-ci
+              uses: pre-commit-ci/lite-action@main
+              if: always()
