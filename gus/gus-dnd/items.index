@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD Items</name>
         <description>The main entry point for my custom items.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.9">
+        <update version="0.1.1">
             <!-- This file -->
             <file name="items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index" />
         </update>
@@ -13,7 +13,7 @@ version="1.0" encoding="utf-8" ?>
     <files>
         <!-- Wings of the Avariel -->
         <file name="wings-of-the-avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-avariel.xml" />
-        <!-- Wings of the Hells -->
-        <file name="wings-of-the-hells.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-hells.xml" />
+        <!-- Wings of the Tainted -->
+        <file name="wings-of-the-tainted.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-tainted.xml" />
     </files>
 </index>
