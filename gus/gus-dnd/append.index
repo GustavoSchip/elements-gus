@@ -1,0 +1,17 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Gus: DnD Append</name>
+        <description>The main entry point for my custom Append.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="append.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/append.index" />
+        </update>
+    </info>
+    <files>
+        <!-- Append -->
+        <file name="append.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/append/append.xml" />
+    </files>
+</index>

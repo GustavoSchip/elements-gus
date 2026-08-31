@@ -3,9 +3,9 @@ version="1.0" encoding="utf-8" ?>
 <index>
     <info>
         <name>Gus: DnD Weapons</name>
-        <description>The main entry point for my custom weapons.</description>
+        <description>The main entry point for my custom Weapons.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <!-- This file -->
             <file name="weapons.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons.index" />
         </update>

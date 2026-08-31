@@ -3,9 +3,9 @@ version="1.0" encoding="utf-8" ?>
 <index>
     <info>
         <name>Gus: DnD Subraces</name>
-        <description>The main entry point for my custom subraces.</description>
+        <description>The main entry point for my custom Subraces.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.7">
+        <update version="0.0.8">
             <!-- This file -->
             <file name="subraces.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index" />
         </update>
