@@ -1,7 +1,2 @@
 # Auto detect text files and perform LF normalization
 * text=auto eol=lf
-
-# Disable language statistics on . prefixed files and directories
-.* linguist-vendored
-.*/ linguist-vendored
-.*/** linguist-vendored
