@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Wings of the Avariel</name>
         <description>The construction for my custom Wings of the Avariel.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <!-- This file -->
             <file name="wings-of-the-avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-avariel.xml" />
         </update>
@@ -25,9 +25,9 @@ version="1.0" encoding="utf-8" ?>
             <set name="rarity">Legendary</set>
         </setters>
         <rules>
-            <stat bonus="base" name="innate speed:fly" value="30" equipped="[armor:none]" />
-            <stat bonus="base" name="innate speed:fly" value="25" equipped="[armor:light]" />
-            <stat bonus="base" name="innate speed:fly" value="30" requirements="ID_WOTC_DMG_MAGIC_ITEM_ELVEN_CHAIN" />
+            <stat bonus="base" equipped="[armor:none]" name="innate speed:fly" value="30" />
+            <stat bonus="base" equipped="[armor:light]" name="innate speed:fly" value="25" />
+            <stat bonus="base" name="innate speed:fly" requirements="ID_WOTC_DMG_MAGIC_ITEM_ELVEN_CHAIN" value="30" />
         </rules>
     </element>
 </elements>

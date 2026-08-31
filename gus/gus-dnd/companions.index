@@ -3,9 +3,9 @@ version="1.0" encoding="utf-8" ?>
 <index>
     <info>
         <name>Gus: DnD Companions</name>
-        <description>The main entry point for my custom companions.</description>
+        <description>The main entry point for my custom Companions.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.6">
+        <update version="0.0.8">
             <!-- This file -->
             <file name="companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions.index" />
         </update>

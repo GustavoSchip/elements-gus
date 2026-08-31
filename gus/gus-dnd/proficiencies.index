@@ -3,9 +3,9 @@ version="1.0" encoding="utf-8" ?>
 <index>
     <info>
         <name>Gus: DnD Proficiencies</name>
-        <description>The main entry point for my custom proficiencies.</description>
+        <description>The main entry point for my custom Proficiencies.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.2">
+        <update version="0.0.4">
             <!-- This file -->
             <file name="spells.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/proficiencies.index" />
         </update>

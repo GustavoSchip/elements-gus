@@ -1,0 +1,18 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Append</name>
+        <description>The construction for my custom Append.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="append.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/append/append.xml" />
+        </update>
+    </info>
+    <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+        <rules>
+            <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WINGSWORD" type="Proficiency" />
+        </rules>
+    </append>
+</elements>

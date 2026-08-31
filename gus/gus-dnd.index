@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD</name>
         <description>The semi-main entry point for my custom content.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.1.1">
+        <update version="0.1.4">
             <!-- This file -->
             <file name="gus-dnd.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index" />
         </update>
@@ -15,8 +15,12 @@ version="1.0" encoding="utf-8" ?>
         <file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
         <!-- My homebrew companions -->
         <file name="companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions.index" />
+        <!-- My homebrew feats -->
+        <file name="feats.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats.index" />
         <!-- My homebrew proficiencies -->
         <file name="proficiencies.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/proficiencies.index" />
+        <!-- My homebrew append -->
+        <file name="companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/append.index" />
         <!-- My homebrew internal -->
         <file name="internal.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internal.index" />
         <!-- My homebrew items -->
