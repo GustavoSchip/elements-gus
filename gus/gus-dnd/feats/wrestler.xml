@@ -27,7 +27,7 @@ version="1.0" encoding="utf-8" ?>
                     <em>
                         <strong>Forehand Chop.</strong>
                     </em>
-                    You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6 bludgeoning damage. If the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 10 feet away from you.
+                    You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6 bludgeoning damage. If the target is the same size as you or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 10 feet away from you.
                 </li>
                 <li>
                     <em>
@@ -67,10 +67,10 @@ version="1.0" encoding="utf-8" ?>
     <element id="ID_GUS_CLASS_FEATURE_WRESTLER_FOREHAND_CHOP" name="Forehand Chop" source="Gus: DnD" type="Class Feature">
         <requirements>ID_GUS_FEAT_WRESTLER</requirements>
         <description>
-            <p>You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6 bludgeoning damage. If the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 10 feet away from you.</p>
+            <p>You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6 bludgeoning damage. If the target is the same size as you or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 10 feet away from you.</p>
         </description>
         <sheet usage="2/Short Rest">
-            <description>You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6+{{wrestler:damage}} bludgeoning damage. If the target is Large or smaller, it must make a DC {{wrestler:dc}} Strength saving throw. On a failed save, you push the target up to 10 feet away from you.</description>
+            <description>You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6+{{wrestler:damage}} bludgeoning damage. If the target is the same size as you or smaller, it must make a DC {{wrestler:dc}} Strength saving throw. On a failed save, you push the target up to 10 feet away from you.</description>
         </sheet>
     </element>
     <element id="ID_GUS_CLASS_FEATURE_WRESTLER_SUPLEX_SLAM" name="Suplex Slam" source="Gus: DnD" type="Class Feature">
