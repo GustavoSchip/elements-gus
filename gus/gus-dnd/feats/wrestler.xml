@@ -1,0 +1,85 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Wrestler</name>
+        <description>The construction for my custom Wrestler.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.3">
+            <!-- This file -->
+            <file name="wrestler.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/wrestler.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_FEAT_WRESTLER" name="Wrestler" source="Gus: DnD" type="Feat">
+        <requirements>([dex:13]|[str:13])||ID_WOTC_PHB_GRANTS_FEAT_UNLOCKER</requirements>
+        <prerequisite>Dexterity 13 and Strength 13 or higher</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Dexterity 13 and Strength 13 or higher</p>
+            <p>You’ve developed the skills necessary to occasionally perform various wrestling moves in close-quarters combat. You gain the following moves:</p>
+            <ul>
+                <li>
+                    <em>
+                        <strong>Battering Ram.</strong>
+                    </em>
+                    You make an unarmed strike by lowering your head and jumping or charging forward, driving the top of your head into the abdomen of the creature. If the attack hits, the target takes 1d10 bludgeoning damage. You and the target must succeed on a Constitution saving throw or be stunned until the end of your next turn, you have advantage on this saving throw.
+                </li>
+                <li>
+                    <em>
+                        <strong>Forehand Chop.</strong>
+                    </em>
+                    You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6 bludgeoning damage. If the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 10 feet away from you.
+                </li>
+                <li>
+                    <em>
+                        <strong>Suplex Slam.</strong>
+                    </em>
+                    You make an unarmed strike by grabbing a creature of your size or smaller, lifting it overhead, and throwing it down onto its back. The target and all of its equipment must weigh no more than your carrying capacity. If the attack hits, the target takes 1d12 bludgeoning damage and is knocked prone.
+                </li>
+            </ul>
+            <p>Some of your wrestling features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:</p>
+            <p class="indent">
+                <strong>Wrestling save DC</strong>
+                = 8 + your proficiency bonus + your Strength modifier
+            </p>
+        </description>
+        <sheet>
+            <description>Your Wrestling save DC is {{wrestler:dc}} and you know the following wrestling moves: Battering Ram, Forehand Chop and Suplex Slam.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_GUS_CLASS_FEATURE_WRESTLER_BATTERING_RAM" type="Class Feature" />
+            <grant id="ID_GUS_CLASS_FEATURE_WRESTLER_FOREHAND_CHOP" type="Class Feature" />
+            <grant id="ID_GUS_CLASS_FEATURE_WRESTLER_SUPLEX_SLAM" type="Class Feature" />
+            <stat bonus="wrestler" name="wrestler:damage" value="strength:modifier" />
+            <stat name="wrestler:dc" value="8" />
+            <stat name="wrestler:dc" value="proficiency" />
+            <stat name="wrestler:dc" value="strength:modifier" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_WRESTLER_BATTERING_RAM" name="Battering Ram" source="Gus: DnD" type="Class Feature">
+        <requirements>ID_GUS_FEAT_WRESTLER</requirements>
+        <description>
+            <p>You make an unarmed strike by lowering your head and jumping or charging forward, driving the top of your head into the abdomen of the creature. If the attack hits, the target takes 1d10 bludgeoning damage. You and the target must succeed on a Constitution saving throw or be stunned until the end of your next turn, you have advantage on this saving throw.</p>
+        </description>
+        <sheet usage="3/Short Rest">
+            <description>You make an unarmed strike by lowering your head and jumping or charging forward, driving the top of your head into the abdomen of the creature. If the attack hits, the target takes 1d10+{{wrestler:damage}} bludgeoning damage. You and the target must succeed on a DC {{wrestler:dc}} Constitution saving throw or be stunned until the end of your next turn, you have advantage on this saving throw.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_WRESTLER_FOREHAND_CHOP" name="Forehand Chop" source="Gus: DnD" type="Class Feature">
+        <requirements>ID_GUS_FEAT_WRESTLER</requirements>
+        <description>
+            <p>You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6 bludgeoning damage. If the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 10 feet away from you.</p>
+        </description>
+        <sheet usage="2/Short Rest">
+            <description>You make an unarmed strike downward the chest, nape or back of an creature, using the open palm of the hand. If the attack hits, the target takes 1d6+{{wrestler:damage}} bludgeoning damage. If the target is Large or smaller, it must make a DC {{wrestler:dc}} Strength saving throw. On a failed save, you push the target up to 10 feet away from you.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_WRESTLER_SUPLEX_SLAM" name="Suplex Slam" source="Gus: DnD" type="Class Feature">
+        <requirements>ID_GUS_FEAT_WRESTLER</requirements>
+        <description>
+            <p>You make an unarmed strike by grabbing a creature of your size or smaller, lifting it overhead, and throwing it down onto its back. The target and all of its equipment must weigh no more than your carrying capacity. If the attack hits, the target takes 1d12 bludgeoning damage and is knocked prone.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You make an unarmed strike by grabbing a creature of your size or smaller, lifting it overhead, and throwing it down onto its back. The target and all of its equipment must weigh no more than your carrying capacity. If the attack hits, the target takes 1d12+{{wrestler:damage}} bludgeoning damage and is knocked prone.</description>
+        </sheet>
+    </element>
+</elements>

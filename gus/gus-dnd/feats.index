@@ -1,0 +1,17 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Gus: DnD Feats</name>
+        <description>The main entry point for my custom Feats.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="feats.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats.index" />
+        </update>
+    </info>
+    <files>
+        <!-- Internal -->
+        <file name="wrestler.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/wrestler.xml" />
+    </files>
+</index>
