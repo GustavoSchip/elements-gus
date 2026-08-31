@@ -1,17 +1,18 @@
 repos:
-    - repo: https://github.com/pre-commit/pre-commit-hooks
-      rev: v6.0.0
+    - repo: "https://github.com/pre-commit/pre-commit-hooks"
+      rev: "v6.0.0"
       hooks:
-          - id: forbid-submodules
+          - id: "forbid-submodules"
 
-    - repo: local
+    - repo: "local"
       hooks:
-          - id: format-with-prettier
-            name: Format with Prettier
-            entry: prettier --ignore-unknown --write
-            language: node
-            types: [text]
+          - id: "format-with-prettier"
+            name: "Format with Prettier"
+            entry: "prettier --ignore-unknown --write"
+            language: "node"
+            types:
+                - "text"
             additional_dependencies:
-                - prettier@3.9.6
+                - "prettier@3.9.6"
                 - "@prettier/plugin-xml@3.4.2"
-                - prettier-plugin-yaml@1.3.0
+                - "prettier-plugin-yaml@1.3.0"
