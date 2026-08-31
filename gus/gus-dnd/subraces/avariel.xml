@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Avariel</name>
         <description>The construction for my custom Avariel subrace for elves.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <!-- This file -->
             <file name="avariel.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/avariel.xml" />
         </update>
@@ -29,14 +29,12 @@ version="1.0" encoding="utf-8" ?>
             <set modifier="1d4" name="weight">115 lb.</set>
         </setters>
         <rules>
+            <grant name="ID_GUS_RACIAL_TRAIT_AVARIEL_WEAPON_TRAINING" type="Racial Trait" />
             <grant name="ID_GUS_RACIAL_TRAIT_WINGS" type="Racial Trait" />
             <grant id="ID_MM_LANGUAGE_AURAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
             <select name="Customized Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" supports="Custom Race Language||Avariel Language" type="Language" />
         </rules>
     </element>
-    <append id="ID_MM_LANGUAGE_AURAN">
-        <supports>Avariel Language</supports>
-    </append>
     <element id="ID_GUS_RACIAL_TRAIT_WINGS" name="Wings" source="Gus: DnD" type="Racial Trait">
         <description>
             <p>You have a pair of wings that grant you a flying speed of 30 feet. Broad and feathered, they can span up to 10 feet when fully extended. To use this flying speed, you can't be wearing medium or heavy armor.</p>
@@ -47,6 +45,18 @@ version="1.0" encoding="utf-8" ?>
         <rules>
             <stat bonus="base" equipped="[armor:none]||[armor:light]" name="innate speed:fly" value="30" />
             <stat bonus="base" name="innate speed:fly" requirements="ID_WOTC_DMG_MAGIC_ITEM_ELVEN_CHAIN" value="30" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_AVARIEL_WEAPON_TRAINING" name="Avariel Weapon Training" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>You gain proficiency with the Wing Sword.</p>
+        </description>
+        <sheet display="false">
+            <description>You gain proficiency with the Wing Sword.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WINGSWORD" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" type="Proficiency" />
+            <select name="Simple/Martial Weapon or Tool (Melody of the Blade)" number="1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" supports="Weapon||Tool" type="Proficiency" />
         </rules>
     </element>
 </elements>

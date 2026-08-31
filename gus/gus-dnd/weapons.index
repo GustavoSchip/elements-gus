@@ -5,13 +5,13 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD Weapons</name>
         <description>The main entry point for my custom Weapons.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <!-- This file -->
             <file name="weapons.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons.index" />
         </update>
     </info>
     <files>
-        <!-- Wing Sword -->
-        <file name="wing-sword.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons/wing-sword.xml" />
+        <!-- Wingsword -->
+        <file name="wingsword.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons/wingsword.xml" />
     </files>
 </index>

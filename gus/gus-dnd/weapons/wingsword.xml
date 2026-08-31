@@ -2,15 +2,15 @@
 version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Wing Sword</name>
-        <description>The construction for my custom Wing Sword.</description>
+        <name>Wingsword</name>
+        <description>The construction for my custom Wingsword.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <!-- This file -->
-            <file name="wing-sword.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons/wing-sword.xml" />
+            <file name="wingsword.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons/wingsword.xml" />
         </update>
     </info>
-    <element id="ID_GUS_WEAPON_WING_SWORD" name="Wing Sword" source="Gus: DnD" type="Weapon">
+    <element id="ID_GUS_WEAPON_WINGSWORD" name="Wingsword" source="Gus: DnD" type="Weapon">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
             <p />

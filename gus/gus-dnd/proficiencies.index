@@ -5,13 +5,13 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD Proficiencies</name>
         <description>The main entry point for my custom Proficiencies.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <!-- This file -->
             <file name="spells.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/proficiencies.index" />
         </update>
     </info>
     <files>
-        <!-- Wing Sword -->
-        <file name="wing-sword.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/proficiencies/wing-sword.xml" />
+        <!-- Wingsword -->
+        <file name="wingsword.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/proficiencies/wingsword.xml" />
     </files>
 </index>
