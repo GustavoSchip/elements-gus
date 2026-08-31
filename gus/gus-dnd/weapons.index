@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD Weapons</name>
         <description>The main entry point for my custom weapons.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <!-- This file -->
             <file name="weapons.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/weapons.index" />
         </update>

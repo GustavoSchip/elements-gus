@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Wing Sword</name>
         <description>The construction for my custom Wing Sword.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <!-- This file -->
             <file name="wing-sword.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/proficiencies/wing-sword.xml" />
         </update>
