@@ -3,9 +3,9 @@ version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
         <name>Mimic</name>
-        <description>The construction for my custom mimic companion.</description>
+        <description>The construction for my custom Mimic companion.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <!-- This file -->
             <file name="mimic.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/mimic.xml" />
         </update>

@@ -1,0 +1,19 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Gus: DnD Deities</name>
+        <description>The main entry point for my custom Deities.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="deitites.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/deities.index" />
+        </update>
+    </info>
+    <files>
+        <!-- Asgorath -->
+        <file name="asgorath.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/deities/asgorath.xml" />
+        <!-- Nulas -->
+        <file name="nulas.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/deities/nulas.xml" />
+    </files>
+</index>
