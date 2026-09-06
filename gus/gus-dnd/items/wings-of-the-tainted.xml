@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Wings of the Tainted</name>
         <description>The construction for my custom Wings of the Tainted.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.9">
+        <update version="0.1.1">
             <!-- This file -->
             <file name="wings-of-the-tainted.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/wings-of-the-tainted.xml" />
         </update>
@@ -13,7 +13,7 @@ version="1.0" encoding="utf-8" ?>
     <element id="ID_GUS_MAGIC_ITEM_WINGS_OF_THE_TAINTED" name="Wings of the Tainted" source="Gus: DnD" type="Magic Item">
         <description>
             <p>Crafted from the wings of a devil, these roughly jagged wings still carry a trace of their innate magic. Though smaller than those of a normal devil, they can be worn and attuned to by a creature capable of bearing them.</p>
-            <p class="indent">While attuned to the wings, you have a pair of spiked wings that grant you a flying speed of 30 feet. Broad and jagged, they can span up to 7 feet when fully extended. Your flying speed is reduced to 25 feet while wearing light armor and 20 feet while wearing medium armor. You can't use this flying speed while wearing heavy armor.</p>
+            <p class="indent">While attuned to the wings, you have a pair of spiked wings that grant you a flying speed of 25 feet. Broad and jagged, they can span up to 7 feet when fully extended. Your flying speed is reduced to 20 feet while wearing light armor and 15 feet while wearing medium armor. You can't use this flying speed while wearing heavy armor.</p>
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
@@ -25,9 +25,9 @@ version="1.0" encoding="utf-8" ?>
             <set name="rarity">Really Rare</set>
         </setters>
         <rules>
-            <stat bonus="base" equipped="[armor:none]" name="innate speed:fly" value="30" />
-            <stat bonus="base" equipped="[armor:light]" name="innate speed:fly" value="25" />
-            <stat bonus="base" equipped="[armor:medium]" name="innate speed:fly" value="20" />
+            <stat bonus="base" equipped="[armor:none]" name="innate speed:fly" value="25" />
+            <stat bonus="base" equipped="[armor:light]" name="innate speed:fly" value="20" />
+            <stat bonus="base" equipped="[armor:medium]" name="innate speed:fly" value="15" />
         </rules>
     </element>
 </elements>
