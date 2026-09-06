@@ -1,0 +1,95 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Mimic</name>
+        <description>The construction for my custom mimic companion.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="mimic.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/mimic.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_COMPANION_MIMIC" name="Mimic" source="Gus: DnD" type="Companion">
+        <setters>
+            <set name="strength">17</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">5</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">8</set>
+            <set name="ac">12 (natural armor)</set>
+            <set name="hp">58 (9d8+18)</set>
+            <set name="speed">15 ft.</set>
+            <set name="senses">darkvision 60ft., passive Perception 11</set>
+            <set name="languages">—</set>
+            <set name="skills">Stealth +5</set>
+            <set name="type">monstrosity</set>
+            <set name="size">Medium</set>
+            <set name="alignment">Neutral</set>
+            <set name="challenge">2</set>
+            <set name="traits">ID_GUS_COMPANION_TRAIT_MIMIC_SHAPECHANGER,ID_GUS_COMPANION_TRAIT_MIMIC_ADHESIVE,ID_GUS_COMPANION_TRAIT_MIMIC_FALSE_APPEARANCE,ID_GUS_COMPANION_TRAIT_MIMIC_GRAPPLER</set>
+            <set name="actions">ID_GUS_COMPANION_ACTION_MIMIC_PSEUDOPOD,ID_GUS_COMPANION_ACTION_MIMIC_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat bonus="base" name="companion:hp:max" value="58" />
+            <stat bonus="base" name="companion:speed" value="15" />
+            <stat bonus="base" name="companion:stealth:proficiency" value="companion:proficiency" />
+        </rules>
+    </element>
+    <element id="ID_GUS_COMPANION_TRAIT_MIMIC_SHAPECHANGER" name="Shapechanger" source="Gus: DnD" type="Companion Trait">
+        <compendium display="false" />
+        <description>
+            <p>The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</p>
+        </description>
+        <sheet>
+            <description>The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_COMPANION_TRAIT_MIMIC_ADHESIVE" name="Adhesive (Object Form Only)" source="Gus: DnD" type="Companion Trait">
+        <compendium display="false" />
+        <description>
+            <p>The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.</p>
+        </description>
+        <sheet>
+            <description>The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_COMPANION_TRAIT_MIMIC_FALSE_APPEARANCE" name="False Appearance (Object Form Only)" source="Gus: DnD" type="Companion Trait">
+        <compendium display="false" />
+        <description>
+            <p>While the mimic remains motionless, it is indistinguishable from an ordinary object.</p>
+        </description>
+        <sheet>
+            <description>While the mimic remains motionless, it is indistinguishable from an ordinary object.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_COMPANION_TRAIT_MIMIC_GRAPPLER" name="Grappler" source="Gus: DnD" type="Companion Trait">
+        <compendium display="false" />
+        <description>
+            <p>The mimic has advantage on attack rolls against any creature grappled by it.</p>
+        </description>
+        <sheet>
+            <description>The mimic has advantage on attack rolls against any creature grappled by it.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_COMPANION_ACTION_MIMIC_PSEUDOPOD" name="Pseudopod" source="Gus: DnD" type="Companion Action">
+        <compendium display="false" />
+        <description>
+            <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_COMPANION_ACTION_MIMIC_BITE" name="Bite" source="Gus: DnD" type="Companion Action">
+        <compendium display="false" />
+        <description>
+            <p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage.</description>
+        </sheet>
+    </element>
+</elements>
