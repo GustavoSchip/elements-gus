@@ -1,0 +1,75 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Nymph</name>
+        <description>The construction for my custom Nymph race.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="nymph.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/nymph.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_RACE_NYMPH" name="Nymph" source="Gus: DnD" type="Race">
+        <description>
+            <p />
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="names" type="female">Aegle, Aglaia, Alcyone, Amphitrite, Arethusa, Atropos, Calliope, Calypso, Celaeno, Clio, Clotho, Clymene, Chrsothemis, Daphne, Dione, Dryope, Echo, Electra, Erato, Erytheis, Euphrosyne, Euterpe, Galatea, Hesperia, Lachesis, Lotis, Melpomene, Merope, Penelope, Polyhymnia, Procris, Maia, Scylla, Sterope, Taygete, Thalia, Thetis, Urania</set>
+            <set name="names-format">{{name}}</set>
+            <set modifier="2d8" name="height">4'5"</set>
+            <set modifier="1d4" name="weight">80 lb.</set>
+        </setters>
+        <rules>
+            <stat name="charisma" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" value="2" />
+            <stat name="wisdom" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" value="1" />
+            <select name="Custom Ability Score Improvement +2 (Nymph)" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" supports="Custom Ability Score Increase 2" type="Ability Score Improvement" />
+            <select name="Custom Ability Score Improvement +1 (Nymph)" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" supports="Custom Ability Score Increase 1" type="Ability Score Improvement" />
+            <grant id="ID_SIZE_MEDIUM" type="Size" />
+            <stat bonus="base" name="innate speed" value="30" />
+            <stat bonus="base" name="innate speed:swim" value="innate speed" />
+            <grant id="ID_VISION_SUPERIORDARKVISION" type="Vision" />
+            <grant id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
+            <grant id="ID_LANGUAGE_ELVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
+            <grant id="ID_LANGUAGE_SYLVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
+            <select name="Customized Language" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" supports="Custom Race Language" type="Language" />
+            <grant id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY" type="Racial Trait" />
+            <grant id="ID_RACIAL_TRAIT_FEY_ANCESTRY" type="Racial Trait" />
+            <grant id="ID_GUS_RACIAL_TRAIT_NYMPH_BLINDING_BEAUTY" type="Racial Trait" />
+            <grant id="ID_GUS_RACIAL_TRAIT_NYMPH_UNEARTHLY_GRACE" type="Racial Trait" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_NYMPH_BLINDING_BEAUTY" name="Blinding Beauty" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>As an action, you can force all humanoids within 30 feet of you to succeed on a Constitution saving throw or become blinded until the end of your next turn. The DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. Once you use this ability, you can't use it again until you finish a short rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, you can force all humanoids within 30 feet of you to succeed on a DC {{blinding beauty:dc}} Constitution saving throw or become blinded until the end of your next turn. Once you use this ability, you can't use it again until you finish a short rest.</description>
+        </sheet>
+        <rules>
+            <stat name="blinding beauty:dc" value="8" />
+            <stat name="blinding beauty:dc" value="proficiency" />
+            <stat name="blinding beauty:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_NYMPH_UNEARTHLY_GRACE" name="Unearthly Grace" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>While you are wearing no armor and not wielding a shield, your AC is equal to 10 + your Dexterity modifier + your Charisma modifier.</p>
+        </description>
+        <sheet>
+            <description>While you are wearing no armor and not wielding a shield, your AC is equal to {{ac:unearthly grace}}.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:unearthly grace:base" value="10" />
+            <stat name="ac:unearthly grace:dexterity" value="dexterity:modifier" />
+            <stat name="ac:unearthly grace:charisma" value="charisma:modifier" />
+
+            <stat name="ac:unearthly grace" value="ac:unearthly grace:base" />
+            <stat name="ac:unearthly grace" value="ac:unearthly grace:dexterity" />
+            <stat name="ac:unearthly grace" value="ac:unearthly grace:charisma" />
+
+            <stat alt="Unearthly Grace (Nymph)" bonus="calculation" equipped="[armor:none],[shield:none]" name="ac:calculation" value="ac:unearthly grace" />
+        </rules>
+    </element>
+</elements>
