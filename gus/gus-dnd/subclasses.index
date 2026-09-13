@@ -1,0 +1,17 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Gus: DnD Subclasses</name>
+        <description>The main entry point for my custom Subclasses.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="subclasses.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subclasses.index" />
+        </update>
+    </info>
+    <files>
+        <!-- Wild Card -->
+        <file name="wild-card.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subclasses/wild-card.xml" />
+    </files>
+</index>
