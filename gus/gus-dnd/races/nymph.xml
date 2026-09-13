@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Nymph</name>
         <description>The construction for my custom Nymph race.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <!-- This file -->
             <file name="nymph.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/nymph.xml" />
         </update>
@@ -161,6 +161,24 @@ version="1.0" encoding="utf-8" ?>
         <description>
             <p>As an action, you can force all humanoids within 30 feet of you that can see you to succeed on a Constitution saving throw or become blinded until the end of your next turn. The DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. Once you use this ability, you can't use it again until you finish a short rest.</p>
         </description>
+        <sheet display="false" />
+        <rules>
+            <grant id="ID_GUS_CLASS_FEATURE_NYMPH_BLINDING_BEAUTY" type="Class Feature" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_NYMPH_ALLURING_FORM" name="Alluring Form" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>As a bonus action, you can attempt to beguile one humanoid you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or be charmed by you. The DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. While charmed in this way, the target is incapacitated and, if it is more than 5 feet away from you, it must use its movement on its turn to move toward you by the most direct route, stopping within 5 feet of you if it can. The target doesn't avoid opportunity attacks while moving toward you. You must take a bonus action on each of your subsequent turns to maintain the charm. The effect ends immediately if you are incapacitated, if you stop maintaining it, or if the target takes damage from any source other than you. A charmed target can repeat the saving throw at the end of each of its turns. The target can also repeat the saving throw immediately before entering damaging terrain or whenever it takes damage from a source other than you. On a successful saving throw, the effect ends for that target. Once a target succeeds on a saving throw against this trait, it is immune to your Alluring Form for the next 24 hours.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant id="ID_GUS_CLASS_FEATURE_NYMPH_ALLURING_FORM" type="Class Feature" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_NYMPH_BLINDING_BEAUTY" name="Blinding Beauty" source="Gus: DnD" type="Class Feature">
+        <description>
+            <p />
+        </description>
         <sheet action="Action">
             <description usage="{{blinding beauty:count}}/Short Rest">You can force all humanoids within 30 feet of you that can see you to succeed on a DC {{blinding beauty:dc}} Constitution saving throw or become blinded until the end of your next turn.</description>
         </sheet>
@@ -169,12 +187,11 @@ version="1.0" encoding="utf-8" ?>
             <stat name="blinding beauty:dc" value="proficiency" />
             <stat name="blinding beauty:dc" value="charisma:modifier" />
             <stat name="blinding beauty:count" value="1" />
-            <!-- <stat name="blinding beauty:count" value="proficiency" /> -->
         </rules>
     </element>
-    <element id="ID_GUS_RACIAL_TRAIT_NYMPH_ALLURING_FORM" name="Alluring Form" source="Gus: DnD" type="Racial Trait">
+    <element id="ID_GUS_CLASS_FEATURE_NYMPH_ALLURING_FORM" name="Alluring Form" source="Gus: DnD" type="Class Feature">
         <description>
-            <p>As a bonus action, you can attempt to beguile one humanoid you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or be charmed by you. The DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. While charmed in this way, the target is incapacitated and, if it is more than 5 feet away from you, it must use its movement on its turn to move toward you by the most direct route, stopping within 5 feet of you if it can. The target doesn't avoid opportunity attacks while moving toward you. You must take a bonus action on each of your subsequent turns to maintain the charm. The effect ends immediately if you are incapacitated, if you stop maintaining it, or if the target takes damage from any source other than you. A charmed target can repeat the saving throw at the end of each of its turns. The target can also repeat the saving throw immediately before entering damaging terrain or whenever it takes damage from a source other than you. On a successful saving throw, the effect ends for that target. Once a target succeeds on a saving throw against this trait, it is immune to your Alluring Form for the next 24 hours.</p>
+            <p />
         </description>
         <sheet action="Bonus Action">
             <description>You can attempt to beguile one humanoid you can see within 60 feet of you. The target must succeed on a DC {{alluring form:dc}} Wisdom saving throw or be charmed by you. While charmed in this way, the target is incapacitated and, if it is more than 5 feet away from you, it must use its movement on its turn to move toward you by the most direct route, stopping within 5 feet of you if it can. The target doesn't avoid opportunity attacks while moving toward you. You must take a bonus action on each of your subsequent turns to maintain the charm. The effect ends immediately if you are incapacitated, if you stop maintaining it, or if the target takes damage from any source other than you. A charmed target can repeat the saving throw at the end of each of its turns. The target can also repeat the saving throw immediately before entering damaging terrain or whenever it takes damage from a source other than you. On a successful saving throw, the effect ends for that target. Once a target succeeds on a saving throw against this trait, it is immune to your Alluring Form for the next 24 hours.</description>
