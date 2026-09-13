@@ -1,0 +1,28 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Eldritch</name>
+        <description>The construction for my custom Eldritch.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="eldritch.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/invocations/eldritch.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE" name="Beguiling Influence" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <description>
+            <p>You gain expertise in the Deception and Persuasion skills.</p>
+        </description>
+        <sheet>
+            <description>You gain expertise in the Deception and Persuasion skills.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_PROFICIENCY_SKILL_DECEPTION" type="Proficiency" />
+            <grant id="ID_PROFICIENCY_SKILL_PERSUASION" type="Proficiency" />
+            <grant id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_DECEPTION" type="Proficiency" />
+            <grant id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_PERSUASION" type="Proficiency" />
+        </rules>
+    </element>
+</elements>
