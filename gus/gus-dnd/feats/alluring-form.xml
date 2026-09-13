@@ -1,0 +1,39 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Alluring Form</name>
+        <description>The construction for my custom Alluring Form.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="alluring-form.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/alluring-form.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_FEAT_ALLURING_FORM" name="Alluring Form" source="Gus: DnD" type="Feat">
+        <requirements>ID_INTERNAL_GRANT_RACE_NYMPH||ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE||ID_WOTC_PHB_GRANTS_FEAT_UNLOCKER</requirements>
+        <prerequisite>Nymph</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Nymph</p>
+            <p>As a bonus action, you can attempt to beguile one humanoid you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or be charmed by you. The DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. While charmed in this way, the target is incapacitated and, if it is more than 5 feet away from you, it must use its movement on its turn to move toward you by the most direct route, stopping within 5 feet of you if it can. The target doesn't avoid opportunity attacks while moving toward you. You must take a bonus action on each of your subsequent turns to maintain the charm. The effect ends immediately if you are incapacitated, if you stop maintaining it, or if the target takes damage from any source other than you. A charmed target can repeat the saving throw at the end of each of its turns. The target can also repeat the saving throw immediately before entering damaging terrain or whenever it takes damage from a source other than you. On a successful saving throw, the effect ends for that target. Once a target succeeds on a saving throw against this trait, it is immune to your Alluring Form for the next 24 hours.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant id="ID_GUS_CLASS_FEATURE_ALLURING_FORM" type="Class Feature" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ALLURING_FORM" name="Alluring Form" source="Gus: DnD" type="Class Feature">
+        <requirements>ID_GUS_FEAT_ALLURING_FORM</requirements>
+        <description>
+            <p />
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can attempt to beguile one humanoid you can see within 60 feet of you. The target must succeed on a DC {{alluring form:dc}} Wisdom saving throw or be charmed by you. While charmed in this way, the target is incapacitated and, if it is more than 5 feet away from you, it must use its movement on its turn to move toward you by the most direct route, stopping within 5 feet of you if it can. The target doesn't avoid opportunity attacks while moving toward you. You must take a bonus action on each of your subsequent turns to maintain the charm. The effect ends immediately if you are incapacitated, if you stop maintaining it, or if the target takes damage from any source other than you. A charmed target can repeat the saving throw at the end of each of its turns. The target can also repeat the saving throw immediately before entering damaging terrain or whenever it takes damage from a source other than you. On a successful saving throw, the effect ends for that target. Once a target succeeds on a saving throw against this trait, it is immune to your Alluring Form for the next 24 hours.</description>
+        </sheet>
+        <rules>
+            <stat name="alluring form:dc" value="8" />
+            <stat name="alluring form:dc" value="proficiency" />
+            <stat name="alluring form:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+</elements>

@@ -1,0 +1,28 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Titania</name>
+        <description>The construction for my custom Titania deity.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="titania.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/deities/titania.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_DEITY_TITANIA" name="Titania" source="Gus: DnD" type="Deity">
+        <description>
+            <p class="flavor">god of faeries</p>
+        </description>
+        <setters>
+            <set name="setting">Forgotten Realms</set>
+            <set name="alignment">CG</set>
+            <set name="domains">Life, Light</set>
+            <set name="symbol">A white diamond</set>
+            <set name="gender">female</set>
+        </setters>
+        <sheet>
+            <description>god of faeries</description>
+        </sheet>
+    </element>
+</elements>

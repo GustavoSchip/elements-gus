@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD</name>
         <description>The semi-main entry point for my custom content.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.1.5">
+        <update version="0.1.8">
             <!-- This file -->
             <file name="gus-dnd.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index" />
         </update>
@@ -25,10 +25,16 @@ version="1.0" encoding="utf-8" ?>
         <file name="companions.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/append.index" />
         <!-- My homebrew internal -->
         <file name="internal.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internal.index" />
+        <!-- My homebrew languages -->
+        <file name="languages.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/languages.index" />
+        <!-- My homebrew invocations -->
+        <file name="invocations.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/invocations.index" />
         <!-- My homebrew items -->
         <file name="items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index" />
         <!-- My homebrew spells -->
         <file name="spells.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells.index" />
+        <!-- My homebrew races -->
+        <file name="races.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races.index" />
         <!-- My homebrew subraces -->
         <file name="subraces.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index" />
         <!-- My homebrew weapons -->

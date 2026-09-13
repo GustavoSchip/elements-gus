@@ -1,0 +1,24 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Latin</name>
+        <description>The construction for my custom Latin language.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="latin.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/languages/latin.xml" />
+        </update>
+    </info>
+    <element id="ID_LANGUAGE_LATIN" name="Latin" source="Aurora Legacy Essentials" type="Language">
+        <supports>Standard</supports>
+        <description>
+            <p>Typically spoken by Romans.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+            <set name="speakers">Humans</set>
+            <set name="script">Common</set>
+        </setters>
+    </element>
+</elements>

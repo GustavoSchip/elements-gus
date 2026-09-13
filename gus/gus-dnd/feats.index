@@ -5,13 +5,17 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD Feats</name>
         <description>The main entry point for my custom Feats.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <!-- This file -->
             <file name="feats.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats.index" />
         </update>
     </info>
     <files>
-        <!-- Internal -->
+        <!-- Wrestler -->
         <file name="wrestler.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/wrestler.xml" />
+        <!-- Blinding Beauty -->
+        <file name="blinding-beauty.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/blinding-beauty.xml" />
+        <!-- Alluring Form -->
+        <file name="alluring-form.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/alluring-form.xml" />
     </files>
 </index>
