@@ -1,0 +1,25 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Gus: DnD Internal</name>
+        <description>The main entry point for my custom Internal.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.5">
+            <!-- This file -->
+            <file name="internals.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internals.index" />
+        </update>
+    </info>
+    <files>
+        <!-- Creature Types -->
+        <file name="creature-types.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internals/creature-types.xml" />
+        <!-- Damage Immunities -->
+        <file name="damage-immunities.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internals/damage-immunities.xml" />
+        <!-- Damage Resistances -->
+        <file name="damage-resistances.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internals/damage-resistances.xml" />
+        <!-- Damage Vulnerabilities -->
+        <file name="damage-vulnerabilities.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internals/damage-vulnerabilities.xml" />
+        <!-- Grants -->
+        <file name="grants.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internals/grants.xml" />
+    </files>
+</index>

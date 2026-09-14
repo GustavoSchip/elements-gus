@@ -1,0 +1,29 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Coastline Dryad</name>
+        <description>The construction for my custom Coastline subrace for dryads.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.1.1">
+            <!-- This file -->
+            <file name="coastline-dryad.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/coastline-dryad.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_SUB_RACE_COASTLINE_DRYAD" name="Coastline Dryad" source="Gus: DnD" type="Sub Race">
+        <supports>Dryad Lineage</supports>
+        <description>
+            <p>You have a swim speed equal to your walking speed. Starting at 3rd level, you can cast the Fog Cloud spell with this trait. Starting at 5th level, you can also cast Lesser Restoration with this trait. Once you cast Fog Cloud or Lesser Restoration with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this species).</p>
+        </description>
+        <sheet>
+            <description level="3">You can cast Fog Cloud once per long rest. Your spellcasting ability is {{spellcasting:natures-magician}}.</description>
+            <description level="5">You can cast Fog Cloud and Lesser Restoration once per long rest each. Your spellcasting ability is {{spellcasting:natures-magician}}.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_INTERNAL_GRANT_SUBRACE_COASTLINE_DRYAD" type="Grants" />
+            <stat bonus="base" name="innate speed:swim" value="innate speed" />
+            <grant id="ID_PHB_SPELL_FOG_CLOUD" level="3" type="Spell" />
+            <grant id="ID_PHB_SPELL_LESSER_RESTORATION" level="5" type="Spell" />
+        </rules>
+    </element>
+</elements>

@@ -1,4 +1,4 @@
-# Gus
+# Gus: DnD
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/GustavoSchip/elements-gus/master.svg)](https://results.pre-commit.ci/latest/github/GustavoSchip/elements-gus/master)
 

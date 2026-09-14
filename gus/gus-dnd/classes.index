@@ -1,0 +1,17 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Gus: DnD Classes</name>
+        <description>The main entry point for my custom Classes.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="classes.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/classes.index" />
+        </update>
+    </info>
+    <files>
+        <!-- Wip -->
+        <!-- <file name="wip.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/classes/wip.xml" /> -->
+    </files>
+</index>

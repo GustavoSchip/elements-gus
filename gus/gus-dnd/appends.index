@@ -1,0 +1,19 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Gus: DnD Append</name>
+        <description>The main entry point for my custom Append.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.3">
+            <!-- This file -->
+            <file name="appends.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/appends.index" />
+        </update>
+    </info>
+    <files>
+        <!-- Auran -->
+        <file name="auran.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/appends/auran.xml" />
+        <!-- Proficiency -->
+        <file name="proficiency.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/appends/proficiency.xml" />
+    </files>
+</index>

@@ -1,0 +1,29 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Desert Dryad</name>
+        <description>The construction for my custom Desert subrace for dryads.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.1.1">
+            <!-- This file -->
+            <file name="desert-dryad.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/desert-dryad.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_SUB_RACE_DESERT_DRYAD" name="Desert Dryad" source="Gus: DnD" type="Sub Race">
+        <supports>Dryad Lineage</supports>
+        <description>
+            <p>You have proficiency in the Stealth skill. Starting at 3rd level, you can cast the Silent Image spell with this trait. Starting at 5th level, you can also cast Heat Metal with this trait. Once you cast Silent Image or Heat Metal with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this species).</p>
+        </description>
+        <sheet>
+            <description level="3">You are proficient in Stealth. You can cast Silent Image once per long rest. Your spellcasting ability is {{spellcasting:natures-magician}}.</description>
+            <description level="5">You are proficient in Stealth. You can cast Silent Image and Heat Metal once per long rest each. Your spellcasting ability is {{spellcasting:desert-dryad}}.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_INTERNAL_GRANT_SUBRACE_DESERT_DRYAD" type="Grants" />
+            <grant id="ID_PROFICIENCY_SKILL_STEALTH" type="Proficiency" />
+            <grant id="ID_PHB_SPELL_SILENT_IMAGE" level="3" type="Spell" />
+            <grant id="ID_PHB_SPELL_HEAT_METAL" level="5" type="Spell" />
+        </rules>
+    </element>
+</elements>

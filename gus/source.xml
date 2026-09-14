@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD</name>
         <description>The source definitions for my custom content.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.9">
+        <update version="0.1.1">
             <!-- This file -->
             <file name="source.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/source.xml" />
         </update>
@@ -17,10 +17,16 @@ version="1.0" encoding="utf-8" ?>
         <setters>
             <set name="abbreviation">Gus</set>
             <set name="url">https://github.com/GustavoSchip/elements-gus/</set>
+            <set name="image">https://avatars.githubusercontent.com/u/50411615</set>
+            <set name="errata">https://github.com/GustavoSchip/elements-gus/commits/master/</set>
             <set name="author" url="https://github.com/GustavoSchip/">Gustavo Schip</set>
+            <set name="official">false</set>
+            <set name="core">false</set>
+            <set name="supplement">false</set>
             <set name="homebrew">true</set>
             <set name="playtest">true</set>
             <set name="incomplete">true</set>
+            <set name="release">20240223</set>
             <set name="information">This homebrew is probably not legal in Adventurers League.</set>
         </setters>
     </element>

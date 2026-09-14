@@ -1,0 +1,80 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Mimicule</name>
+        <description>The construction for my custom Mimicule companion.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="mimicule.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/mimicule.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_COMPANION_MIMICULE" name="Mimicule" source="Gus: DnD" type="Companion">
+        <supports>Familiar</supports>
+        <description>
+            <p>If your DM allows, a mimicule can be your familiar, and can be summoned as a spirit with the Find Familiar spell.</p>
+        </description>
+        <setters>
+            <set name="strength">10</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">11</set>
+            <set name="intelligence">5</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">8</set>
+            <set name="ac">11 (Natural Armor)</set>
+            <set name="hp">9 (2d8)</set>
+            <set name="speed">10 ft.</set>
+            <set name="senses">Darkvision 60 ft., passive Perception 11</set>
+            <set name="languages">—</set>
+            <set name="skills">Stealth +5</set>
+            <set name="immunities">Acid</set>
+            <set name="condition immunities">Prone</set>
+            <set name="type">Monstrosity (shapechanger)</set>
+            <set name="size">Tiny</set>
+            <set name="alignment">neutral</set>
+            <set name="challenge">0</set>
+            <set name="traits">ID_GUS_COMPANION_TRAIT_MIMICULE_SHAPECHANGER,ID_GUS_COMPANION_TRAIT_MIMICULE_ADHESIVE,ID_GUS_COMPANION_TRAIT_MIMICULE_FALSE_APPEARANCE</set>
+            <set name="actions">ID_GUS_COMPANION_ACTION_MIMICULE_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="11" />
+            <stat bonus="base" name="companion:hp:max" value="9" />
+            <stat bonus="base" name="companion:speed" value="10" />
+            <stat bonus="base" name="companion:stealth:proficiency" value="companion:proficiency" />
+            <stat bonus="double" name="companion:stealth:proficiency" value="companion:proficiency" />
+        </rules>
+    </element>
+    <element id="ID_GUS_COMPANION_TRAIT_MIMICULE_SHAPECHANGER" name="Shapechanger" source="Gus: DnD" type="Companion Trait">
+        <description>
+            <p>The mimicule can use its action to polymorph into a tiny object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</p>
+        </description>
+        <sheet>
+            <description>The mimicule can use its action to polymorph into a tiny object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_COMPANION_TRAIT_MIMICULE_ADHESIVE" name="Adhesive (Object Form Only)" source="Gus: DnD" type="Companion Trait">
+        <description>
+            <p>The mimicule can choose to adhere to anything that touches it. A Medium or smaller creature adhered to the mimicule is also grappled by it (escape DC 10). Ability checks made to escape this grapple have disadvantage.</p>
+        </description>
+        <sheet>
+            <description>The mimicule can choose to adhere to anything that touches it. A Medium or smaller creature adhered to the mimicule is also grappled by it (escape DC 10). Ability checks made to escape this grapple have disadvantage.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_COMPANION_TRAIT_MIMICULE_FALSE_APPEARANCE" name="False Appearance (Object Form Only)" source="Gus: DnD" type="Companion Trait">
+        <description>
+            <p>While the mimicule remains motionless, it is indistinguishable from an ordinary object.</p>
+        </description>
+        <sheet>
+            <description>While the mimicule remains motionless, it is indistinguishable from an ordinary object.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_COMPANION_ACTION_MIMICULE_BITE" name="Bite" source="Gus: DnD" type="Companion Action">
+        <description>
+            <p>Melee Weapon Attack: +2 to hit, reach 5ft., one target. Hit: 2 (1d4) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +2 to hit, reach 5ft., one target. Hit: 2 (1d4) piercing damage.</description>
+        </sheet>
+    </element>
+</elements>
