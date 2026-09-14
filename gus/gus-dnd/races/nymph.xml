@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Nymph</name>
         <description>The construction for my custom Nymph race.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <!-- This file -->
             <file name="nymph.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/nymph.xml" />
         </update>
@@ -152,7 +152,6 @@ version="1.0" encoding="utf-8" ?>
             <stat name="ac:unearthly grace" value="ac:unearthly grace:base" />
             <stat name="ac:unearthly grace" value="ac:unearthly grace:dexterity" />
             <stat name="ac:unearthly grace" value="ac:unearthly grace:charisma" />
-
             <stat alt="Unearthly Grace (Nymph)" bonus="calculation" equipped="[armor:none],[shield:none]" name="ac:calculation" value="ac:unearthly grace" />
         </rules>
     </element>
