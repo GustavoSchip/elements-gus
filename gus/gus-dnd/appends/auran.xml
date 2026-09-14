@@ -1,0 +1,16 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Auran</name>
+        <description>The construction for my custom Auran.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="auran.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/appends/auran.xml" />
+        </update>
+    </info>
+    <append id="ID_MM_LANGUAGE_AURAN">
+        <supports>Avariel Language</supports>
+    </append>
+</elements>
