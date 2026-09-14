@@ -5,14 +5,18 @@ version="1.0" encoding="utf-8" ?>
         <name>Grants</name>
         <description>The construction for my custom Grants.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.1">
+        <update version="0.0.3">
             <!-- This file -->
             <file name="grants.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internals/grants.xml" />
         </update>
     </info>
     <element id="ID_INTERNAL_GRANT_RACE_NYMPH" name="Race Nymph" source="Internal" type="Grants" />
+    <element id="ID_INTERNAL_GRANT_RACE_DRYAD" name="Race Dryad" source="Internal" type="Grants" />
     <element id="ID_INTERNAL_GRANT_SUBRACE_AVARIEL" name="Subrace Avariel" source="Internal" type="Grants" />
     <element id="ID_INTERNAL_GRANT_SUBRACE_ELADRIN" name="Subrace Eladrin" source="Internal" type="Grants" />
     <element id="ID_INTERNAL_GRANT_SUBRACE_ARACHNIE" name="Subrace Arachnie" source="Internal" type="Grants" />
     <element id="ID_INTERNAL_GRANT_SUBRACE_ISILMNIR_EL" name="Subrace Isilmnir’el" source="Internal" type="Grants" />
+    <element id="ID_INTERNAL_GRANT_SUBRACE_COASTLINE_DRYAD" name="Subrace Coastline" source="Internal" type="Grants" />
+    <element id="ID_INTERNAL_GRANT_SUBRACE_DESERT_DRYAD" name="Subrace Desert" source="Internal" type="Grants" />
+    <element id="ID_INTERNAL_GRANT_SUBRACE_WOODLAND_DRYAD" name="Subrace Woodland" source="Internal" type="Grants" />
 </elements>

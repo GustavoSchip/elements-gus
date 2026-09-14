@@ -5,12 +5,13 @@ version="1.0" encoding="utf-8" ?>
         <name>Mimic</name>
         <description>The construction for my custom Mimic companion.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <!-- This file -->
             <file name="mimic.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/companions/mimic.xml" />
         </update>
     </info>
     <element id="ID_GUS_COMPANION_MIMIC" name="Mimic" source="Gus: DnD" type="Companion">
+        <supports>Companion</supports>
         <setters>
             <set name="strength">17</set>
             <set name="dexterity">12</set>

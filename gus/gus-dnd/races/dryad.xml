@@ -1,0 +1,151 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Dryad</name>
+        <description>The construction for my custom Dryad race.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="dryad.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/dryad.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_RACE_DRYAD" name="Dryad" source="Gus: DnD" type="Race">
+        <description>
+            <p>From tempestuous ocean, to trembling forest, to stark, belligerent mountainside, anywhere the natural world breathes freely, dryads call home. Typically solitary folk, dryads are most content among the company of one another and the solace of nature.</p>
+            <p>Throughout history, most clashes between dryads and other species have been in response to the other’s aspirations of conquest and domination negatively impacting the natural world. Dryads have a reputation for civility and patience, but it swiftly veers into ruinous fury and retribution when harm is done to nature. Many dryads proudly declare themselves as protectors of The World, and value the lives of simple beasts, plants, and even mountains as equal to those of “intelligent” beings.</p>
+            <h4>DRYAD TRAITS</h4>
+            <p class="indent">
+                <strong>
+                    <em>Ability Score Increase.</em>
+                </strong>
+                Your Wisdom score increases by 2 and your Constition score increases by 1.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Creature Type.</em>
+                </strong>
+                You are a Humanoid.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Age.</em>
+                </strong>
+                Dryads mature slower than humans, reaching adulthood at around 30 years of age. They can live for up to 300 years.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Size.</em>
+                </strong>
+                Dryads vary greatly in size. Your size is Medium.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Speed.</em>
+                </strong>
+                Your walking speed is 30 feet.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Chlorophyll.</em>
+                </strong>
+                If you start your turn in direct sunlight, your base walking speed increases by 10 feet until the end of that turn.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Nature’s Magician.</em>
+                </strong>
+                You know one cantrip of your choice from the Druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this species).
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Possess Plant.</em>
+                </strong>
+                As an action, you can possess a non-magical plant within 5 feet of you, meddling your body and gear into the body of the plant. While possessing it, you cannot move or talk, but you can hear and see as normal. You can’t take actions, except to use a bonus action to leave the plant, at which time you appear in an unoccupied space within 5 feet of it. While possessed, the plant gains the awakened shrub stat block, except its size changes to match the size of the plant you possessed, and it shares your place in initiative and obeys your mental commands (no action required). If the plant is reduced to 0 hit points, you are ejected from it, landing prone in an unoccupied space within 5 feet of it.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Languages.</em>
+                </strong>
+                Your character can speak, read, and write Common and one other language that you and your DM agree is appropriate for the character.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Dryad Lineage.</em>
+                </strong>
+                There are many types of Dryad. Choose your lineage from one of the following lineages and gain its benefits.
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" value="2" />
+            <stat name="constitution" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" value="1" />
+            <select name="Custom Ability Score Improvement +2 (Dryad)" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Custom Ability Score Increase 2" type="Ability Score Improvement" />
+            <select name="Custom Ability Score Improvement +1 (Dryad)" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Custom Ability Score Increase 1" type="Ability Score Improvement" />
+            <grant id="ID_INTERNAL_GRANT_RACE_DRYAD" type="Grants" />
+            <grant id="ID_SIZE_MEDIUM" type="Size" />
+            <grant id="ID_INTERNAL_GRANT_RACE_DRYAD" type="Grants" />
+            <stat bonus="base" name="innate speed" value="30" />
+            <grant id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
+            <select name="Language (Dryad)" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" supports="Standard||Exotic" type="Language" />
+            <select name="Customized Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" supports="Custom Race Language" type="Language" />
+            <grant id="ID_GUS_RACIAL_TRAIT_DRYAD_CHLOROPHYLL" type="Racial Trait" />
+            <grant id="ID_GUS_RACIAL_TRAIT_DRYAD_NATURES_MAGICIAN" type="Racial Trait" />
+            <grant id="ID_GUS_RACIAL_TRAIT_DRYAD_POSSESS_PLANT" type="Racial Trait" />
+            <select name="Dryad Lineage" supports="Dryad Lineage" type="Sub Race" />
+        </rules>
+    </element>
+
+    <element id="ID_GUS_RACIAL_TRAIT_DRYAD_CHLOROPHYLL" name="Chlorophyll" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>If you start your turn in direct sunlight, your base walking speed increases by 10 feet until the end of that turn.</p>
+        </description>
+        <sheet>
+            <description>If you start your turn in direct sunlight, your speed increases by 10 feet until the end of the turn.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_DRYAD_NATURES_MAGICIAN" name="Nature’s Magician" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>You know one cantrip of your choice from the Druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this species).</p>
+        </description>
+        <sheet>
+            <description>You know a Druid cantrip. Your spellcasting ability is {{spellcasting:natures-magician}}.</description>
+        </sheet>
+        <rules>
+            <select name="Cantrip (Nature's Magician)" supports="Druid,0" type="Spell" />
+            <select name="Spellcasting Ability (Nature's Magician)" supports="Nature's Magician Ability" type="Racial Trait" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_DRYAD_NATURES_MAGICIAN_INT" name="Nature's Magician (Intelligence)" source="Gus: DnD" type="Racial Trait">
+        <supports>Nature's Magician Ability</supports>
+        <description />
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="spellcasting:natures-magician" value="Intelligence" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_DRYAD_NATURES_MAGICIAN_WIS" name="Nature's Magician (Wisdom)" source="Gus: DnD" type="Racial Trait">
+        <supports>Nature's Magician Ability</supports>
+        <description />
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="spellcasting:natures-magician" value="Wisdom" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_DRYAD_NATURES_MAGICIAN_CHA" name="Nature's Magician (Charisma)" source="Gus: DnD" type="Racial Trait">
+        <supports>Nature's Magician Ability</supports>
+        <description />
+        <sheet display="false" />
+        <rules>
+            <stat inline="true" name="spellcasting:natures-magician" value="Charisma" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_DRYAD_POSSESS_PLANT" name="Possess Plant" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>As an action, you can possess a non-magical plant within 5 feet of you, meddling your body and gear into the body of the plant. While possessing it, you cannot move or talk, but you can hear and see as normal. You can’t take actions, except to use a bonus action to leave the plant, at which time you appear in an unoccupied space within 5 feet of it. While possessed, the plant gains the awakened shrub stat block, except its size changes to match the size of the plant you possessed, and it shares your place in initiative and obeys your mental commands (no action required). If the plant is reduced to 0 hit points, you are ejected from it, landing prone in an unoccupied space within 5 feet of it.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can possess a non-magical plant within 5ft. While possessed, you can't move, talk, or take actions (except a bonus action to leave). The plant uses the awakened shrub stat block, shares your initiative, and obeys your mental commands. If it drops to 0 HP, you are ejected prone.</description>
+        </sheet>
+    </element>
+</elements>

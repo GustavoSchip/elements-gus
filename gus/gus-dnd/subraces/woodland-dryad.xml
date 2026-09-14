@@ -1,0 +1,29 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Woodland Dryad</name>
+        <description>The construction for my custom Woodland subrace for dryads.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.1.1">
+            <!-- This file -->
+            <file name="woodland-dryad.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/woodland-dryad.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_SUB_RACE_WOODLAND_DRYAD" name="Woodland Dryad" source="Gus: DnD" type="Sub Race">
+        <supports>Dryad Lineage</supports>
+        <description>
+            <p>You have proficiency in the Nature skill. Starting at 3rd level, you can cast the Cure Wounds spell with this trait. Starting at 5th level, you can also cast Enhance Ability with this trait. Once you cast Cure Wounds or Enhance Ability with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this species).</p>
+        </description>
+        <sheet>
+            <description level="3">You can cast Cure Wounds once per long rest. Your spellcasting ability is {{spellcasting:natures-magician}}.</description>
+            <description level="5">You can cast Cure Wounds and Enhance Ability once per long rest each. Your spellcasting ability is {{spellcasting:natures-magician}}.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_INTERNAL_GRANT_SUBRACE_WOODLAND_DRYAD" type="Grants" />
+            <grant id="ID_PROFICIENCY_SKILL_NATURE" type="Proficiency" />
+            <grant id="ID_PHB_SPELL_CURE_WOUNDS" level="3" type="Spell" />
+            <grant id="ID_PHB_SPELL_ENHANCE_ABILITY" level="5" type="Spell" />
+        </rules>
+    </element>
+</elements>
