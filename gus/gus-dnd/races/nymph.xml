@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Nymph</name>
         <description>The construction for my custom Nymph race.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <!-- This file -->
             <file name="nymph.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/nymph.xml" />
         </update>
@@ -82,7 +82,7 @@ version="1.0" encoding="utf-8" ?>
                 <strong>
                     <em>Unearthly Grace.</em>
                 </strong>
-                Instead of wearing armor, nymphs rely on their supernatural grace to protect themselves. You cannot wear armor, helmets, or gauntlets, nor can you wield a shield. This restriction does not prevent you from wearing clothing, jewelry, or other items that do not function as armor. Your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier.
+                Instead of wearing armor, nymphs rely on their supernatural grace to protect themselves. You cannot wear armor, helmets, greaves, gauntlets or sollerets, nor can you wield a shield. This restriction does not prevent you from wearing clothing, jewelry, or other items that do not function as armor. Your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier.
             </p>
             <p class="indent">
                 <strong>
@@ -140,10 +140,10 @@ version="1.0" encoding="utf-8" ?>
     </element>
     <element id="ID_GUS_RACIAL_TRAIT_NYMPH_UNEARTHLY_GRACE" name="Unearthly Grace" source="Gus: DnD" type="Racial Trait">
         <description>
-            <p>Instead of wearing armor, nymphs rely on their supernatural grace to protect themselves. You cannot wear armor, helmets, or gauntlets, nor can you wield a shield. This restriction does not prevent you from wearing clothing, jewelry, or other items that do not function as armor. Your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier.</p>
+            <p>Instead of wearing armor, nymphs rely on their supernatural grace to protect themselves. You cannot wear armor, helmets, greaves, gauntlets or sollerets, nor can you wield a shield. This restriction does not prevent you from wearing clothing, jewelry, or other items that do not function as armor. Your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier.</p>
         </description>
         <sheet>
-            <description>You cannot wear armor, helmets, or gauntlets, nor can you wield a shield. This restriction does not prevent you from wearing clothing, jewelry, or other items that do not function as armor. your AC is equal to {{ac:unearthly grace}}.</description>
+            <description>You cannot wear armor, helmets, greaves, gauntlets or sollerets, nor can you wield a shield. This restriction does not prevent you from wearing clothing, jewelry, or other items that do not function as armor. your AC is equal to {{ac:unearthly grace}}.</description>
         </sheet>
         <rules>
             <stat name="ac:unearthly grace:base" value="10" />
