@@ -13,6 +13,14 @@ version="1.0" encoding="utf-8" ?>
     <element id="ID_GUS_SUB_RACE_NAIAD" name="Naiad" source="Gus: DnD" type="Sub Race">
         <supports>Nymph Lineage</supports>
         <description>
+            <!-- <p class="flavor"></p> -->
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>Naiads are fair maidens of fey origin associated with water. They are usually fair-skinned, of moderate height, and with hair that ranges from black, brown, and blonde. Their hair is often wet, though always luscious. Eye colors for naiads differ much like how they do for humans. In general, it is very hard to tell a naiad from a normal human woman that just emerged from a bath. There are some tells, though. For example, naiads are never seen wearing heavy clothing even when in cold weather. They wear flowing silks with light, pastel-colored tones. Their skin is also cool and usually moist, leading some to almost believe they are partially made of water.</p>
+            <h4>HISTORY</h4>
+            <p>Naiads are historically fae that are tied with water. Among the fair folk, they align best with fairies and pixies. Like their air-flying cousins, naiads can be mischievous, too! Their tricks can be more dangerous, however, and will often end with someone drowning. However, naiads are also more human in some ways. There are stories of naiads through history that fell for elves and even humans, taking them as lovers and bearing them fae-touched young.</p>
+            <h4>SOCIETY</h4>
+            <p>The naiad race is composed entirely of female figures. They reside in areas of water, usually those of natural origin. So, you won't find a naiad often in a manmade canal, but you will find them in rivers and springs. If a fountain is built over a natural spring, the naiad may continue to reside there as well. Of recent, naiads are associated closer with the fair folk, with roots ingrained in nature like that of dryads or even eladrin. Due to the pollution of waters, naiads are no longer as widespread as they used to be. Instead, they remain closer to fonts of energy leaking from the Feywild into waters, like special creeks or ponds. They are usually thus neighbors to other fey creatures.</p>
+            <p class="indent">Naiads can be territorial and take offense to those who trespass on their waters. They are often rooted to their origin as a result, and will die defending their home. However, some naiads have taken it upon themselves to travel, leaving their own bodies of water to venture into the world and help salvage nature before it is all despoiled.</p>
             <h4>NAIAD TRAITS</h4>
             <p>Your naiad character has a variety of supernatural abilities, due to their affinity with water.</p>
             <p class="indent">
