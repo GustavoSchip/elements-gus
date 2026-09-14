@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD</name>
         <description>The semi-main entry point for my custom content.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.2.3">
+        <update version="0.2.4">
             <!-- This file -->
             <file name="gus-dnd.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd.index" />
         </update>
@@ -35,6 +35,8 @@ version="1.0" encoding="utf-8" ?>
         <file name="spells.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/spells.index" />
         <!-- My homebrew races -->
         <file name="races.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races.index" />
+        <!-- My homebrew classes -->
+        <file name="classes.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/classes.index" />
         <!-- My homebrew subraces -->
         <file name="subraces.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces.index" />
         <!-- My homebrew subclasses -->
