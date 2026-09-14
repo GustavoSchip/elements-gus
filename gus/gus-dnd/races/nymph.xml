@@ -127,7 +127,7 @@ version="1.0" encoding="utf-8" ?>
             <grant id="ID_GUS_RACIAL_TRAIT_NYMPH_FEY_HERITAGE" type="Racial Trait" />
             <grant id="ID_GUS_RACIAL_TRAIT_NYMPH_UNEARTHLY_GRACE" type="Racial Trait" />
             <grant id="ID_GUS_RACIAL_TRAIT_NYMPH_BLINDING_BEAUTY" type="Racial Trait" />
-            <select name="Nymph Lineage" optional="true" supports="Nymph" type="Race Variant" />
+            <select name="Nymph Lineage" optional="true" supports="Nymph Lineage" type="Race Variant" />
         </rules>
     </element>
     <element id="ID_GUS_RACIAL_TRAIT_NYMPH_FEY_HERITAGE" name="Fey Heritage" source="Gus: DnD" type="Racial Trait">
