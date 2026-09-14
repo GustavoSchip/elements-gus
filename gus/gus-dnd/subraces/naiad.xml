@@ -13,7 +13,7 @@ version="1.0" encoding="utf-8" ?>
     <element id="ID_GUS_SUB_RACE_NAIAD" name="Naiad" source="Gus: DnD" type="Sub Race">
         <supports>Nymph Lineage</supports>
         <description>
-            <!-- <p class="flavor"></p> -->
+            <p class="flavor">Naiads live in and near water. They might be spotted among rivers and lakes, on isolated shores, or amid coral labyrinths and deep sea fumaroles. Wherever rivers and seas show their variety and force, naiads gather to revel in nature's might. Individual naiads often grow fixated with a single type or body of water, potentially preferring a deep sea trench, coastline, or river system above all others. Over time, such a resident nymph often becomes connected with their aquatic home through sightings and stories, becoming a guardian of the place and, in effect, a manifestation of its personality.</p>
             <h4>PHYSICAL DESCRIPTION</h4>
             <p>Naiads are fair maidens of fey origin associated with water. They are usually fair-skinned, of moderate height, and with hair that ranges from black, brown, and blonde. Their hair is often wet, though always luscious. Eye colors for naiads differ much like how they do for humans. In general, it is very hard to tell a naiad from a normal human woman that just emerged from a bath. There are some tells, though. For example, naiads are never seen wearing heavy clothing even when in cold weather. They wear flowing silks with light, pastel-colored tones. Their skin is also cool and usually moist, leading some to almost believe they are partially made of water.</p>
             <h4>HISTORY</h4>
