@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Nymph</name>
         <description>The construction for my custom Nymph race.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <!-- This file -->
             <file name="nymph.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/nymph.xml" />
         </update>
@@ -96,6 +96,12 @@ version="1.0" encoding="utf-8" ?>
                 </strong>
                 You can speak, read, and write Common, Elvish, and Sylvan.
             </p>
+            <p class="indent">
+                <strong>
+                    <em>Nymph Lineage.</em>
+                </strong>
+                There are many types of nymph. Choose your lineage from one of the following lineages and gain its benefits.
+            </p>
         </description>
         <sheet display="false" />
         <setters>
@@ -105,14 +111,13 @@ version="1.0" encoding="utf-8" ?>
             <set modifier="1d4" name="weight">80 lb.</set>
         </setters>
         <rules>
-            <stat name="charisma" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" value="2" />
-            <stat name="wisdom" requirements="!(ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI||ID_INTERNAL_GRANTS_BACKGROUND_ASI)" value="1" />
-            <select name="Custom Ability Score Improvement +2 (Nymph)" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" supports="Custom Ability Score Increase 2" type="Ability Score Improvement" />
-            <select name="Custom Ability Score Improvement +1 (Nymph)" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" supports="Custom Ability Score Increase 1" type="Ability Score Improvement" />
+            <stat name="charisma" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" value="2" />
+            <stat name="wisdom" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" value="1" />
+            <select name="Custom Ability Score Improvement +2 (Nymph)" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Custom Ability Score Increase 2" type="Ability Score Improvement" />
+            <select name="Custom Ability Score Improvement +1 (Nymph)" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Custom Ability Score Increase 1" type="Ability Score Improvement" />
             <grant id="ID_INTERNAL_GRANT_RACE_NYMPH" type="Grants" />
             <grant id="ID_SIZE_MEDIUM" type="Size" />
             <stat bonus="base" name="innate speed" value="30" />
-            <stat bonus="base" name="innate speed:swim" value="15" />
             <grant id="ID_VISION_DARKVISION" type="Vision" />
             <grant id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
             <grant id="ID_LANGUAGE_ELVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
@@ -122,6 +127,7 @@ version="1.0" encoding="utf-8" ?>
             <grant id="ID_GUS_RACIAL_TRAIT_NYMPH_FEY_HERITAGE" type="Racial Trait" />
             <grant id="ID_GUS_RACIAL_TRAIT_NYMPH_UNEARTHLY_GRACE" type="Racial Trait" />
             <grant id="ID_GUS_RACIAL_TRAIT_NYMPH_BLINDING_BEAUTY" type="Racial Trait" />
+            <select name="Nymph Lineage" optional="true" supports="Nymph" type="Race Variant" />
         </rules>
     </element>
     <element id="ID_GUS_RACIAL_TRAIT_NYMPH_FEY_HERITAGE" name="Fey Heritage" source="Gus: DnD" type="Racial Trait">

@@ -1,0 +1,54 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Naiad</name>
+        <description>The construction for my custom Naiad subrace for nymphs.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.1.1">
+            <!-- This file -->
+            <file name="naiad.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/subraces/naiad.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_SUB_RACE_NAIAD" name="Naiad" source="Gus: DnD" type="Sub Race">
+        <supports>Nymph Lineage</supports>
+        <description>
+            <h4>h4>NAIAD TRAITS</h4>
+            <p>Your naiad character has a variety of supernatural abilities, due to their affinity with water.</p>
+            <p class="indent">
+                <strong>
+                    <em>Amphibious.</em>
+                </strong>
+                You can breathe air and water.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Water Origin.</em>
+                </strong>
+                You are resistant to cold damage.
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant id="ID_INTERNAL_GRANT_SUBRACE_NYMPH" type="Grants" />
+            <grant id="ID_GUS_RACIAL_TRAIT_NAIAD_AMPHIBIOUS" type="Racial Trait" />
+            <grant id="ID_GUS_RACIAL_TRAIT_NAIAD_WATER_ORIGIN" type="Racial Trait" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_NAIAD_AMPHIBIOUS" name="Amphibious" source="Gus: DnD" type="Racial Trait">
+        <sheet>
+            <description>You can breathe air and water.</description>
+        </sheet>
+        <rules>
+            <stat bonus="base" name="innate speed:swim" value="innate speed" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_NAIAD_WATER_ORIGIN" name="Water Origin" source="Gus: DnD" type="Racial Trait">
+        <sheet>
+            <description>You are resistant to cold damage.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" type="Condition" />
+        </rules>
+    </element>
+</elements>
