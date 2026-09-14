@@ -13,7 +13,7 @@ version="1.0" encoding="utf-8" ?>
     <element id="ID_GUS_SUB_RACE_NAIAD" name="Naiad" source="Gus: DnD" type="Sub Race">
         <supports>Nymph Lineage</supports>
         <description>
-            <h4>h4>NAIAD TRAITS</h4>
+            <h4>NAIAD TRAITS</h4>
             <p>Your naiad character has a variety of supernatural abilities, due to their affinity with water.</p>
             <p class="indent">
                 <strong>
@@ -30,7 +30,7 @@ version="1.0" encoding="utf-8" ?>
         </description>
         <sheet display="false" />
         <rules>
-            <grant id="ID_INTERNAL_GRANT_SUBRACE_NYMPH" type="Grants" />
+            <grant id="ID_INTERNAL_GRANT_SUBRACE_NAIAD" type="Grants" />
             <grant id="ID_GUS_RACIAL_TRAIT_NAIAD_AMPHIBIOUS" type="Racial Trait" />
             <grant id="ID_GUS_RACIAL_TRAIT_NAIAD_WATER_ORIGIN" type="Racial Trait" />
         </rules>
