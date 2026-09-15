@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Damage Vulnerabilities</name>
         <description>The construction for my custom Damage Vulnerabilities.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <!-- This file -->
             <file name="damage-vulnerabilities.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/internals/damage-vulnerabilities.xml" />
         </update>
