@@ -1,0 +1,22 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Pact Boons</name>
+        <description>The construction for my custom Pact Boons.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="pact-boons.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/features/pact-boons.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK" name="Pact of the Mark" source="Gus: DnD" type="Class Feature">
+        <supports>Pact Boon</supports>
+        <description>
+            <p>When you select this boon, you gain a special tattoo or mark from your patron. It can be made in their visage or be a symbol that represents them. As a bonus action you can use the mark to regain a warlock spell slot. You can do this once per long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>When you select this boon, you gain a special tattoo or mark from your patron. It can be made in their visage or be a symbol that represents them. As a bonus action you can use the mark to regain a warlock spell slot. You can do this once per long rest.</description>
+        </sheet>
+    </element>
+</elements>
