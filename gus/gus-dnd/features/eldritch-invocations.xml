@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Eldritch Invocations</name>
         <description>The construction for my custom Eldritch Invocations.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <!-- This file -->
             <file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/features/eldritch-invocations.xml" />
         </update>
@@ -53,7 +53,7 @@ version="1.0" encoding="utf-8" ?>
             <description>When you summon a Pact Weapon in the form of a ranged weapon, it has the following benefits: Your Pact Weapon does not require ammunition, and can instead produce its own magical ammunition. If your Pact Weapon has the thrown property, it returns to your hand after being thrown. Ranged attack rolls with your Pact Weapon ignore quarter and half cover, and attacking at long range doesn’t impose disadvantage.</description>
         </sheet>
     </element>
-    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_EVELYNS_KISS" name="Verenestra's Kiss" source="Gus: DnD" type="Class Feature">
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_VERENESTRA_S_KISS" name="Verenestra's Kiss" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
         <prerequisite>5th level</prerequisite>
         <requirements>[level:5]</requirements>
