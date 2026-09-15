@@ -5,13 +5,15 @@ version="1.0" encoding="utf-8" ?>
         <name>Eldritch Invocations</name>
         <description>The construction for my custom Eldritch Invocations.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.1">
+        <update version="0.0.7">
             <!-- This file -->
             <file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/features/eldritch-invocations.xml" />
         </update>
     </info>
-    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE" name="Beguiling Influence" source="Gus: DnD" type="Class Feature">
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_TONGUE" name="Beguiling Tongue" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
+        <prerequisite>Archfey Patron</prerequisite>
+        <requirements>ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
         <description>
             <p>You gain expertise in the Deception and Persuasion skills.</p>
         </description>
@@ -23,6 +25,258 @@ version="1.0" encoding="utf-8" ?>
             <grant id="ID_PROFICIENCY_SKILL_PERSUASION" type="Proficiency" />
             <grant id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_DECEPTION" type="Proficiency" />
             <grant id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_PERSUASION" type="Proficiency" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_BEWILDERING_BLAST" name="Bewildering Blast" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Archfey Patron, Eldritch Blast Cantrip</prerequisite>
+        <requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
+        <description>
+            <p>Your eldritch blast confuses and disorients your opponent, as your power awes them. Whenever you make a critical hit with your eldritch blast, that creature becomes charmed by you until the end of their next turn.</p>
+            <p class="indent">Additionally, you can choose to deal psychic damage, instead of force, for your eldritch blast.</p>
+        </description>
+        <sheet>
+            <description>Whenever you make a critical hit with your eldritch blast, that creature becomes charmed by you until the end of their next turn. Additionally, you can choose to deal psychic damage, instead of force, for your eldritch blast.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_ARCHER" name="Eldritch Archer" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Pact of the Blade</prerequisite>
+        <requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+        <description>
+            <p>When you summon a Pact Weapon in the form of a ranged weapon, it has the following benefits:</p>
+            <p class="indent">Your Pact Weapon does not require ammunition, and can instead produce its own magical ammunition.</p>
+            <p class="indent">If your Pact Weapon has the thrown property, it returns to your hand after being thrown.</p>
+            <p class="indent">Ranged attack rolls with your Pact Weapon ignore quarter and half cover, and attacking at long range doesn’t impose disadvantage.</p>
+        </description>
+        <sheet>
+            <description>When you summon a Pact Weapon in the form of a ranged weapon, it has the following benefits: Your Pact Weapon does not require ammunition, and can instead produce its own magical ammunition. If your Pact Weapon has the thrown property, it returns to your hand after being thrown. Ranged attack rolls with your Pact Weapon ignore quarter and half cover, and attacking at long range doesn’t impose disadvantage.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_VERENESTRA_S_KISS" name="Verenestra's Kiss" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p>As an action, you target a friendly creature within touch range. That creature gains the following benefits:</p>
+            <p class="indent">The creature heals hit points equal to your warlock level.</p>
+            <p class="indent">Any charmed or frightened conditions affecting the creature are removed. They have advantage on saving throws against those effects for 1 minute.</p>
+            <p class="indent">As long as the creature is within 30 ft. of you, both you and the creature have a +1 to your AC for 1 minute.</p>
+            <p>You must complete a long rest before you can use this feature again.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>As an action, you target a friendly creature within touch range. That creature gains the following benefits: The creature heals {{level:warlock}} hit points. Any charmed or frightened conditions affecting the creature are removed. They have advantage on saving throws against those effects for 1 minute. As long as the creature is within 30 ft. of you, both you and the creature have a +1 to your AC for 1 minute. You must complete a long rest before you can use this feature again.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_FEYWILDS_GRACE" name="Feywild's Grace" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p>You can cast misty step at will, without expending a spell slot or components.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_MISTY_STEP" />
+            </div>
+        </description>
+        <sheet>
+            <description>You can cast misty step at will, without expending a spell slot or components.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_PHB_SPELL_MISTY_STEP" type="Spell" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_LOLTHS_BLESSING" name="Lolth's Blessing" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p>You can cast web at will, without expending a spell slot or components.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_WEB" />
+            </div>
+        </description>
+        <sheet>
+            <description>You can cast web at will, without expending a spell slot or components.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_PHB_SPELL_WEB" type="spell" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_LUNAR_LIGHT" name="Eilistraee's Light" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p>You can cast moonbeam at will, without expending a spell slot or components.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_MOONBEAM" />
+            </div>
+        </description>
+        <sheet>
+            <description>You can cast moonbeam at will, without expending a spell slot or components.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_PHB_SPELL_MOONBEAM" type="spell" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_PHOENIX_SOUL" name="Phoenix Soul" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>7th level</prerequisite>
+        <requirements>[level:7]</requirements>
+        <description>
+            <p>As a reaction when you drop to 0 hit points, you can choose to drop to 1 hit point instead. Doing so causes all hostile creatures within 10 ft. of you to take 2d6 fire damage. You must complete a long rest before doing so again.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>As a reaction when you drop to 0 hit points, you can choose to drop to 1 hit point instead. Doing so causes all hostile creatures within 10 ft. of you to take 2d6 fire damage. You must complete a long rest before doing so again.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_SACRED_BLAST" name="Sacred Blast" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Eldritch Blast cantrip</prerequisite>
+        <requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+        <description>
+            <p>When you cast eldritch blast, you can cause it to deal radiant or necrotic damage (your choice) instead of force. If you fire more than one blast, you can choose the damage type for each individual blast.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_ELDRITCH_BLAST" />
+            </div>
+        </description>
+        <sheet>
+            <description>When you cast eldritch blast, you can cause it to deal radiant or necrotic damage (your choice) instead of force. If you fire more than one blast, you can choose the damage type for each individual blast.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_SILVER_TONGUE" name="Silver Tongue" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Archfey Patron, Friends cantrip</prerequisite>
+        <requirements>ID_PHB_SPELL_FRIENDS,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
+        <description>
+            <p>When you cast friends, the target doesn’t realize what you did to them after the spell’s duration.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FRIENDS" />
+            </div>
+        </description>
+        <sheet>
+            <description>When you cast friends, the target doesn’t realize what you did to them after the spell’s duration.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_TWINNED_BLAST" name="Twinned Blast" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Eldritch Blast cantrip</prerequisite>
+        <requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+        <description>
+            <p>When you cast eldritch blast, you can spend a warlock spell slot to double the amount of beams it creates.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_ELDRITCH_BLAST" />
+            </div>
+        </description>
+        <sheet>
+            <description>When you cast eldritch blast, you can spend a warlock spell slot to double the amount of beams it creates.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_VOICE_OF_CTHULHU" name="Voice of Cthulhu" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Message cantrip</prerequisite>
+        <requirements>ID_PHB_SPELL_MESSAGE</requirements>
+        <description>
+            <p>When you cast message, you can cast it without any components. Additionally, you can target up to 3 creatures when you cast it.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_MESSAGE" />
+            </div>
+        </description>
+        <sheet>
+            <description>When you cast message, you can cast it without any components. Additionally, you can target up to 3 creatures when you cast it.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_WORLD_OF_DREAMS" name="World of Dreams" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p>You can use a warlock spell slot to cast sleep, and when you cast it in this way, you may add an additional amount of d8’s equal to your Charisma Modifier (minimum of 1).</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SLEEP" />
+            </div>
+        </description>
+        <sheet>
+            <description>You can use a warlock spell slot to cast sleep, and when you cast it in this way, you may add an additional {{charisma:modifier}}d8.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_PHB_SPELL_SLEEP" type="spell" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_ARCANE_INK" name="Arcane Ink" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>9th level, Pact of the Mark</prerequisite>
+        <requirements>[level:9],ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
+        <description>
+            <p>Your tattoo has granted you secret arcane knowledge. You learn one 1st-level spell that you are able to cast at will without presenting material components. You may cast it a number of times equal to half your warlock level rounded up per long rest.</p>
+        </description>
+        <sheet>
+            <description>Your tattoo has granted you secret arcane knowledge. You learn one 1st-level spell that you are able to cast at will without presenting material components. You may cast it a {{level:warlock:half:up}} times per long rest.</description>
+        </sheet>
+        <rules>
+            <select level="9" name="Spellcasting (Arcane Ink)" spellcasting="Warlock" supports="1" type="Spell" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_EMPOWERING_MARK" name="Empowering Mark" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Pact of the Mark, 7th level</prerequisite>
+        <requirements>[level:7], ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
+        <description>
+            <p>The next damaging spell you cast after using your Pact Mark deals maximum damage.</p>
+        </description>
+        <sheet>
+            <description>The next damaging spell you cast after using your Pact Mark deals maximum damage.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_MARK_OF_MODIFICATION" name="Mark of Modification" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>9th level, Pact of the Mark</prerequisite>
+        <requirements>[level:9], ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
+        <description>
+            <p>You gain an option from the sorcerer’s metamagic feature. You may use it once before having to take a long rest. As a part of a long rest, you can change the selected option.</p>
+        </description>
+        <sheet>
+            <description>You gain an option from the sorcerer’s metamagic feature. You may use it once before having to take a long rest. As a part of a long rest, you can change the selected option.</description>
+        </sheet>
+        <rules>
+            <select name="Mark of Modification" supports="Metamagic" type="Class Feature" />
+        </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_MARK_OF_SACRIFICE" name="Mark of Sacrifice" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>12th level, Pact of the Mark</prerequisite>
+        <requirements>[level:12], ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
+        <description>
+            <p>Whenever you kill a creature with a spell, roll a d20. On a 20, you regain the ability to use your Pact of the Mark.</p>
+        </description>
+        <sheet>
+            <description>Whenever you kill a creature with a spell, roll a d20. On a 20, you regain the ability to use your Pact of the Mark.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_OVERCHARGED_MAGIC" name="Overcharged Magic" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>5th level, Pact of the Mark</prerequisite>
+        <requirements>[level:5], ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
+        <description>
+            <p>The next spell attack roll you make after using your Pact Mark has advantage.</p>
+        </description>
+        <sheet>
+            <description>The next spell attack roll you make after using your Pact Mark has advantage.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_STRENGTHENED_CASTER" name="Strengthened Caster" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>7th level, Pact of the Mark</prerequisite>
+        <requirements>[level:7], ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
+        <description>
+            <p>You have a +1 to your spell attack rolls and your spell save DC.</p>
+        </description>
+        <sheet>
+            <description>You have a +1 to your spell attack rolls and your spell save DC.</description>
+        </sheet>
+        <rules>
+            <stat name="spellcasting:attack" value="1" />
+            <stat name="spellcasting:dc" value="1" />
         </rules>
     </element>
 </elements>

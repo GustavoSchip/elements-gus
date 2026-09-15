@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Alluring Form</name>
         <description>The construction for my custom Alluring Form.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <!-- This file -->
             <file name="alluring-form.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/alluring-form.xml" />
         </update>
@@ -19,10 +19,10 @@ version="1.0" encoding="utf-8" ?>
         </description>
         <sheet display="false" />
         <rules>
-            <grant id="ID_GUS_CLASS_FEATURE_ALLURING_FORM" type="Class Feature" />
+            <grant id="ID_GUS_FEAT_FEATURE_ALLURING_FORM" type="Feat Feature" />
         </rules>
     </element>
-    <element id="ID_GUS_CLASS_FEATURE_ALLURING_FORM" name="Alluring Form" source="Gus: DnD" type="Class Feature">
+    <element id="ID_GUS_FEAT_FEATURE_ALLURING_FORM" name="Alluring Form" source="Gus: DnD" type="Feat Feature">
         <requirements>ID_GUS_FEAT_ALLURING_FORM</requirements>
         <description>
             <p />
