@@ -5,13 +5,15 @@ version="1.0" encoding="utf-8" ?>
         <name>Eldritch Invocations</name>
         <description>The construction for my custom Eldritch Invocations.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <!-- This file -->
             <file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/features/eldritch-invocations.xml" />
         </update>
     </info>
-    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_INFLUENCE" name="Beguiling Influence" source="Gus: DnD" type="Class Feature">
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_BEGUILING_TONGUE" name="Beguiling Tongue" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
+        <prerequisite>Archfey Patron</prerequisite>
+        <requirements>ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
         <description>
             <p>You gain expertise in the Deception and Persuasion skills.</p>
         </description>
@@ -24,5 +26,19 @@ version="1.0" encoding="utf-8" ?>
             <grant id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_DECEPTION" type="Proficiency" />
             <grant id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_PERSUASION" type="Proficiency" />
         </rules>
+    </element>
+    <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_BEWILDERING_BLAST" name="Bewildering Blast" source="Gus: DnD" type="Class Feature">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>Archfey Patron, Eldritch Blast Cantrip</prerequisite>
+        <requirements>ID_PHB_SPELL_ELDRITCH_BLAST,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
+        <description>
+            <p>Your eldritch blast confuses and disorients your opponent, as your power awes them. Whenever you make a critical hit with your eldritch blast, that creature becomes charmed by you until the end of their next turn.</p>
+            <p class="indent">Additionally, you can choose to deal psychic damage, instead of force, for your eldritch blast.</p>
+        </description>
+        <sheet>
+            <description>
+                Whenever you make a critical hit with your eldritch blast, that creature becomes charmed by you until the end of their next turn. &#13; Additionally, you can choose to deal psychic damage, instead of force, for your eldritch blast.
+            </description>
+        </sheet>
     </element>
 </elements>
