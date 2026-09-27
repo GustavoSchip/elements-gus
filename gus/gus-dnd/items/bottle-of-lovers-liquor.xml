@@ -1,0 +1,31 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Bottle of Lovers Liquor</name>
+        <description>The construction for my custom Bottle of Lovers Liquor.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.3">
+            <!-- This file -->
+            <file name="bottle-of-lovers-liquor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/bottle-of-lovers-liquor.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_MAGIC_ITEM_BOTTLE_OF_LOVERS_LIQUOR" name="Bottle of Lovers Liquor" source="Gus: DnD" type="Magic Item">
+        <description>
+            <p>This bottle contains two servings of magical liquor, each a different color and flavor. One serving is pink and sweet, while the other is blue and bitter. When a creature drinks either serving, the empty serving magically replenishes itself, provided the bottle has charges remaining.</p>
+            <p class="indent">When two different creatures drink the two servings within 5 minutes of one another, their minds become magically linked and their minds are swapped for 1 hour. This effect is a charm. The link between the two minds functions only while both creatures are on the same plane of existence. If either creature leaves that plane, the link ends and the creatures' minds return to their respective bodies.</p>
+            <p class="indent">
+                A creature immune to the charmed condition or to the
+                <em>detect thoughts</em>
+                spell is unaffected by this effect. The bottle has 1d8 charges. When the mind-swap effect successfully occurs, the bottle expends 1 charge. The bottle regains no expended charges. Once all its charges have been expended, the liquor no longer replenishes itself.
+            </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set lb="0.5" name="weight">½ lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very rare</set>
+            <set name="charges">1d8</set>
+        </setters>
+    </element>
+</elements>
