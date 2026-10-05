@@ -9,7 +9,7 @@ export default {
         { files: ["*.xml"], options: { xmlQuoteAttributes: "double", xmlSortAttributesByKey: true, xmlWhitespaceSensitivity: "ignore", printWidth: 9999 } },
         { files: ["*.yml"], options: { yamlBlockStyle: "folded", yamlCollectionStyle: "block", yamlQuoteValues: true, printWidth: 4 } },
         { files: ["*.yaml"], options: { yamlBlockStyle: "folded", yamlCollectionStyle: "block", yamlQuoteValues: true, printWidth: 4 } },
-        { files: ["*.md"], options: { printWidth: 180 } },
+        { files: ["*.md"], options: { printWidth: 9999 } },
         { files: ["*.mjs"], options: { printWidth: 200 } }
     ],
 
@@ -20,6 +20,7 @@ export default {
     requirePragma: false,
     bracketSameLine: true,
     bracketSpacing: true,
+    quoteProps: "as-needed",
     trailingComma: "none",
     objectWrap: "collapse",
     embeddedLanguageFormatting: "auto",
