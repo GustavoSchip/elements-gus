@@ -8,7 +8,11 @@ on:
         paths:
             - "**.index"
             - "**.xml"
-            - "wiki/**"
+            - "**.md"
+            - "**.yml"
+            - "**.yaml"
+            - "**.mjs"
+            - "**.json"
     workflow_dispatch: null
     workflow_call: null
 concurrency:
