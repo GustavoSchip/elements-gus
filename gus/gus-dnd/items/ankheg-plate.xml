@@ -1,0 +1,30 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ankheg Plate</name>
+        <description>The construction for my custom Ankheg Plate.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="ankheg-plate.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/ankheg-plate.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_MAGIC_ITEM_ANKHEG_PLATE" name="Ankheg Plate" source="Gus: DnD" type="Magic Item">
+        <description>
+            <p>This plate armor has been expertly crafted. Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate armor and is not susceptible to rust. As any world-weary adventurer will tell you, however, the best appreciated aspect of ankheg plate is its light weight and low encumbrance. Monsters come and go, but fatigue is a constant enemy.</p>
+        </description>
+        <setters>
+            <set name="keywords">plate, ankheg</set>
+            <set name="category">Magic Armor</set>
+            <set addition="Plate" name="type">Armor</set>
+            <set name="armor">Plate</set>
+            <set name="rarity">Very Rare</set>
+            <set name="enhancement">2</set>
+            <set name="slot">body</set>
+        </setters>
+        <rules>
+            <stat bonus="enhancement" name="ac:armored:enhancement" value="2" />
+        </rules>
+    </element>
+</elements>

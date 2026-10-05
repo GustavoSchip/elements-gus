@@ -1,0 +1,24 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Gray Compass of Chaos</name>
+        <description>The construction for my custom Gray Compass of Chaos.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="gray-compass-of-chaos.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/gray-compass-of-chaos.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_MAGIC_ITEM_GRAY_COMPASS_OF_CHAOS" name="Gray Compass of Chaos" source="Gus: DnD" type="Magic Item">
+        <description>
+            <p>...</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set lb="0.5" name="weight">½ lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+    </element>
+</elements>
