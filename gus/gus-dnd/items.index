@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD Items</name>
         <description>The main entry point for my custom Items.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.1.5">
+        <update version="0.1.7">
             <!-- This file -->
             <file name="items.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items.index" />
         </update>
@@ -19,5 +19,11 @@ version="1.0" encoding="utf-8" ?>
         <file name="oathbow.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/oathbow.xml" />
         <!-- Bottle of Lovers Liquor -->
         <file name="bottle-of-lovers-liquor.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/bottle-of-lovers-liquor.xml" />
+        <!-- Gray Compass of Chaos -->
+        <file name="gray-compass-of-chaos.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/gray-compass-of-chaos.xml" />
+        <!-- Ankheg Plate -->
+        <file name="ankheg-plate.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/ankheg-plate.xml" />
+        <!-- Umberhulk Half Plate -->
+        <file name="umberhulk-half-plate.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/umberhulk-half-plate.xml" />
     </files>
 </index>

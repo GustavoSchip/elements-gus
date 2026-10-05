@@ -1,0 +1,30 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Umberhulk Half Plate</name>
+        <description>The construction for my custom Umberhulk Half Plate.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="umberhulk-half-plate.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/items/umberhulk-half-plate.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_MAGIC_ITEM_UMBERHULK_HALF_PLATE" name="Umberhulk Half Plate" source="Gus: DnD" type="Magic Item">
+        <description>
+            <p>The hard plates that protect umber hulks are reasonably easy to craft into humanoid armor. This dark suit of armor was fashioned into half plate by duergar smiths. The dark dwarves, skilled in handling umber hulk exoskeletons, cured and reinforced the armor.</p>
+        </description>
+        <setters>
+            <set name="keywords">half plate, umberhulk</set>
+            <set name="category">Magic Armor</set>
+            <set addition="Half Plate Armor" name="type">Armor</set>
+            <set name="armor">Half Plate</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">1</set>
+            <set name="slot">body</set>
+        </setters>
+        <rules>
+            <stat bonus="enhancement" name="ac:armored:enhancement" value="1" />
+        </rules>
+    </element>
+</elements>
