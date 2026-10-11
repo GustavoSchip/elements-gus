@@ -1,0 +1,146 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Vampire</name>
+        <description>The construction for my custom Vampire race.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.3">
+            <!-- This file -->
+            <file name="vampire.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/vampire.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_RACE_VAMPIRE" name="Vampire" source="Gus: DnD" type="Race">
+        <description>
+            <p>The Legion of Dusk is dominated by an aristocratic class made up of vampires. They are faster and stronger than most humans, and gifted with supernatural abilities that made them the most formidable force in their homeland. Now, as they push into the depths of Ixalan in search of the Immortal Sun, they bring this strength to bear against all who would resist their advance.</p>
+            <h4>FEAST OF BLOOD</h4>
+            <p>For many vampires, the Rite of Redemption that transforms a human into a vampire is an act of personal sacrifice, paving the way for a promised glorious age. These vampires embody Torrezon’s noble tradition in Ixalan. They are often guided by their dual loyalties to church and crown, believing that the monarch acts with righteous purpose. As such, these vampires carry themselves with a self-assurance that is both imposing and imperial. Other societies seem inferior and unclean compared to their own, leading them to feel that they have a right to claim new lands despite the presence of people already inhabiting those lands.</p>
+            <p class="indent">Other vampires view vampirism merely as a means to attain a powerful advantage over others. These vampires are fierce, ruthless, and often cruel, relishing conflict—be it political or armed—as a means of demonstrating their superiority. Many are politically ambitious, invoking Torrezon’s hierarchy when it serves their interests, but ignoring all the rules of church, state, and morality when those rules become a burden. When these vampires come to Ixalan, they are conquerors, motivated by the prospect of personal glory and the accumulation of riches. Those who achieve wealth and power display it ostentatiously.</p>
+            <h4>VAMPIRE TRAITS</h4>
+            <p>Your vampire character has the following traits.</p>
+            <p class="indent">
+                <b>
+                    <i>Ability Score Increase.</i>
+                </b>
+                Your Charisma score increases by 2.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Age.</i>
+                </b>
+                Vampires don’t mature and age in the same way that other races do. Every living vampire is either a bloodchief, infected by Ulamog’s influence in the distant reaches of history, or was spawned by a bloodchief from a living human. Most vampires are thus very old, but few have any memory of their earliest years.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Alignment.</i>
+                </b>
+                Vampires might not have an innate tendency toward evil, but many of them end up there. Evil or not, their strict hierarchies incline them toward a lawful alignment.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Size.</i>
+                </b>
+                Vampire are about the same size and build as humans. Your size is Medium.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Speed.</i>
+                </b>
+                Your base walking speed is 30 feet.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Sunlight Hypersensitivity.</i>
+                </b>
+                A vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Unholy Body.</i>
+                </b>
+                Dark magic sustains you, making you resistant to necrotic damage and vulnerable to radiant damage. Healing potions do not have a healing effect on you. Instead, they deal poison damage equal to the amount that was meant to heal. To heal you must either drink blood, spend hit dice, or finish a long rest.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Superior Darkvision.</i>
+                </b>
+                Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Languages.</i>
+                </b>
+                You can speak, read, and write Common and Vampiric
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Bloodthirst.</i>
+                </b>
+                You are immune to disease and don't need to eat or breathe, though you can consume food and drink, which taste bland and stale to you. You must drink at least one ration of blood every seven days. At midnight on the seventh day without blood, and each midnight thereafter, you gain one level of exhaustion. Drinking a ration of blood removes all exhaustion gained from this trait. If this exhaustion reaches 6 levels, you are destroyed.
+            </p>
+            <p class="indent">
+                <b>
+                    <i>Bite.</i>
+                </b>
+                You can use a bonus action to bite a creature within 5 feet of you that has blood and is willing, charmed, grappled, incapacitated, paralyzed, or restrained. The bite deals 1d6 piercing damage plus your proficiency bonus. You then drain the creature's blood, dealing necrotic damage equal to your Constitution modifier (minimum of 1). If the bite deals no necrotic damage, you consume no blood. Otherwise, this counts as drinking one ration of blood for your Bloodthirst trait.
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" value="2" />
+            <select name="Custom Ability Score Improvement +2 (Vampire)" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" supports="Custom Ability Score Increase 2" type="Ability Score Improvement" />
+            <grant id="ID_INTERNAL_GRANT_RACE_VAMPIRE" type="Grants" />
+            <stat bonus="base" name="innate speed" value="30" />
+            <grant id="ID_SIZE_MEDIUM" type="Size" />
+            <grant id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
+            <grant id="ID_GUS_LANGUAGE_VAMPIRIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" type="Language" />
+            <select name="Customized Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" supports="Custom Race Language||Vampiric Language" type="Language" />
+            <grant id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" type="Racial Trait" />
+            <grant id="ID_VISION_SUPERIORDARKVISION" type="Vision" />
+            <grant id="ID_GUS_RACIAL_TRAIT_VAMPIRE_SUNLIGHT_HYPERSENSITIVITY" type="Racial Trait" />
+            <grant id="ID_GUS_RACIAL_TRAIT_VAMPIRE_UNHOLY_BODY" type="Racial Trait" />
+            <grant id="ID_GUS_RACIAL_TRAIT_VAMPIRE_BLOODTHIRST" type="Racial Trait" />
+            <grant id="ID_GUS_RACIAL_TRAIT_VAMPIRE_BITE" type="Racial Trait" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_VAMPIRE_SUNLIGHT_HYPERSENSITIVITY" name="Sunlight Hypersensitivity" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>A vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.</p>
+        </description>
+        <sheet>
+            <description>A vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_VAMPIRE_UNHOLY_BODY" name="Unholy Body" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>Dark magic sustains you, making you resistant to necrotic damage and vulnerable to radiant damage. Healing potions do not have a healing effect on you. Instead, they deal poison damage equal to the amount that was meant to heal. To heal you must either drink blood, spend hit dice, or finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>Dark magic sustains you, making you resistant to necrotic damage and vulnerable to radiant damage. Healing potions do not have a healing effect on you. Instead, they deal poison damage equal to the amount that was meant to heal. To heal you must either drink blood, spend hit dice, or finish a long rest.</description>
+        </sheet>
+        <rules>
+            <grant id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" type="Condition" />
+            <grant id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" type="Condition" />
+        </rules>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_VAMPIRE_BLOODTHIRST" name="Bloodthirst" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>You are immune to disease and don't need to eat or breathe, though you can consume food and drink, which taste bland and stale to you. You must drink at least one ration of blood every seven days. At midnight on the seventh day without blood, and each midnight thereafter, you gain one level of exhaustion. Drinking a ration of blood removes all exhaustion gained from this trait. If this exhaustion reaches 6 levels, you are destroyed.</p>
+        </description>
+        <sheet>
+            <description>You are immune to disease and don't need to eat or breathe. Other food and drink taste bland and stale. After seven days without blood, you gain one level of exhaustion at midnight each day until you drink a ration of blood, which removes all exhaustion gained from this trait. If this exhaustion reaches 6 levels, you are destroyed.</description>
+        </sheet>
+    </element>
+    <element id="ID_GUS_RACIAL_TRAIT_VAMPIRE_BITE" name="Bite" source="Gus: DnD" type="Racial Trait">
+        <description>
+            <p>You can use a bonus action to bite a creature within 5 feet of you that has blood and is willing, charmed, grappled, incapacitated, paralyzed, or restrained. The bite deals 1d6 piercing damage plus your proficiency bonus. You then drain the creature's blood, dealing necrotic damage equal to your Constitution modifier (minimum of 1). If the bite deals no necrotic damage, you consume no blood. Otherwise, this counts as drinking one ration of blood for your Bloodthirst trait.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You bite a willing, charmed, grappled, incapacitated, paralyzed, or restrained creature within 5 feet of you that has blood, dealing 1d6 + {{bite:damage}} piercing damage and {{bite:additional damage}} necrotic damage. If the bite deals no necrotic damage, you consume no blood. Otherwise, this counts as drinking one ration of blood for your Bloodthirst trait.</description>
+        </sheet>
+        <rules>
+            <stat name="bite:damage" value="proficiency" />
+            <stat name="bite:additional damage" value="constitution:modifier" />
+        </rules>
+    </element>
+</elements>

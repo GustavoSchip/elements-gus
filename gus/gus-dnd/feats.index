@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD Feats</name>
         <description>The main entry point for my custom Feats.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.3">
+        <update version="0.0.6">
             <!-- This file -->
             <file name="feats.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats.index" />
         </update>
@@ -15,5 +15,11 @@ version="1.0" encoding="utf-8" ?>
         <file name="wrestler.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/wrestler.xml" />
         <!-- Alluring Form -->
         <file name="alluring-form.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/alluring-form.xml" />
+        <!-- Superior Body -->
+        <file name="superior-body.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/superior-body.xml" />
+        <!-- Misty Escape -->
+        <file name="misty-escape.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/misty-escape.xml" />
+        <!-- Animating Bite -->
+        <file name="animating-bite.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/animating-bite.xml" />
     </files>
 </index>

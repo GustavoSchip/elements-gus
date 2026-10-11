@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Gus: DnD Races</name>
         <description>The main entry point for my custom Races.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <!-- This file -->
             <file name="races.index" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races.index" />
         </update>
@@ -15,5 +15,7 @@ version="1.0" encoding="utf-8" ?>
         <file name="nymph.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/nymph.xml" />
         <!-- Dryad -->
         <file name="dryad.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/dryad.xml" />
+        <!-- Vampire -->
+        <file name="vampire.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/races/vampire.xml" />
     </files>
 </index>

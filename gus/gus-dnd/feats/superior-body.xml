@@ -1,0 +1,37 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Superior Body</name>
+        <description>The construction for my custom Superior Body.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="superior-body.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/superior-body.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_FEAT_SUPERIOR_BODY" name="Superior Body" source="Gus: DnD" type="Feat">
+        <requirements>ID_INTERNAL_GRANT_RACE_VAMPIRE||ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE||ID_WOTC_PHB_GRANTS_FEAT_UNLOCKER</requirements>
+        <prerequisite>Vampire</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Vampire</p>
+            <p>If your Strength, Dexterity, or Constitution scores are less then 18, they become 18.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant id="ID_GUS_FEAT_FEATURE_SUPERIOR_BODY" type="Feat Feature" />
+        </rules>
+    </element>
+    <element id="ID_GUS_FEAT_FEATURE_SUPERIOR_BODY" name="Superior Body" source="Gus: DnD" type="Feat Feature">
+        <requirements>ID_GUS_FEAT_SUPERIOR_BODY</requirements>
+        <description>
+            <p />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat bonus="base" name="strength:score:set" value="18" />
+            <stat bonus="base" name="dexterity:score:set" value="18" />
+            <stat bonus="base" name="constitution:score:set" value="18" />
+        </rules>
+    </element>
+</elements>

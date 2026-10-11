@@ -1,0 +1,24 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Vampiric</name>
+        <description>The construction for my custom Vampiric language.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.1">
+            <!-- This file -->
+            <file name="latin.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/languages/vampiric.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_LANGUAGE_VAMPIRIC" name="Vampiric" source="Gus: DnD" type="Language">
+        <supports>Vampirirc Language</supports>
+        <description>
+            <p>The language of the Vampire race.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Vampire</set>
+            <set name="script">Vampiric</set>
+        </setters>
+    </element>
+</elements>
