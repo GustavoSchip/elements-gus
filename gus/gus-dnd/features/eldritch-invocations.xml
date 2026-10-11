@@ -5,7 +5,7 @@ version="1.0" encoding="utf-8" ?>
         <name>Eldritch Invocations</name>
         <description>The construction for my custom Eldritch Invocations.</description>
         <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
-        <update version="0.0.7">
+        <update version="0.0.8">
             <!-- This file -->
             <file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/features/eldritch-invocations.xml" />
         </update>
@@ -55,8 +55,8 @@ version="1.0" encoding="utf-8" ?>
     </element>
     <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_VERENESTRA_S_KISS" name="Verenestra's Kiss" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
-        <prerequisite>5th level</prerequisite>
-        <requirements>[level:5]</requirements>
+        <prerequisite>5th level, Verenestra</prerequisite>
+        <requirements>[level:5], ID_GUS_DEITY_VERENESTRA</requirements>
         <description>
             <p>As an action, you target a friendly creature within touch range. That creature gains the following benefits:</p>
             <p class="indent">The creature heals hit points equal to your warlock level.</p>
@@ -70,8 +70,8 @@ version="1.0" encoding="utf-8" ?>
     </element>
     <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_FEYWILDS_GRACE" name="Feywild's Grace" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
-        <prerequisite>15th level</prerequisite>
-        <requirements>[level:15]</requirements>
+        <prerequisite>15th level, Archfey Patron</prerequisite>
+        <requirements>[level:15], ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
         <description>
             <p>You can cast misty step at will, without expending a spell slot or components.</p>
             <div class="reference">
@@ -87,8 +87,8 @@ version="1.0" encoding="utf-8" ?>
     </element>
     <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_LOLTHS_BLESSING" name="Lolth's Blessing" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
-        <prerequisite>15th level</prerequisite>
-        <requirements>[level:15]</requirements>
+        <prerequisite>15th level, Lolth</prerequisite>
+        <requirements>[level:15], ID_WOTC_PHB_DEITY_LOLTH</requirements>
         <description>
             <p>You can cast web at will, without expending a spell slot or components.</p>
             <div class="reference">
@@ -104,8 +104,8 @@ version="1.0" encoding="utf-8" ?>
     </element>
     <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_LUNAR_LIGHT" name="Eilistraee's Light" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
-        <prerequisite>15th level</prerequisite>
-        <requirements>[level:15]</requirements>
+        <prerequisite>15th level, Eilistraee</prerequisite>
+        <requirements>[level:15], ID_WOTC_SCAG_DEITY_EILISTRAEE</requirements>
         <description>
             <p>You can cast moonbeam at will, without expending a spell slot or components.</p>
             <div class="reference">
@@ -147,7 +147,7 @@ version="1.0" encoding="utf-8" ?>
     <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_SILVER_TONGUE" name="Silver Tongue" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
         <prerequisite>Archfey Patron, Friends cantrip</prerequisite>
-        <requirements>ID_PHB_SPELL_FRIENDS,ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
+        <requirements>ID_PHB_SPELL_FRIENDS, ID_WOTC_PHB_ARCHETYPE_OTHERWORLDLY_PATRON_THE_ARCHFEY</requirements>
         <description>
             <p>When you cast friends, the target doesn’t realize what you did to them after the spell’s duration.</p>
             <div class="reference">
@@ -206,7 +206,7 @@ version="1.0" encoding="utf-8" ?>
     <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_ARCANE_INK" name="Arcane Ink" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
         <prerequisite>9th level, Pact of the Mark</prerequisite>
-        <requirements>[level:9],ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
+        <requirements>[level:9], ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
         <description>
             <p>Your tattoo has granted you secret arcane knowledge. You learn one 1st-level spell that you are able to cast at will without presenting material components. You may cast it a number of times equal to half your warlock level rounded up per long rest.</p>
         </description>
@@ -219,7 +219,7 @@ version="1.0" encoding="utf-8" ?>
     </element>
     <element id="ID_GUS_CLASS_FEATURE_ELDRITCH_INVOCATION_EMPOWERING_MARK" name="Empowering Mark" source="Gus: DnD" type="Class Feature">
         <supports>Eldritch Invocation</supports>
-        <prerequisite>Pact of the Mark, 7th level</prerequisite>
+        <prerequisite>7th level, Pact of the Mark</prerequisite>
         <requirements>[level:7], ID_GUS_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_MARK</requirements>
         <description>
             <p>The next damaging spell you cast after using your Pact Mark deals maximum damage.</p>
