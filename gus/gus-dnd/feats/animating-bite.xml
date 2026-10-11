@@ -1,0 +1,34 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Animating Bite</name>
+        <description>The construction for my custom Animating Bite.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="animating-bite.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/animating-bite.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_FEAT_ANIMATING_BITE" name="Animating Bite" source="Gus: DnD" type="Feat">
+        <requirements>ID_INTERNAL_GRANT_RACE_VAMPIRE||ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE||ID_WOTC_PHB_GRANTS_FEAT_UNLOCKER</requirements>
+        <prerequisite>Vampire</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Vampire</p>
+            <p>When you reduce a creature to 0 hit points with your Bite, you can choose to animate it. At the next midnight, it rises as a zombie under your control and obeys your simple commands. You can control a number of zombies animated this way up to your proficiency bonus. Any zombies raised beyond this limit are hostile toward you and other creatures. At 18th level, you can raise a vampire spawn instead of a zombie. You can control only one vampire spawn animated this way at a time.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant id="ID_GUS_FEAT_FEATURE_ANIMATING_BITE" type="Feat Feature" />
+        </rules>
+    </element>
+    <element id="ID_GUS_FEAT_FEATURE_ANIMATING_BITE" name="Animating Bite" source="Gus: DnD" type="Feat Feature">
+        <requirements>ID_GUS_FEAT_SUPERIOR_BODY</requirements>
+        <description>
+            <p />
+        </description>
+        <sheet action="Reaction">
+            <description>When you reduce a creature to 0 hit points with your Bite, you can choose to animate it. At the next midnight, it rises as a zombie under your control and obeys your simple commands. You can control a number of zombies animated this way up to your proficiency bonus. Any zombies raised beyond this limit are hostile toward you and other creatures. At 18th level, you can raise a vampire spawn instead of a zombie. You can control only one vampire spawn animated this way at a time.</description>
+        </sheet>
+    </element>
+</elements>

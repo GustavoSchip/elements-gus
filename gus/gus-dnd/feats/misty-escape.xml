@@ -1,0 +1,34 @@
+<?xml
+version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Misty Escape</name>
+        <description>The construction for my custom Misty Escape.</description>
+        <author url="https://github.com/GustavoSchip/">Gustavo Schip</author>
+        <update version="0.0.2">
+            <!-- This file -->
+            <file name="misty-escape.xml" url="https://raw.githubusercontent.com/GustavoSchip/elements-gus/master/gus/gus-dnd/feats/misty-escape.xml" />
+        </update>
+    </info>
+    <element id="ID_GUS_FEAT_MISTY_ESCAPE" name="Misty Escape" source="Gus: DnD" type="Feat">
+        <requirements>ID_INTERNAL_GRANT_RACE_VAMPIRE||ID_WOTC_TCOE_RACE_CUSTOM_LINEAGE||ID_WOTC_PHB_GRANTS_FEAT_UNLOCKER</requirements>
+        <prerequisite>Vampire</prerequisite>
+        <description>
+            <p class="flavor">Prerequisite: Vampire</p>
+            <p>When you drop to 0 hit points outside an area of sunlight or running water, you transform into a cloud of mist instead of falling unconscious. If you can't transform, you are destroyed. While in mist form, you can't take actions, speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can occupy another creature's space. You can pass through any space air can pass through without squeezing, but can't pass through water. You have advantage on Strength, Dexterity, and Constitution saving throws, and you are immune to nonmagical damage, except damage from sunlight. While you have 0 hit points in mist form, you can't return to your vampire form. If you fail to return to your vampire form within 2 hours, you are destroyed. After 1 hour in mist form, you regain 1 hit point, return to your vampire form, and gain one level of exhaustion. This exhaustion can be removed only by drinking a ration of blood, as described in your Bloodthirst trait. If this exhaustion reaches 6 levels, you are destroyed.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant id="ID_GUS_FEAT_FEATURE_MISTY_ESCAPE" type="Feat Feature" />
+        </rules>
+    </element>
+    <element id="ID_GUS_FEAT_FEATURE_MISTY_ESCAPE" name="Misty Escape" source="Gus: DnD" type="Feat Feature">
+        <requirements>ID_GUS_FEAT_MISTY_ESCAPE</requirements>
+        <description>
+            <p />
+        </description>
+        <sheet>
+            <description>When you drop to 0 hit points outside an area of sunlight or running water, you transform into a cloud of mist instead of falling unconscious. If you can't transform, you are destroyed. While in mist form, you can't take actions, speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can occupy another creature's space. You can pass through any space air can pass through without squeezing, but can't pass through water. You have advantage on Strength, Dexterity, and Constitution saving throws, and you are immune to nonmagical damage, except damage from sunlight. While you have 0 hit points in mist form, you can't return to your vampire form. If you fail to return to your vampire form within 2 hours, you are destroyed. After 1 hour in mist form, you regain 1 hit point, return to your vampire form, and gain one level of exhaustion. This exhaustion can be removed only by drinking a ration of blood, as described in your Bloodthirst trait. If this exhaustion reaches 6 levels, you are destroyed.</description>
+        </sheet>
+    </element>
+</elements>
