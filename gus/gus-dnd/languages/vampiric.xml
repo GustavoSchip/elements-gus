@@ -11,14 +11,9 @@ version="1.0" encoding="utf-8" ?>
         </update>
     </info>
     <element id="ID_GUS_LANGUAGE_VAMPIRIC" name="Vampiric" source="Gus: DnD" type="Language">
-        <supports>Vampirirc Language</supports>
+        <supports>Monster, Vampirirc Language</supports>
         <description>
             <p>The language of the Vampire race.</p>
         </description>
-        <setters>
-            <set name="exotic">true</set>
-            <set name="speakers">Vampire</set>
-            <set name="script">Vampiric</set>
-        </setters>
     </element>
 </elements>
